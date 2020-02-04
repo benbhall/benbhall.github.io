@@ -5,13 +5,12 @@ date: 2019-06-12T18:35:48+01:00
 author: Ben Hall
 layout: post
 guid: http://benhall.io/?p=656
-img: i-rest.jpg # Add image post (optional)
+img: emailprivate.png # Add image post (optional)
 description: You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. # Add post description (optional)
 permalink: /a-c-developers-guide-to-keeping-you-email-private-and-out-of-github-commits/
 categories:
   - Uncategorized
 ---
-<figure class="wp-block-image"><img src="https://i1.wp.com/benhall.io/wp-content/uploads/2019/06/emailprivate.png?w=687" alt="" class="wp-image-686" srcset="https://i1.wp.com/benhall.io/wp-content/uploads/2019/06/emailprivate.png?w=983 983w, https://i1.wp.com/benhall.io/wp-content/uploads/2019/06/emailprivate.png?resize=300%2C67 300w, https://i1.wp.com/benhall.io/wp-content/uploads/2019/06/emailprivate.png?resize=768%2C172 768w, https://i1.wp.com/benhall.io/wp-content/uploads/2019/06/emailprivate.png?resize=800%2C179 800w" sizes="(max-width: 687px) 100vw, 687px" data-recalc-dims="1" /></figure> 
 
 If you&#8217;re about to start working with public repos on GitHub, you might want to hide your email address(es) from the commit history.
 
