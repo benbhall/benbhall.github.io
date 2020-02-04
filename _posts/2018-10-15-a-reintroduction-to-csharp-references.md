@@ -6,6 +6,7 @@ author: Ben Hall
 layout: post
 guid: http://benhall.io/?p=514
 permalink: /a-reintroduction-to-csharp-references/
+timg: types.png
 twitterCardType:
   - summary
 cardImage:
@@ -20,11 +21,12 @@ tags:
   - reference type
   - value type
 ---
+
+Reviewing what we need to know pre- and post- C# 7 features about the type system and references in particular, while correcting common misconceptions along the way.
+
 [<img class="aligncenter size-full wp-image-604" src="https://i2.wp.com/benhall.io/wp-content/uploads/2018/10/novcpwin.png?resize=518%2C56" alt="" width="518" height="56" border="1" srcset="https://i2.wp.com/benhall.io/wp-content/uploads/2018/10/novcpwin.png?w=518 518w, https://i2.wp.com/benhall.io/wp-content/uploads/2018/10/novcpwin.png?resize=300%2C32 300w" sizes="(max-width: 518px) 100vw, 518px" data-recalc-dims="1" />](https://www.codeproject.com/Competitions/1064/Best-Article-of-October-2018.aspx)
 
 Super happy to have won First Prize @ [Codeproject](https://www.codeproject.com/Articles/1263638/A-Re-Introduction-to-Csharp-References-Post-Csharp) for best article.
-
-Reviewing what we need to know pre- and post- C# 7 features about the type system and references in particular, while correcting common misconceptions along the way.
 
 # Warm-up Exercise
 
