@@ -36,5 +36,6 @@ paginate_path: "/page/:num"
 
 sass:
   style: compressed
+  sass_dir: /assets/css/scss
 
 exclude: ["node_modules", "gulpfile.js", "package.json", "yarn.lock"]
