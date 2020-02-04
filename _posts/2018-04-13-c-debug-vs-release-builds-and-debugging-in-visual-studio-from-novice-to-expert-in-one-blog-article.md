@@ -6,6 +6,7 @@ author: Ben Hall
 layout: post
 guid: http://benhall.io/?p=363
 permalink: /c-debug-vs-release-builds-and-debugging-in-visual-studio-from-novice-to-expert-in-one-blog-article/
+tdesc: I planned to write a write an introductory article but as I delved deeper into internals I started exploring actual behaviour with Roslyn vs. previous commentary / what the documentation states. So, while I do start with the basics, I hope there is something for more experienced C# developers too.
 twitterCardType:
   - summary
 cardImage:

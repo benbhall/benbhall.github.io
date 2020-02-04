@@ -6,6 +6,7 @@ author: Ben Hall
 layout: post
 guid: http://benhall.io/?p=326
 permalink: /correcting-a-common-c-async-await-misconception/
+tdesc: Async/await has been part of C# since C# 5.0 yet many developers have yet to explore how it works under the covers, which I would recommend for any syntactic sugar in C#. I won&#8217;t be going into that level of detail now, nor will I explore the subtleties of IO and CPU bound operations.
 categories:
   - Asynchronous
   - 'C# .NET'
