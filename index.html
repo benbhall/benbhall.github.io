@@ -3,7 +3,7 @@ layout: main
 ---
 {% for post in paginator.posts %}
 <article class="post">
-  {% if post.img %}
+  {% if post.timg %}
     <a class="post-thumbnail" style="background-image: url({{"/assets/img/" | prepend: site.baseurl | append : post.timg}})" href="{{post.url | prepend: site.baseurl}}"></a>
   {% else %}
   {% endif %}
