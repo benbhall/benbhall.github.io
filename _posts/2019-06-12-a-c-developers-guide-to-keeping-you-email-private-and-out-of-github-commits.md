@@ -6,7 +6,7 @@ author: Ben Hall
 layout: post
 guid: http://benhall.io/?p=656
 img: emailprivate.png # Add image post (optional)
-description: You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. # Add post description (optional)
+description: 
 permalink: /a-c-developers-guide-to-keeping-you-email-private-and-out-of-github-commits/
 categories:
   - Uncategorized

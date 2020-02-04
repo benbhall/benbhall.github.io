@@ -11,13 +11,12 @@ site-twitter: #if your site has a twitter account, enter it here
 # Author Settings
 author: Ben Hall # add your name
 author-img: benface.jpg # add your photo
-about-author: Left an enjoyable career teaching Computer Science and programming in August 2016 and started out in software development.
-              Currently an Expert Software Engineer (Technical Lead on .NET) at the United Kingdom Hydrographic Office in South West England.
-social-twitter: # add your Twitter handle
-social-facebook: # add your Facebook handle
-social-github: artemsheludko # add your Github handle
-social-linkedin: # add your Linkedin handle
-social-email: # add your Email address
+about-author: > 
+  Many years a school teacher 👨‍🎓. Now Expert Software Engineer (Technical Lead on .NET) at the UK Hydrographic Office. 
+  CodeProject MVP 2019. I do yoga.
+social-twitter: benhall_io
+social-github: benbhall # add your Github handle
+social-linkedin: ben-hall-software-engineer
 
 # Disqus
 discus-identifier: mr-brown # add your discus identifier
