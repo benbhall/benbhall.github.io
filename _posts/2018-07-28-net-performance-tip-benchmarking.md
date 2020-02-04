@@ -6,6 +6,7 @@ author: Ben Hall
 layout: post
 guid: http://benhall.io/?p=466
 permalink: /net-performance-tip-benchmarking/
+timg: perfdates.png
 twitterCardType:
   - summary
 cardImage:
@@ -63,7 +64,8 @@ For many scenarios, it is fine to just fire it up with the standard settings. He
   * <span class="lang:c# decode:true crayon-inline ">[ClrJob, CoreJob]</span>  &#8211; I used the attribute approach to configuration, decorating the class to make `BenchmarkDotNet` run the tests on .NET full framework and also Core.
   * <span class="lang:c# decode:true crayon-inline ">[Benchmark]</span>  &#8211; used to decorate each method I wanted to benchmark
 
-<pre class="whitespace-before:1 whitespace-after:1 lang:c# decode:true">[ClrJob, CoreJob]
+```csharp
+[ClrJob, CoreJob]
 public class DateTimeBenchmark {
     private DateTime dateNow;
     private DateTimeOffset dateOffset;
@@ -93,7 +95,8 @@ public class DateTimeBenchmark {
     public void NodaTime_ZonedDateTime() {
         nowInIsoUtc = SystemClock.Instance.GetCurrentInstant().InUtc();
     }
-}</pre>
+}
+```
 
 A call to get things started:
 

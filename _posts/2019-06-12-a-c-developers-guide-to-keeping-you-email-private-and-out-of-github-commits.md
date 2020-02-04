@@ -5,7 +5,6 @@ date: 2019-06-12T18:35:48+01:00
 author: Ben Hall
 layout: post
 guid: http://benhall.io/?p=656
-timg: emailprivate.png # Add image post (optional)
 img: emailprivate.png # Add image post (optional)
 description: 
 permalink: /a-c-developers-guide-to-keeping-you-email-private-and-out-of-github-commits/
