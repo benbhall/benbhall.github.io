@@ -100,10 +100,12 @@ public class DateTimeBenchmark {
 
 A call to get things started:
 
-<pre class="whitespace-before:1 whitespace-after:1 lang:c# decode:true">static void Main(string[] args)
+```csharp
+static void Main(string[] args)
 {
     var summary = BenchmarkRunner.Run&lt;DateTimeBenchmark&gt;();
-}</pre>
+}
+```
 
 Note if you want to try this code, you&#8217;ll need to install the NuGet packages for `BenchmarkDotNet` and `NodaTime`.
 
@@ -117,4 +119,6 @@ Obviously, not a substitute for understanding the underlying implementation deta
 
 One gotcha is, if you are testing Core and full framework, make sure you create a new Core console application and edit your _csproj_ file, switching out <span class="lang:c# decode:true crayon-inline "><TargetFramework></span>  for e.g.
 
-<pre class="whitespace-before:1 whitespace-after:1 lang:c# decode:true ">&lt;TargetFrameworks&gt;netcoreapp2.1;net46&lt;/TargetFrameworks&gt;</pre>
+```csharp
+TargetFrameworks&gt;netcoreapp2.1;net46&lt;/TargetFrameworks&gt;
+```

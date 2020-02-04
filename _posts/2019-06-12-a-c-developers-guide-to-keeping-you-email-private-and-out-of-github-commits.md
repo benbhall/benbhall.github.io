@@ -22,7 +22,7 @@ GitHub website -> Settings -> Emails.
   
 Scroll down to &#8216;Keep my email address private&#8217; and you&#8217;ll be able to take a copy of your&nbsp;_no-reply_ address that will look something like:
 
-    1119252+foobar@users.noreply.github.com
+> 1119252+foobar@users.noreply.github.com
 
 Note that if you&#8217;re missing the number prefix, commits made with that _no-reply_ email won&#8217;t be associated with you if you change your username. Simply un-check then re-check the &#8216;Keep my email address private&#8217; box and you&#8217;ll get a new one with the id prefix.
 
@@ -42,7 +42,8 @@ So I might have c:\teamgit for working with our team&#8217;s on-prem Azure DevOp
 
 Contents of&nbsp;.gitconfig:
 
-<pre class="wp-block-code"><code>[user]
+```csharp
+[user]
     name = Ben Hall
     email = benh@foo.com
 
@@ -50,19 +51,24 @@ Contents of&nbsp;.gitconfig:
      path = c:/github/github-user.gitconfig
 
 [includeIf "gitdir/i:c:/teamgit/"]
-     path = c:/teamgit/teamgit-user.gitconfig</code></pre>
+     path = c:/teamgit/teamgit-user.gitconfig
+```
 
 It&#8217;s really picky about that trailing slash and the /i gets around case issues. It&#8217;s a beast that wants to live on UNIX but is forced into Windows 🙂 At least the file names and extensions can be anything you want.
 
 Contents of&nbsp;github-user.gitconfig:
 
-<pre class="wp-block-code"><code>[user]
-    email =  1119252+foobar@users.noreply.github.com</code></pre>
+```csharp
+[user]
+    email =  1119252+foobar@users.noreply.github.com
+```
 
 Contents of&nbsp;teamgit-user.gitconfig:
 
-<pre class="wp-block-code"><code>[user]
-    email = ben.hall@myemployer.co.uk</code></pre>
+```csharp
+[user]
+    email = ben.hall@myemployer.co.uk
+```
 
 This works in command line, VS Code and Visual Studio. In the latter it won&#8217;t acknowledge it in Team Explorer git settings (for sensible reasons) but you&#8217;ll see it is working in your commit log.
 
@@ -74,7 +80,7 @@ Don&#8217;t forget to ask anyone you add as a [co-author](https://help.github.co
 
 You&#8217;ll want to try making some commits but before you do it is straightforward to check with the following:
 
-<pre class="wp-block-code"><code>git config --show-origin --get user.email</code></pre>
+  `git config --show-origin --get user.email`
 
 For the repo you are sitting in, the show-origin bit will let you see precisely which config file the email taken from.
 
