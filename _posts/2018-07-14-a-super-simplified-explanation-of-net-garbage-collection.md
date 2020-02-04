@@ -6,6 +6,7 @@ author: Ben Hall
 layout: post
 guid: http://benhall.io/?p=437
 permalink: /a-super-simplified-explanation-of-net-garbage-collection/
+tdesc: This article is a super-simplified, look at .NET garbage collection, with loads of intentional technical omissions. It aims to provide a baseline level of understanding that a typical C# developer realistically needs for their day-to-day work. I certainly won’t add complexity by mentioning the stack, value types, boxing etc.
 enclosure:
   - |
     http://benhall.io/wp-content/uploads/2018/07/gcAnimMp4.mp4
@@ -24,10 +25,6 @@ tags:
   - garbage collection
 ---
 [<img class="alignleft wp-image-503" src="https://i0.wp.com/benhall.io/wp-content/uploads/2018/07/codeprojectgc.png?resize=504%2C53" alt="" width="504" height="53" srcset="https://i0.wp.com/benhall.io/wp-content/uploads/2018/07/codeprojectgc.png?w=494 494w, https://i0.wp.com/benhall.io/wp-content/uploads/2018/07/codeprojectgc.png?resize=300%2C32 300w, https://i0.wp.com/benhall.io/wp-content/uploads/2018/07/codeprojectgc.png?resize=280%2C29 280w" sizes="(max-width: 504px) 100vw, 504px" data-recalc-dims="1" />](https://www.codeproject.com/Competitions/1058/Best-Article-of-July-2018.aspx)
-
-&nbsp;
-
-&nbsp;
 
 Super happy to have won First Prize @ [Codeproject](https://www.codeproject.com/Articles/1252394/A-Super-Simplified-Explanation-of-NET-Garbage-Coll) for best article.
 
