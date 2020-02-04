@@ -6,7 +6,7 @@ author: Ben Hall
 layout: post
 guid: http://benhall.io/?p=651
 permalink: /net-core-lifecycles-making-an-informed-decision-on-version/
-img: coreversions2.png
+timg: coreversions2.png
 categories:
   - .NET Core
   - 'C# .NET'

@@ -5,24 +5,25 @@ date: 2019-06-12T18:35:48+01:00
 author: Ben Hall
 layout: post
 guid: http://benhall.io/?p=656
+timg: emailprivate.png # Add image post (optional)
 img: emailprivate.png # Add image post (optional)
 description: 
 permalink: /a-c-developers-guide-to-keeping-you-email-private-and-out-of-github-commits/
 categories:
-  - Uncategorized
+  - git
 ---
 
-If you&#8217;re about to start working with public repos on GitHub, you might want to hide your email address(es) from the commit history.
+If you are about to start working with public repos on GitHub, you might want to hide your email address(es) from the commit history.
 
 Written for .NET developers but useful to anyone working with git.
 
-## Step 1&nbsp;(Find the private email)
+## Step 1: (Find the private email)
 
 GitHub website -> Settings -> Emails.  
   
 Scroll down to &#8216;Keep my email address private&#8217; and you&#8217;ll be able to take a copy of your&nbsp;_no-reply_ address that will look something like:
 
-    `1119252+foobar@users.noreply.github.com`
+    1119252+foobar@users.noreply.github.com
 
 Note that if you&#8217;re missing the number prefix, commits made with that _no-reply_ email won&#8217;t be associated with you if you change your username. Simply un-check then re-check the &#8216;Keep my email address private&#8217; box and you&#8217;ll get a new one with the id prefix.
 
