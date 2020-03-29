@@ -107,7 +107,7 @@ You might be thinking of that large Bitmap image you’ve working with – actua
 
 In the following example, the object from LargeObjectHeapExample is actually 16 Bytes because it is just made up of general class info and pointers to the string and byte array.
 
-By instantiating the LargeObjectHeapExample object we are actually allocating **3 objects on the heap**: 2 of them on the small object heap; and the byte array on the large object heap [visit their website](https://canadianviagras.net/pill/fildena/).
+By instantiating the LargeObjectHeapExample object we are actually allocating **3 objects on the heap**: 2 of them on the small object heap; and the byte array on the large object heap.
 
 <img class="alignleft size-full wp-image-452" src="https://i1.wp.com/benhall.io/wp-content/uploads/2018/07/aLargeObject2.png?resize=687%2C312" alt="" width="687" height="312" srcset="https://i1.wp.com/benhall.io/wp-content/uploads/2018/07/aLargeObject2.png?w=876 876w, https://i1.wp.com/benhall.io/wp-content/uploads/2018/07/aLargeObject2.png?resize=300%2C136 300w, https://i1.wp.com/benhall.io/wp-content/uploads/2018/07/aLargeObject2.png?resize=768%2C349 768w, https://i1.wp.com/benhall.io/wp-content/uploads/2018/07/aLargeObject2.png?resize=800%2C363 800w" sizes="(max-width: 687px) 100vw, 687px" data-recalc-dims="1" /> 
 
