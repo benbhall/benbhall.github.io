@@ -1,0 +1,104 @@
+
+title: Failing Fast
+masthead_title: " "
+remote_theme: "mmistakes/minimal-mistakes@4.21.0"
+#theme: minimal-mistakes-jekyll
+description: Agile + Secure .NET Development
+twitter_username: benhall_io
+github_username: benbhall
+minimal_mistakes_skin: dark
+search: true
+logo: "/assets/images/masthead-ff-plastic-672x168.png"
+
+analytics:
+  provider: "google-gtag"
+  google:
+    tracking_id: "G-KRNVNX2G6M"
+    anonymize_ip: false # default
+
+# Output options (more information on Jekyll's site)
+timezone: "Europe/London"
+markdown: kramdown
+#permalink: /:year-:month-:day-:title/
+permalink: /:categories/:title/
+paginate: 3
+paginate_path: /page:num/
+
+include:
+  - _pages
+
+plugins:
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-gist
+  - jekyll-feed
+  - jemoji
+  - jekyll-include-cache
+
+author:
+  name   : "Ben Hall"
+  avatar : "/assets/images/bio-photo3.jpg"
+  bio    : "Agile + Secure .NET"
+  links:    
+    - label: "Twitter"
+      icon: "fab fa-fw fa-twitter-square"
+      url: "https://twitter.com/benhall_io"
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/benbhall"
+    - label: "Stack Overflow"
+      icon: "fab fa-fw fa-stack-overflow"
+      url: "https://stackoverflow.com/users/6870582/ben-hall"
+    - label: "LinkedIn"
+      icon: "fab fa-fw fa-linkedin-in"
+      url: "https://linkedin.com/in/ben-hall-software-engineer"          
+    - label: "Feed"
+      icon: "fas fa-fw fa-rss-square"
+      url: "https://benhall.io/feed.xml"            
+
+
+footer:
+  links:
+    - label: "Twitter"
+      icon: "fab fa-fw fa-twitter-square"
+      url: "https://twitter.com/"
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/benbhall"
+    - label: "Stack Overflow"
+      icon: "fab fa-fw fa-stack-overflow"
+      url: "https://stackoverflow.com/users/6870582/ben-hall"
+    - label: "LinkedIn"
+      icon: "fab fa-fw fa-linkedin-in"
+      url: "https://linkedin.com/in/ben-hall-software-engineer"      
+
+defaults:
+  # _posts
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: single
+      author_profile: true
+      read_time: true
+      comments: true
+      share: true
+      related: true
+  # _pages
+  - scope:
+      path: "_pages"
+      type: pages
+    values:
+      layout: single
+      author_profile: true
+  - scope:
+      path: "/"
+    values:
+      layout: single
+
+category_archive:
+  type: liquid
+  path: /categories/
+tag_archive:
+  type: liquid
+  path: /tags/
