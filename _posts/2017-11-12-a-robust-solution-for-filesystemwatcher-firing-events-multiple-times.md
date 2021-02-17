@@ -1,12 +1,12 @@
 ---
 title: FileSystemWatcher is a Bit Broken
 excerpt: A robust solution for FileSystemWatcher firing events multiple times.
-subtitle: A robust solution for FileSystemWatcher firing events multiple times
 date: 2017-11-12
 permalink: /a-robust-solution-for-filesystemwatcher-firing-events-multiple-times/
+redirect_from:
+  - /2017/11/12/a-robust-solution-for-filesystemwatcher-firing-events-multiple-times/
 categories:
-  - File...Watcher
-  - MemoryCache
+  - 'C# .NET'
 tags:
   - .NET
   - 'C#'

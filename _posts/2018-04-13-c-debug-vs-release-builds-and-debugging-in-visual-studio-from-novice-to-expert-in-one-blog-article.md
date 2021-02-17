@@ -1,10 +1,10 @@
 ---
 title: C# Debug vs. Release builds
-subtitle: Builds and debugging in Visual Studio - from novice to expert in one blog article.
 excerpt: Builds and debugging in Visual Studio - from novice to expert in one blog article
 date: 2018-04-13
 permalink: /c-debug-vs-release-builds-and-debugging-in-visual-studio-from-novice-to-expert-in-one-blog-article/
-excerpt: ...exploring actual behaviour with Roslyn vs. previous commentary / what the documentation states. So, while I do start with the basics, I hope there is something for more experienced C# developers too.
+redirect_from:
+  - /2018/04/13/c-debug-vs-release-builds-and-debugging-in-visual-studio-from-novice-to-expert-in-one-blog-article/
 categories:
   - 'C# .NET'
   - Internals

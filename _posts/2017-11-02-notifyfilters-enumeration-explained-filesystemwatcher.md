@@ -4,8 +4,10 @@ subtitle: NotifyFilters enumeration explained
 excerpt: NotifyFilters enumeration explained.
 date: 2017-11-02
 permalink: /notifyfilters-enumeration-explained-filesystemwatcher/
+redirect_from:
+  - /2017/11/02/notifyfilters-enumeration-explained-filesystemwatcher/
 categories:
-  - FileWatcher
+  - 'C# .NET'
 tags:
   - .NET
   - 'C#'

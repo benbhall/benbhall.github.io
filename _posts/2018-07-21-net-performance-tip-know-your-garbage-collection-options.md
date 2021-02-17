@@ -3,6 +3,8 @@ title: .NET Performance Tip
 excerpt: Know Your Garbage Collection Options. An under-utilised setting that can offer substantial performance gains.
 date: 2018-07-21
 permalink: /net-performance-tip-know-your-garbage-collection-options/
+redirect_from:
+  - /2018/07/21/net-performance-tip-know-your-garbage-collection-options/
 categories:
   - 'C# .NET'
   - Garbage Collection

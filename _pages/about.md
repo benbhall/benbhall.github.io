@@ -1,16 +1,20 @@
 ---
 permalink: /about/
-title: "About"
+title: "▌│█║▌║▌║ about me ║▌║▌║█│▌"
 classes: wide
 ---
 
-In 2016 I switched careers from school teacher to software engineer.
+## What I've been up to
 
-Currently the Technical Lead on .NET development for a gov.uk.
+2008 ⇉⇉⇉ 2016 👨‍🏫🦸‍♂️ school teacher 11-18 Computer Science ☆ Head of Year ☆ Head of Department
 
-I have also provided technical expertise and ghostwriting to numerous leading industry names.
+2016 ⇉⇉⇉ .... 🤓 switched careers to Software Engineer ミミ★ 🥳
 
-Working with:
+2018 ⇉⇉⇉ .... 👷 .NET Technical Lead for a gov.uk
+
+2019 ⇉⇉⇉ .... 🧙 I have also provided technical expertise and ghostwriting to numerous leading industry names.
+
+## Stuff I work with regularly
 
 - C# / ASP.NET – NETFx and .NET Core 3.1
 - Azure Cloud
@@ -20,7 +24,7 @@ Working with:
 - PowerShell + DSC
 - SQL Server
 - JavaScript, jQuery etc.
-- Agile, SCRUM and all that good stuff
+- Agile, SCRUM & all that good stuff
 
 ## Talks
 
@@ -28,7 +32,7 @@ Working with:
 
 ## Awards
 
-- 1 Jan 2019 - CodeProject MVP 2019 [MVA Most Valuable Author Award](https://www.codeproject.com/Competitions/1071/CodeProject-MVP-2019.aspx) - ‘We recognize and value your exceptional contributions and commitment to the technical communities worldwide. By sharing your real world expertise and technical skills, you demonstrate outstanding technical community leadership.'
+- 1 Jan 2019 - CodeProject MVP 2019 [MVA Most Valuable Author Award](https://www.codeproject.com/Competitions/1071/CodeProject-MVP-2019.aspx) - 'We recognize and value your exceptional contributions and commitment to the technical communities worldwide. By sharing your real world expertise and technical skills, you demonstrate outstanding technical community leadership.'
 - 15 Nov 2018 - First Prize: [Best Article of October 2018](https://www.codeproject.com/Competitions/1064/Best-Article-of-October-2018.aspx) with A Re-Introduction to C# References Post C# 7
 - 24 Aug 2018 First Prize: [Best Article of July 2018](https://www.codeproject.com/Competitions/1058/Best-Article-of-July-2018.aspx) with A Super-Simplified Explanation of .NET Garbage Collection
 - 18 May 2018 First Prize: [Best C# Article of April 2018](https://www.codeproject.com/Competitions/1041/Best-Csharp-Article-of-April-2018.aspx) with C# Debug vs. Release Builds and Debugging in Visual Studio – from Novice to Expert in One Blog Article

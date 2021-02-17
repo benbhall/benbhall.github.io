@@ -2,6 +2,8 @@
 title: Using FakeItEasy with Entity Framework 6
 date: 2016-12-13
 permalink: /using-fakeiteasy-with-entity-framework-6/
+redirect_from:
+  - /2016/12/13/using-fakeiteasy-with-entity-framework-6/
 classes: wide
 excerpt: In EF6, DbSet gained an additional protected internal constructor. So instead of creating lots of mocks, we mark the DbSet properties virtual, allowing FakeItEasy to override them.
 categories:

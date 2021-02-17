@@ -1,6 +1,6 @@
 ---
 title: Automatic updates in Windows for .NET Core and .NET 5
-excerpt: A reminder to be cautious and think about heeding the warning window that comes up for Visual Studio projects from external sources.
+excerpt: Making it that little bit easier to keep up with security patching.
 date: 2021-01-09
 permalink: /dotnet-core-automatic-windows-updates/
 categories:
@@ -104,3 +104,17 @@ Obviously, updating is not the same as adopting Core as a component of Windows. 
 There are no immediate plans to use Microsoft Update channels for major or minor versions also but if this does become a thing, the default roll-forward behaviour will ensure there are no breaking changes.
 
 There's loads more details in the [.NET blog article](https://devblogs.microsoft.com/dotnet/net-core-updates-coming-to-microsoft-update/) from @jamshed.
+
+## Useful to know
+
+* List installed runtimes with `dotnet --list-runtimes`.
+* List installed SDKs with `dotnet --list-sdks`.
+* Uninstall a runtime, sdk or the hosting bundle with `dotnet-core-uninstall` available to [download here](https://github.com/dotnet/cli-lab/releases).
+* Programatically have an app report which runtime it is using courtesy of [Rick Strahl](https://weblog.west-wind.com/posts/2018/Apr/12/Getting-the-NET-Core-Runtime-Version-in-a-Running-Application):
+
+```csharp
+string runtime = System.Runtime.InteropServices
+    .RuntimeInformation.FrameworkDescription;
+```
+
+I think in his article he got a `null` from this but it worked correctly for me and was useful in proving to myself how the roll forward worked.

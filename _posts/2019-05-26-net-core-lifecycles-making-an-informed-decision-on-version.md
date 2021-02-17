@@ -4,6 +4,8 @@ subtitle: Making an Informed Decision on Version Path
 excerpt: I get regular queries about decisions on .NET Core versions so I have shared a snapshot of the key points to help you make an informed decision here. Remember, no support means no security updates! Microsoft's Modern Lifecycle Policy is going to keep us on our toes and require a little more forward-planning than Framework did, I think.
 date: 2019-05-26
 permalink: /net-core-lifecycles-making-an-informed-decision-on-version/
+redirect_from:  
+  - /2019/05/26/net-core-lifecycles-making-an-informed-decision-on-version/
 categories:
   - .NET Core
   - 'C# .NET'
@@ -26,7 +28,7 @@ I get regular queries about decisions on .NET Core versions so I have shared a s
 
 ## 1. .NET Framework applications
 
-The current version is 4.8 and no further major versions will be released.
+The current version is 4.8; no further major versions will be released.
 
 It will continue to receive updates for reliability, bugs or security fixes for as long as there is a Windows operating system.
 

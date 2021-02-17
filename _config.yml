@@ -1,6 +1,7 @@
 
 title: Failing Fast
 masthead_title: " "
+subtitle: " "
 remote_theme: "mmistakes/minimal-mistakes@4.21.0"
 #theme: minimal-mistakes-jekyll
 description: Agile + Secure .NET Development
@@ -34,11 +35,17 @@ plugins:
   - jekyll-feed
   - jemoji
   - jekyll-include-cache
+  - jekyll-redirect-from
 
 author:
   name   : "Ben Hall"
   avatar : "/assets/images/bio-photo3.jpg"
-  bio    : "Agile + Secure .NET"
+  bio: |-
+    彡★ Agile
+    
+    彡★ Secure
+
+    彡★ Iteration &gt&#x003B; perfection
   links:    
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
@@ -54,7 +61,7 @@ author:
       url: "https://linkedin.com/in/ben-hall-software-engineer"          
     - label: "Feed"
       icon: "fas fa-fw fa-rss-square"
-      url: "https://benhall.io/feed.xml"            
+      url: "https://failingfast.io/feed.xml"            
 
 
 footer:

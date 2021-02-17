@@ -2,6 +2,8 @@
 title: A Re-Introduction to C# References
 date: 2018-10-15
 permalink: /a-reintroduction-to-csharp-references/
+redirect_from:  
+  - /2018/10/15/a-reintroduction-to-csharp-references/
 categories:
   - 'C# .NET'
   - Internals

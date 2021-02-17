@@ -3,9 +3,10 @@ title: FileSystemWatcher vs. Locked Files
 excerpt: Another Problem with FileSystemWatcher.
 date: 2017-11-20
 permalink: /a-morerobust-solution-for-filesystemwatcher-firing-events-multiple-times/
+redirect_from:
+  - /2017/11/20/a-morerobust-solution-for-filesystemwatcher-firing-events-multiple-times/
 categories:
-  - File...Watcher
-  - MemoryCache
+  - 'C# .NET'
 tags:
   - .NET
   - 'C#'

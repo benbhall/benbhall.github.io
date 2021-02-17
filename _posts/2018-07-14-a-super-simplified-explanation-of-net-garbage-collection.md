@@ -1,7 +1,9 @@
 ---
 title: .NET Garbage Collection. A Super-Simplified Explanation.
 date: 2018-07-14
-permalink: /a-super-simplified-explanation-of-net-garbage-collection/
+permalink: /super-simplified-explanation-net-garbage-collection/
+redirect_from:
+  - /2018/07/16/a-super-simplified-explanation-of-net-garbage-collection/
 excerpt: Garbage collection is so often at the root (excuse the pun) of many performance problems, very often because of misunderstanding, so please do set aside time to deepen your understanding after reading this. This article is a super-simplified, look at .NET garbage collection, with loads of intentional technical omissions. It aims to provide a baseline level of understanding that a typical C# developer realistically needs for their day-to-day work. I certainly won’t add complexity by mentioning the stack, value types, boxing etc.
 classes: wide
 categories:
