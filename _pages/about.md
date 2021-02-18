@@ -6,13 +6,13 @@ classes: wide
 
 ## What I've been up to
 
+2019 ⇉⇉⇉ ... 🧙 I have provided technical expertise and ghostwriting to numerous leading industry names
+
+2018 ⇉⇉⇉ ... 👷 .NET Technical Lead for a gov.uk
+
+2016 ⇉⇉⇉ ... 🤓 switched careers to Software Engineer ミミ★ 🥳
+
 2008 ⇉⇉⇉ 2016 👨‍🏫🦸‍♂️ school teacher 11-18 Computer Science ☆ Head of Year ☆ Head of Department
-
-2016 ⇉⇉⇉ .... 🤓 switched careers to Software Engineer ミミ★ 🥳
-
-2018 ⇉⇉⇉ .... 👷 .NET Technical Lead for a gov.uk
-
-2019 ⇉⇉⇉ .... 🧙 I have also provided technical expertise and ghostwriting to numerous leading industry names.
 
 ## Stuff I work with regularly
 
