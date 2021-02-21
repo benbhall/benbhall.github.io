@@ -40,12 +40,7 @@ plugins:
 author:
   name   : "Ben Hall"
   avatar : "/assets/images/bio-photo3.jpg"
-  bio: |-
-    彡★ Agile
-    
-    彡★ Secure
-
-    彡★ Iteration &gt&#x003B; perfection
+  bio: Iteration over perfection
   links:    
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
