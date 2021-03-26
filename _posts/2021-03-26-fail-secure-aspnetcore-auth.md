@@ -102,7 +102,7 @@ Ultimately, as a filter it will apply to all pages and actions unless overridden
 
 ### Method 2: Fallback Policy (Recommended)
 
-The preferred way from ASP.NET Core 3.x on is to set a fallback authentication policy in Startup.cs:
+The preferred way, from ASP.NET Core 3.x on is to set a fallback authentication policy in Startup.cs:
 
 ```csharp
 services.AddAuthorization(options =>
@@ -113,27 +113,20 @@ services.AddAuthorization(options =>
 });
 ```
 
-This will apply to any Razor Pages, controllers and actions where no authorization behaviour has been defined.
+This will apply to any Razor Page, controller or action where no authorization behaviour has been defined.
 
-It uses the endpoint routing that was introduced fully in ASP.NET Core 3.0. You'll recognise it from the templates:
+It uses the endpoint routing that was introduced fully in ASP.NET Core 3.0,   at endpoint level using the `RequireAuthorizaton()` extension method again, with the bonus of being able to add authorization to the health check endpoint and our SignalR endpoint (the `AuthorizeFilter` approach only works with Razor Pages and MVC).
 
 ```csharp
 app.UseEndpoints(endpoints =>
 {
-    endpoints.MapRazorPages();
-    endpoints.MapControllers();
-});
-```
-
-It gives control at endpoint level using the `RequireAuthorizaton()` extension method again, with the bonus of being able to add authorization to the health check endpoint and our SignalR endpoint (the `AuthorizeFilter` approach only works with Razor Pages and MVC).
-
-```csharp
 endpoints.MapRazorPages().RequireAuthorization("OurPagePolicy");
 endpoints.MapHealthChecks("/health").RequireAuthorization();
 endpoints.MapHub<TaskHub>("/taskupdate").RequireAuthorization();
+}
 ```
 
-The fallback policy doesn't have an overload for `RequireAuthorization()` that takes a policy but it can still be altered through the fluent builder i.e.
+There's no overload here for `RequireAuthorization()` that takes a policy (because we're building one) but it can still be altered through the fluent builder i.e.
 
 ```csharp
 options.FallbackPolicy = new AuthorizationPolicyBuilder()
