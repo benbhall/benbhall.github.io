@@ -11,7 +11,7 @@ tags: [asp.net,authentication,authorization]
 
 *Written with ASP.NET Core 3.x and .NET 5 in mind.*
 
-ASP.NET developers will be familiar with the `[Authorize]` attribute and know that when they use it to decorate a class or method in a controller or Razor Page, a visitor will be forced to **authenticate** if they have not done so already.
+ASP.NET developers will be familiar with uding the `[Authorize]` attribute to decorate a class or method in a controller or Razor Page, so that a visitor will be forced to **authenticate** if they have not done so already.
 
 We can also use it for **authorization** via:
 
@@ -32,11 +32,13 @@ But you can be forgiven for thinking that authorization and authentication have 
 * If we want a user authenticated we add the `[Authorize]`.
 * If we want to check if a user is authorized we can add  `[Authorize]`.
   
-The attribute is only one many ways to do things but just wanted to say now, that I don't like this ambiguity being the default for *simple authorization* 😁. For this article we'll play along with it as we're just looking at whatever it takes to enforce authentication.
+The attribute is only one of many ways to do things but I just wanted to say now, that I don't like this ambiguity being the default for *simple authorization* 😁. For this article we'll play along with it as we're just looking at whatever it takes to enforce authentication.
 
 ### To be fair
 
 The [authorization middleware](https://github.com/dotnet/aspnetcore/blob/7e145b1132ebe0bf85765f5ef96d337ff2d790e2/src/Security/Authorization/Policy/src/AuthorizationMiddleware.cs#L70) does actually call authentication directly, so the behaviour of the attribute isn't totally out there - it makes sense that an attempt to authorize should also ensure authentication has taken place first.
+
+Any let's get back on topic...
 
 ## Undesirable: Fail Open
 
