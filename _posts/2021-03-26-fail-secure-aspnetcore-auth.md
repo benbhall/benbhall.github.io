@@ -1,6 +1,6 @@
 ---
-title: Fail Secure with ASP.NET Core Controllers and Razor Pages
-excerpt: Reverse your approach to enforcing authentication with global settings.
+title: ASP.NET Core Authentication - Fail Secure
+excerpt: Reverse your approach to enforcing authentication on controllers and Razor Pages with global settings.
 date: 2021-03-26
 permalink: /fail-secure-aspnetcore/
 categories:
