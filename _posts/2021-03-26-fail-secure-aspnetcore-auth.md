@@ -128,6 +128,12 @@ endpoints.MapHub<TaskHub>("/taskupdate").RequireAuthorization();
 }
 ```
 
+If we wanted to allow unauthenticated access to the health checks we use an extension method on `IEndpointConventionBuilder` that is the same as adding `[AllowAnonymous]`:
+
+```csharp
+endpoints.MapHealthChecks("/health").WithMetadata(new AllowAnonymousAttribute());
+```
+
 There's no overload here for `RequireAuthorization()` that takes a policy (because we're building one) but it can still be altered through the fluent builder i.e.
 
 ```csharp
