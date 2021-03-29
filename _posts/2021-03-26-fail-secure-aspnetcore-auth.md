@@ -38,7 +38,7 @@ The attribute is only one of many ways to do things but I just wanted to say now
 
 The [authorization middleware](https://github.com/dotnet/aspnetcore/blob/7e145b1132ebe0bf85765f5ef96d337ff2d790e2/src/Security/Authorization/Policy/src/AuthorizationMiddleware.cs#L70) does actually call authentication directly, so the behaviour of the attribute isn't totally out there - it makes sense that an attempt to authorize should also ensure authentication has taken place first.
 
-Any let's get back on topic...
+Anyway let's get back on topic...
 
 ## Undesirable: Fail Open
 
@@ -52,7 +52,7 @@ In ASP.NET we can achieve this and fail secure by reversing the logic and requir
 
 ### Method 1: Authorization Filter
 
-It *was* the recommended way to enforce authentication globally before the release of ASP.NET Core 3.x and the shift to endpoint routing that (endpoint routing, amongst other things, introduced authorization as middleware).
+It *was* the recommended way to enforce authentication globally before the release of ASP.NET Core 3.x and the shift to endpoint routing (endpoint routing, amongst other things, introduced authorization as middleware).
 
 Of course, if you've not found a need to migrate onto endpoint routing then this is still the way to go for now.
 
@@ -77,7 +77,7 @@ public void ConfigureServices(IServiceCollection services)
 
 This is the same as adding an `[Authorize]` everywhere i.e. if you are an authenticated user, you are authorized - no other requirements.
 
-You may also find it using `RequireAuthenticatedUser()` to build a policy and avoid any dependency on `DefaultPolicy`; but then still, it's applied as a filter:
+You may also find it using `RequireAuthenticatedUser()` to build a policy and avoid any dependency on `DefaultPolicy` (the behaviour of which can be changed in code); but then still, it's applied as a filter:
 
 ```csharp
  var policy = new AuthorizationPolicyBuilder()
