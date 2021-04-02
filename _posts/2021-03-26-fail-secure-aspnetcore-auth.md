@@ -1,6 +1,6 @@
 ---
-title: ASP.NET Core Authentication - Fail Secure
-excerpt: Reverse your approach to enforcing authentication on controllers and Razor Pages with global settings.
+title: "ASP.NET Core Authentication: Fail Secure"
+excerpt: Reverse your approach to enforcing authentication on controllers, endpoints, actions and Razor Pages with global settings.
 date: 2021-03-26
 permalink: /fail-secure-aspnetcore/
 categories:
@@ -11,16 +11,16 @@ tags: [asp.net,authentication,authorization]
 
 *Written with ASP.NET Core 3.x and .NET 5 in mind.*
 
-ASP.NET developers will be familiar with using the `[Authorize]` attribute to decorate a class or method in a controller or Razor Page, so that a visitor will be forced to **authenticate** if they have not done so already.
+ASP.NET developers will be familiar with using the default behaviour using an `[Authorize]` attribute to decorate a Razor Page and a class or method in a controller, and through some magic, users are expected to **authenticate**.
 
-We can also use it for **authorization** via:
+We'll also use it for **authorization** via roles, claims, policies and requirements i.e.
 
 * Roles (`[Authorize(Roles = "Admin")]`)
 * Policies (`[Authorize(Policy = "RequireAdminRole")]`)
 
 And select specific authentication schemes using `[Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]`.
 
-## The Confusing Bit
+## The Confusing Bit for ASP.NET Newcomers
 
 * Authorization is about permissions
 * Authentication is about identity
@@ -32,7 +32,9 @@ But you can be forgiven for thinking that authorization and authentication have 
 * If we want a user authenticated we add the `[Authorize]`.
 * If we want to check if a user is authorized we can add  `[Authorize]`.
   
-The attribute is only one of many ways to do things but I just wanted to say now, that I don't like this ambiguity being the default for *simple authorization* 😁. For this article we'll play along with it as we're just looking at whatever it takes to enforce authentication.
+The attribute is only one of many ways to do things but I just wanted to say now, that I'm not a fan of this ambiguity being the default for *simple authorization* 😁.
+
+For this article we'll play along with it as we're just looking at whatever it takes to enforce authentication.
 
 ### To be fair
 
@@ -146,6 +148,22 @@ options.FallbackPolicy = new AuthorizationPolicyBuilder()
       .Build();
 ```
 
+#### Don't Confuse it with DefaultPolicy
+
+`FallBackPolicy` is about what to do regarding authorization when it *is not* explicitly set for a given controller, page, endpoint or action.
+
+`DefaultPolicy` is the behaviour to follow where authorization *is* explicitly set for a given controller, page, endpoint or action but no policy has been provided to determine authorization behaviour i.e.
+
+`endpoints.MapHealthChecks("/health").RequireAuthorization();`
+
+vs.
+
+`endpoints.MapRazorPages().RequireAuthorization("OurPagePolicy");`
+
+The first one would use the `DefaultPolicy`.
+
+It can be changed in code but out of the box this policy just requires that all users must be authenticated to be authorized.
+
 ### Method 3: Razor Page Conventions
 
 As the title suggests, this method is only intended for Razor Pages. It might appeal where a single point for globally configuring all authorization in a fluent style is preferred.
@@ -163,3 +181,11 @@ services.AddRazorPages(
 ```
 
 We could instead have just used `options.Conventions.AuthorizeFolder("/")` and then added `[AllowAnonymous]` on any Razor Pages we don't require authentication on. The key takeaway here is another approach to enforcing a fail secure approach to authentication globally.
+
+## Summary
+
+It clearly makes sense in most normal scernarios to set fall-back behaviour globally that requires authentication by default.
+
+This ensures that where authentication is unintentionally omitted from a page or action during future development, we assume authentication is expected rather than none.
+
+We've looked at three ways to do this: where unauthenticated behaviour has to be explicitly called out by `[AllowAnonymous]`; Razor Page conventions; or applying the metadata for `AllowAnonymousAttribute` directly to an endpoint. All of these have their valid use cases but expect to use method 2 for new Core or .NET 5 work using endpoint routing.
