@@ -11,7 +11,7 @@ tags: [asp.net,authentication,authorization]
 
 *Written with ASP.NET Core 3.x and .NET 5 in mind.*
 
-ASP.NET developers will be familiar with using the default behaviour using an `[Authorize]` attribute to decorate a Razor Page and a class or method in a controller, and through some magic, users are expected to **authenticate**.
+ASP.NET developers will be familiar with using the default behaviour of the `[Authorize]` attribute to decorate a Razor Page and a class or method in a controller, and through some magic, users are required to **authenticate**.
 
 We'll also use it for **authorization** via roles, claims, policies and requirements i.e.
 
