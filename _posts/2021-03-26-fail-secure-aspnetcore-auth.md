@@ -184,7 +184,7 @@ We could instead have just used `options.Conventions.AuthorizeFolder("/")` and t
 
 ## Summary
 
-It clearly makes sense in most normal scernarios to set fall-back behaviour globally that requires authentication by default.
+It clearly makes sense in most normal scenarios to set fall-back behaviour globally that requires authentication by default.
 
 This ensures that where authentication is unintentionally omitted from a page or action during future development, we assume authentication is expected rather than none.
 
