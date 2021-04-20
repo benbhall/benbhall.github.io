@@ -6,13 +6,13 @@ classes: wide
 
 ## What I've been up to
 
-2019 ⇉⇉⇉ ... 🧙 Also a Technical Specialist & Author for ContentLab.io. I provide technical expertise and technical writing products to leading industry names.
+2019 ⇉⇉⇉ ... 🧙 Also a Technical Specialist & Author for ContentLab.io. I have provided technical expertise and technical writing products to Microsoft and leading industry names.
 
-2018 ⇉⇉⇉ ... 👷 Currently Lead Developer (Technical) for C# .NET at a gov.uk
+2018 ⇉⇉⇉ ... 👷 Currently 'Expert' aka Lead Engineer (Technical) for C# .NET at a gov.uk.
 
 2016 ⇉⇉⇉ ... 🤓 switched careers to Software Engineer ミミ★ 🥳
 
-2008 ⇉⇉⇉ 2016 👨‍🏫🦸‍♂️ school teacher 11-18 Computer Science ☆ Head of Year ☆ Head of Department
+2008 ⇉⇉⇉ 2016 👨‍🏫🦸‍♂️ school teacher 11-18 Computer Science ☆ Head of Year ☆ Head of Department.
 
 ## Stuff I work with regularly
 
