@@ -1,6 +1,6 @@
 ---
 title: .NET Quarterly News Update - 2021.1
-excerpt: Useful things 
+excerpt: Useful things you may have missed in 2021 Q1 from the .NET community.
 date: 2021-03-31
 permalink: /dotnet-quarterly-update-2021-1/
 categories:
