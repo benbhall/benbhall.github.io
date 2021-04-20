@@ -6,7 +6,7 @@ classes: wide
 
 ## What I've been up to
 
-2019 ⇉⇉⇉ ... 🧙 Also a Technical Specialist & Author for ContentLab.io. I have provided technical expertise and technical writing products to Microsoft and leading industry names.
+2019 ⇉⇉⇉ ... 🧙 Also a Technical Specialist & Author for ContentLab.io. I have provided technical expertise and technical writing products for Microsoft and leading industry names.
 
 2018 ⇉⇉⇉ ... 👷 Currently 'Expert' aka Lead Engineer (Technical) for C# .NET at a gov.uk.
 
