@@ -10,7 +10,7 @@ tags: [.NET]
 
 ## Automatic updates in Windows for .NET Core and .NET 5
 
-I just made a small update to [my .NET version guidance](https/failingfast.io/dotnet) this quarter - that .NET Core and .NET 5 servicing updates can now be installed automatically on Windows, through Microsoft Update.
+I just made a small update to [my .NET version guidance](https://failingfast.io/dotnet) this quarter - that .NET Core and .NET 5 servicing updates can now be installed automatically on Windows, through Microsoft Update.
 
 See the [article I wrote in January](https://failingfast.io/dotnet-core-automatic-windows-updates/) for more on this.
 
@@ -27,7 +27,7 @@ There’s a clear upgrade window for 3.1 to work towards but 2.1 will unfortunat
 
 ## .NET Framework Support Lifecycle Key Dates
 
-More to consider with this and worth a read of my .NET version guidance. Some headlines:
+More to consider with this and worth a read of my  [my .NET version guidance](https://failingfast.io/dotnet). Some headlines:
 
 * Versions 4, 4.5 and 4.51 are out of support so check those legacy applications.
 * Version 4.5.2 is out of support 10 October 2023.
