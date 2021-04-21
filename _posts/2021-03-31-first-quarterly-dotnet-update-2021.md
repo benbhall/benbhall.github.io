@@ -10,7 +10,7 @@ tags: [.NET]
 
 ## Automatic updates in Windows for .NET Core and .NET 5
 
-I just made a small update to [my .NET version guidance](http://(https/failingfast.io/dotnet) this quarter - that .NET Core and .NET 5 servicing updates can now be installed automatically on Windows, through Microsoft Update.
+I just made a small update to [my .NET version guidance](https/failingfast.io/dotnet) this quarter - that .NET Core and .NET 5 servicing updates can now be installed automatically on Windows, through Microsoft Update.
 
 See the [article I wrote in January](https://failingfast.io/dotnet-core-automatic-windows-updates/) for more on this.
 
