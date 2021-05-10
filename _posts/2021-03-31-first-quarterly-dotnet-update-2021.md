@@ -30,7 +30,7 @@ There’s a clear upgrade window for 3.1 to work towards but 2.1 will unfortunat
 More to consider with this and worth a read of my  [my .NET version guidance](https://failingfast.io/dotnet). Some headlines:
 
 * Versions 4, 4.5 and 4.51 are out of support so check those legacy applications.
-* Version 4.5.2 is out of support 10 October 2023.
+* Support for .NET Framework 4.5.2, 4.6, and 4.6.1 will end on April 26, 2022. This is a departure from the lifecycle due to SHA-1 retirement.
 
 ## .NET Security Advisory
 
