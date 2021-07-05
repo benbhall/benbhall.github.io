@@ -27,13 +27,13 @@ Read more: [https://devblogs.microsoft.com/dotnet/introducing-net-hot-reload/](h
 
 ## .NET Security Advisories
 
-### Microsoft Security Advisory CVE-2021-31204 - .NET Core Elevation of Privilege Vulnerability
+Microsoft Security Advisory CVE-2021-31204 - .NET Core Elevation of Privilege Vulnerability:
 
 - [https://github.com/dotnet/announcements/issues/185](https://github.com/dotnet/announcements/issues/185)
 - CVSS Severity: High
 - Affected versions: <= .NET 5.0.5 and <= Core 3.1.14
 
-### Microsoft Security Advisory CVE-2021-31957 - ASP.NET Denial of Service Vulnerability
+Microsoft Security Advisory CVE-2021-31957 - ASP.NET Denial of Service Vulnerability:
 
 - [https://github.com/dotnet/announcements/issues/189](https://github.com/dotnet/announcements/issues/189)
 - CVSS Severity: Medium
