@@ -27,15 +27,17 @@ Read more: [https://devblogs.microsoft.com/dotnet/introducing-net-hot-reload/](h
 
 ## .NET Security Advisories
 
-Microsoft Security Advisory CVE-2021-31204 | .NET Core Elevation of Privilege Vulnerability ([link](https://github.com/dotnet/announcements/issues/185))
+Microsoft Security Advisory CVE-2021-31204 - .NET Core Elevation of Privilege Vulnerability:
 
-CVSS Severity: High
-Affected versions: <= .NET 5.0.5 and <= Core 3.1.14
+- [https://github.com/dotnet/announcements/issues/185](https://github.com/dotnet/announcements/issues/185)
+- CVSS Severity: High
+- Affected versions: <= .NET 5.0.5 and <= Core 3.1.14
 
-Microsoft Security Advisory CVE-2021-31957 | ASP.NET Denial of Service Vulnerability ([link]https://github.com/dotnet/announcements/issues/189)
+Microsoft Security Advisory CVE-2021-31957 - ASP.NET Denial of Service Vulnerability:
 
-CVSS Severity: Medium
-Affected software: <= .NET 5.0.6 and <= Core 3.1.15
+- [https://github.com/dotnet/announcements/issues/189](https://github.com/dotnet/announcements/issues/189)
+- CVSS Severity: Medium
+- Affected software: <= .NET 5.0.6 and <= Core 3.1.15
 
 ### How To Fix
 
@@ -44,6 +46,7 @@ The fix  for both requires an upgrade to >= 5.0.7 and >= 3.1.16.
 Self-contained apps need to be built with the new SDK and redeployed.
 
 For other apps, update runtime on machines. Remember, this process can now be automated via Microsoft Update for .NET 5.x and Core.
+
 ## Reminder of .NET Support Lifecycle Key Dates
 
 - Core 2.1 support ends **21 August 2021**.

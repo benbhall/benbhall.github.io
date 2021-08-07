@@ -6,25 +6,78 @@ classes: wide
 
 ## What I've been up to
 
-2019 ⇉⇉⇉ ... 🧙 Also a Technical Specialist & Author for ContentLab.io. I have provided technical expertise and technical writing products for Microsoft and leading industry names.
+#### 2019 ⇉⇉⇉ ...   Technical Specialist & Author for ContentLab.io
 
-2018 ⇉⇉⇉ ... 👷 Currently 'Expert' aka Lead Engineer (Technical) for C# .NET at a gov.uk.
+🧙 In my spare time I provided technical expertise and technical writing products for Microsoft, Mattermost and other leading industry names (see below for examples).
 
-2016 ⇉⇉⇉ ... 🤓 switched careers to Software Engineer ミミ★ 🥳
+#### 2018 ⇉⇉⇉ ... Technical Lead Engineer for C# .NET at a gov.uk
 
-2008 ⇉⇉⇉ 2016 👨‍🏫🦸‍♂️ school teacher 11-18 Computer Science ☆ Head of Year ☆ Head of Department.
+👷 For my day job I am 70% developer and 30% of my time driving knowledge, capability and standards across teams - primarily for the .NET ecosystem, doing things like [this internal .NET versions guidance](https://github.com/UKHO/dotnet-guild/blob/main/dotnetversions.md), and pushing an inclusive language initiative out teams along with authoring  an [inclusive language policy for development teams](https://github.com/UKHO/dotnet-guild/blob/main/dotnetversions.md).
+
+#### 2016 ⇉⇉⇉ ... Software Engineer at a gov.uk
+
+🤓 switched careers to Software Engineering ミミ★ 🥳
+
+#### 2008 ⇉⇉⇉ 2016 School Teacher
+
+👨‍🏫🦸‍♂️ 11-18 Computer Science ☆ Head of Year ☆ Head of Department.
+
+## Things I write about for other people
+
+Most of what I do is 👻 ghostwritten but I do get authorship credit sometimes:
+
+### Mattermost (2 Blog Articles)
+
+Mattermost is the leading open source collaboration platform. I was asked to write 2 articles.
+
+- **Article 1**: [Mattermost Installation: The Important Details for Sysadmins](https://mattermost.com/blog/mattermost-installation-for-sysadmins/)
+- **Article 2**: [Getting started with Mattermost integrations](https://mattermost.com/blog/getting-started-with-mattermost-integrations/)
+
+### Microsoft (3 Part Blog Series)
+
+- **Part 1**: [Build a Teams Power App for Manufacturing 1: Get Started with Dataverse](https://www.codeproject.com/Articles/5303169/Build-a-Teams-Power-App-for-Manufacturing-1-Get-St)
+- **Part 2**: [Build a Teams Power App for Manufacturing 2: Create the Customer UI](https://www.codeproject.com/Articles/5303170/Build-a-Teams-Power-App-for-Manufacturing-2-Create)
+- **Part 3**: [Build a Teams Power App for Manufacturing 3: Create the Manufacturer UI
+](https://www.codeproject.com/Articles/5303171/Build-a-Teams-Power-App-for-Manufacturing-3-Create)
+
+### Orpalis
+
+- [Using PDF Layers or Optional Content Groups (OCG) in GdPicture.NET](https://www.gdpicture.com/blog/pdf-layers-ocg/)
+
+### Aspose
+
+- [Document Accessibility with Aspose.PDF for .NET](https://contentlab.io/aspose-pdf-net-accessibility/)
+
+### Some other topics I've ghostwritten on recently
+
+- Distributed systems tracing with OpenTelemetry in .NET Core (including example dockerized services)
+- Breaking up monolithic applications into microservices
+- Python Flask authentication with OpenID Connect (including example application)
+- Technical debt
+- Continuous Integration and Deployment pipelines
+- Developer workspaces and 'Flow'
+- Outsourcing testing
+- Testing low-code/no-code applications
+- Documentation for a PDF .NET library (including example application)
+- Identity Management (a paper comparing customer-facing and internal systems)
+- Integrating a leading open source collaboration platform with Jenkins and other examples
 
 ## Stuff I work with regularly
 
-- C# / ASP.NET – NETFx and .NET Core 3.1
-- Azure Cloud
+- C# / ASP .NET – NETFx, .NET Core 3.1 + .NET 5
+- Azure Cloud (Apps, Functions, Event Grid, and lots more...)
 - Azure DevOps
 - Terraform
 - NServiceBus
-- PowerShell + DSC
+- PowerShell
 - SQL Server
 - JavaScript, jQuery etc.
 - Agile, SCRUM & all that good stuff
+
+## Other things I use lots in my own time
+
+- Python
+- Docker
 
 ## Talks
 
