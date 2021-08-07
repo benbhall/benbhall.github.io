@@ -86,7 +86,7 @@ Mattermost is the leading open source collaboration platform. I was asked to wri
 ## Awards
 
 - 1 Jan 2019 - CodeProject MVP 2019 [MVA Most Valuable Author Award](https://www.codeproject.com/Competitions/1071/CodeProject-MVP-2019.aspx) - 'We recognize and value your exceptional contributions and commitment to the technical communities worldwide. By sharing your real world expertise and technical skills, you demonstrate outstanding technical community leadership.'
-- 15 Nov 2018 - First Prize: [Best Article of October 2018](https://www.codeproject.com/Competitions/1064/Best-Article-of-October-2018.aspx) with A Re-Introduction to C# References Post C# 7
-- 24 Aug 2018 First Prize: [Best Article of July 2018](https://www.codeproject.com/Competitions/1058/Best-Article-of-July-2018.aspx) with A Super-Simplified Explanation of .NET Garbage Collection
-- 18 May 2018 First Prize: [Best C# Article of April 2018](https://www.codeproject.com/Competitions/1041/Best-Csharp-Article-of-April-2018.aspx) with C# Debug vs. Release Builds and Debugging in Visual Studio – from Novice to Expert in One Blog Article
-- 23 Mar 2018 - First Prize: [Best C# Article of February 2018](https://www.codeproject.com/Competitions/1029/Best-Csharp-Article-of-February-2018.aspx) with Addressing a Simple Yet Common C# Async/Await Misconception
+- 15 Nov 2018 - First Prize: [Best Article of October 2018](https://www.codeproject.com/Articles/1263638/A-Re-Introduction-to-Csharp-References-Post-Csharp) with A Re-Introduction to C# References Post C# 7
+- 24 Aug 2018 First Prize: [Best Article of July 2018](https://www.codeproject.com/Articles/1252394/A-Super-Simplified-Explanation-of-NET-Garbage-Coll) with A Super-Simplified Explanation of .NET Garbage Collection
+- 18 May 2018 First Prize: [Best C# Article of April 2018](https://www.codeproject.com/Articles/1239524/Csharp-Debug-vs-Release-Builds-and-Debugging-in-Vi) with C# Debug vs. Release Builds and Debugging in Visual Studio – from Novice to Expert in One Blog Article
+- 23 Mar 2018 - First Prize: [Best C# Article of February 2018](https://www.codeproject.com/Articles/1229574/Addressing-a-simple-yet-common-Csharp-Async-Await) with Addressing a Simple Yet Common C# Async/Await Misconception
