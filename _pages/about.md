@@ -12,7 +12,7 @@ classes: wide
 
 #### 2018 ⇉⇉⇉ ... Technical Lead Engineer for C# .NET at a gov.uk
 
-👷 For my day job I am 70% developer and 30% of my time driving knowledge, capability and standards across teams - primarily for the .NET ecosystem, doing things like [this internal .NET versions guidance](https://github.com/UKHO/dotnet-guild/blob/main/dotnetversions.md), and pushing an inclusive language initiative out teams along with authoring  an [inclusive language policy for development teams](https://github.com/UKHO/dotnet-guild/blob/main/dotnetversions.md).
+👷 For my day job I am 70% developer and 30% of my time driving knowledge, capability and standards across teams - primarily for the .NET ecosystem, doing things like [this internal .NET versions guidance](https://github.com/UKHO/dotnet-guild/blob/main/dotnetversions.md), and pushing an inclusive language initiative out teams along with authoring  an [inclusive language policy for development teams](https://github.com/UKHO/docs/blob/main/software-engineering-policies/InclusiveLanguage/InclusiveLanguagePolicy.md).
 
 #### 2016 ⇉⇉⇉ ... Software Engineer at a gov.uk
 
