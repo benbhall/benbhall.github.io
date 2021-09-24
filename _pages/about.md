@@ -50,7 +50,7 @@ Mattermost is the leading open source collaboration platform. I was asked to wri
 
 ### Some other topics I've ghostwritten on recently
 
-- Distributed systems tracing with OpenTelemetry in .NET Core (including example dockerized services)
+- Distributed systems tracing with OpenTelemetry in .NET Core (with example dockerized services)
 - Caching in ASP.NET Core
 - Distributed caching (example .NET application written)
 - Breaking up monolithic applications into microservices
