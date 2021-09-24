@@ -6,19 +6,19 @@ classes: wide
 
 ## What I've been up to
 
-#### 2019 ⇉⇉⇉ ...   Technical Specialist & Author for ContentLab.io
+### 2019 ⇉⇉⇉ ...   Technical Specialist & Author for ContentLab.io
 
 🧙 In my spare time I provided technical expertise and technical writing products for Microsoft, Mattermost and other leading industry names (see below for examples).
 
-#### 2018 ⇉⇉⇉ ... Technical Lead Engineer for C# .NET at a gov.uk
+### 2018 ⇉⇉⇉ ... Technical Lead Engineer for C# .NET at a gov.uk
 
 👷 For my day job I am 70% developer and 30% of my time driving knowledge, capability and standards across teams - primarily for the .NET ecosystem, doing things like [this internal .NET versions guidance](https://github.com/UKHO/dotnet-guild/blob/main/dotnetversions.md), and pushing an inclusive language initiative out teams along with authoring  an [inclusive language policy for development teams](https://github.com/UKHO/docs/blob/main/software-engineering-policies/InclusiveLanguage/InclusiveLanguagePolicy.md).
 
-#### 2016 ⇉⇉⇉ ... Software Engineer at a gov.uk
+### 2016 ⇉⇉⇉ ... Software Engineer at a gov.uk
 
 🤓 switched careers to Software Engineering ミミ★ 🥳
 
-#### 2008 ⇉⇉⇉ 2016 School Teacher
+### 2008 ⇉⇉⇉ 2016 School Teacher
 
 👨‍🏫🦸‍♂️ 11-18 Computer Science ☆ Head of Year ☆ Head of Department.
 
@@ -51,6 +51,8 @@ Mattermost is the leading open source collaboration platform. I was asked to wri
 ### Some other topics I've ghostwritten on recently
 
 - Distributed systems tracing with OpenTelemetry in .NET Core (including example dockerized services)
+- Caching in ASP.NET Core
+- Distributed caching (example .NET application written)
 - Breaking up monolithic applications into microservices
 - Python Flask authentication with OpenID Connect (including example application)
 - Technical debt
