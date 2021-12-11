@@ -10,9 +10,11 @@ tags: [Docker, WSL]
 
 So Docker Desktop isn't free to use in *all* scenarios any more. Don't panic!
 
-Of course it is possible to get up and running in Windows without Docker Desktop. Why? Because we're developers with super powers and there is *nothing* we cannot do when we're given the time to solve a problem. And that's just it - time. Just because we can, doesn't mean we should.  It's complicated and comes with an ongoing commitment to maintaining it all - not ideal for productivity - and a little ironic given the productivity gains we are used to getting from working with containers. 
+Of course it is possible to get up and running in Windows without Docker Desktop. Why? Because we're developers with super powers and there is *nothing* we cannot do when we're given the time to solve a problem. And that's just it - time. Just because we can, doesn't mean we should.  It's complicated and comes with an ongoing commitment to maintaining it all - not ideal for productivity - and a little ironic given the productivity gains we are used to getting from working with containers.
 
-Yet there are occasions when Docker Desktop has not been available to me and it has been useful knowing how to use Docker in Windows, nonetheless. In this article I'll walk you through the process I follow.
+Yet there are occasions when Docker Desktop has not been available to me and it has been useful knowing how to use Docker in Windows, nonetheless.
+
+In this article I'll walk you through the process that I follow with Windows Subsystem for Linux (WSL) 2, a small executable, wsl.exe, in c:\windows\system32 that allows us to run Linux containers natively on Windows, without emulation.
 
 ## Prerequisites
 
