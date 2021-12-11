@@ -9,7 +9,7 @@ twitter_username: benhall_io
 github_username: benbhall
 minimal_mistakes_skin: dark
 search: true
-logo: "/assets/images/masthead-ff-plastic-672x168.png"
+logo: "/assets/images/masthead-ff.png"
 
 analytics:
   provider: "google-gtag"
