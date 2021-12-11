@@ -14,6 +14,14 @@ Of course it is possible to get up and running in Windows without Docker Desktop
 
 Yet there are occasions when Docker Desktop has not been available to me and it has been useful knowing how to use Docker in Windows, nonetheless. In this article I'll walk you through the process I follow.
 
+## Prerequisites
+
+These are shared with Docker Desktop so, if you had previously setup Docker Desktop, you may not need to complete these.
+
+1. Install Windows 10 version 1903 or higher or Windows 11.
+2. Enable the WSL 2 feature on Windows.
+3. Download and install the Linux kernel update package.
+
 ## Creating a WSL 2 Distribution
 
 1\. First, install a Linux distro on WSL 2 - either from the Microsoft Store or from the command line. I'm using Ubuntu in this example.
