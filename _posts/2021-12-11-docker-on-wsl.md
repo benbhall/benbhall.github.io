@@ -16,27 +16,27 @@ Yet there are occasions when Docker Desktop has not been available to me and it 
 
 ## Creating a WSL 2 Distribution
 
-1. First, install a Linux distro on WSL 2 - either from the Microsoft Store or from the command line. I'm using Ubuntu in this example.
+1\. First, install a Linux distro on WSL 2 - either from the Microsoft Store or from the command line. I'm using Ubuntu in this example.
 
 ```powershell
 wsl --install -d Ubuntu
 ```
 
-2. When the installation completes, an automatic process to create a non-root user begins. Other distros may require you to configure a non-root user and sudo access yourself.
+2\. When the installation completes, an automatic process to create a non-root user begins. Other distros may require you to configure a non-root user and sudo access yourself.
 
-3. You should also confirm the command installed WSL 2 (not v1):
+3\. You should also confirm the command installed WSL 2 (not v1):
 
 ```powershell
 wsl --list --verbose
 ```
 
-4. And if it did not, run the following command to upgrade it to v2:
+4\. And if it did not, run the following command to upgrade it to v2:
 
 ```powershell
 wsl --set-version Ubuntu 2
 ```
 
-5. Remember, you will be managing this VM yourself, so now is a good time to update the Ubuntu distro. Switch to your Ubuntu distro’s WSL 2 Bash shell:
+5\. Remember, you will be managing this VM yourself, so now is a good time to update the Ubuntu distro. Switch to your Ubuntu distro’s WSL 2 Bash shell:
 
 ```powershell
 wsl --distribution Ubuntu
@@ -54,7 +54,7 @@ Next, install Docker manually by setting up Docker Engine and launching `dockerd
 
 Continue in your VM Bash shell.
 
-1. Install packages to allow apt to use a repository over HTTPS:
+1\. Install packages to allow apt to use a repository over HTTPS:
 
 ```bash
 sudo apt-get install \
@@ -64,13 +64,13 @@ sudo apt-get install \
     lsb-release
 ```
 
-2. Add Docker’s official GPG key:
+2\. Add Docker’s official GPG key:
 
 ```bash
 curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /usr/share/keyrings/docker-archive-keyring.gpg
 ```
 
-3, Use the *stable* repository:
+3\. Use the *stable* repository:
 
 ```bash
 echo \
@@ -82,19 +82,19 @@ echo \
 
 Continue in your VM Bash shell.
 
-1. Update the apt package index next:
+1\. Update the apt package index next:
 
 ```bash
 sudo apt-get update
 ```
 
-2. For this example, install the latest version of Docker Engine and `containerd` with the following command:
+2\. For this example, install the latest version of Docker Engine and `containerd` with the following command:
 
 ```bash
 sudo apt-get install docker-ce docker-ce-cli containerd.io
 ```
 
-3. Test it with the following command:
+3\. Test it with the following command:
 
 ```bash
 sudo docker run hello-world
