@@ -12,7 +12,7 @@ If, like me, you're moving between a number of environments for development, you
 
 Well, don't panic! It is still possible to get up and running in Windows without Docker Desktop. Why? Because we're developers with super powers and there is *nothing* we cannot do when we're given the time to solve a problem.
 
-Notice I said 'give the time' - just because we can, doesn't mean we should.  It's complicated and comes with an ongoing commitment to maintaining it all - not ideal for productivity, and your security team won't be pleased if you don't keep everything patched.
+Notice I said 'given the time' - just because we can, doesn't mean we should all of the time.  It's complicated and comes with an ongoing commitment to maintaining it all - not ideal for productivity, and your security team won't be pleased if you don't keep everything patched.
 
 That said, there have been occasions when Docker Desktop has not been available to me and it has been useful to know how to use Docker in Windows, nonetheless.
 
