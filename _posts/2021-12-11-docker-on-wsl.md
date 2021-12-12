@@ -1,6 +1,6 @@
 ---
-title: Docker on WSL 2
-excerpt: An alternative where Docker Desktop is not available to you in Windows
+title: Manual Docker Setup on Windows
+excerpt: An alternative using WSL 2, where Docker Desktop is not available to you in Windows
 date: 2021-12-11
 permalink: /docker-wsl-2/
 categories:
@@ -8,13 +8,15 @@ categories:
 tags: [Docker, WSL]
 ---
 
-So Docker Desktop isn't free to use in *all* scenarios any more. Don't panic!
+If, like me, you're moving between a number of environments for development, you may not always have access to Docker Desktop.
 
-Of course it is possible to get up and running in Windows without Docker Desktop. Why? Because we're developers with super powers and there is *nothing* we cannot do when we're given the time to solve a problem. And that's just it - time. Just because we can, doesn't mean we should.  It's complicated and comes with an ongoing commitment to maintaining it all - not ideal for productivity - and a little ironic given the productivity gains we are used to getting from working with containers.
+Well, don't panic! It is still possible to get up and running in Windows without Docker Desktop. Why? Because we're developers with super powers and there is *nothing* we cannot do when we're given the time to solve a problem.
 
-Yet there are occasions when Docker Desktop has not been available to me and it has been useful knowing how to use Docker in Windows, nonetheless.
+Notice I said 'give the time' - just because we can, doesn't mean we should.  It's complicated and comes with an ongoing commitment to maintaining it all - not ideal for productivity, and your security team won't be pleased if you don't keep everything patched.
 
-In this article I'll walk you through the process that I follow with Windows Subsystem for Linux (WSL) 2, a small executable, wsl.exe, in c:\windows\system32 that allows us to run Linux containers natively on Windows, without emulation.
+That said, there have been occasions when Docker Desktop has not been available to me and it has been useful to know how to use Docker in Windows, nonetheless.
+
+In this article I'll walk you through the process that I follow with Windows Subsystem for Linux (WSL) 2 that lives in a small executable, wsl.exe, in c:\windows\system32. It will allow us to run Linux containers natively on Windows, without emulation.
 
 ## Prerequisites
 
