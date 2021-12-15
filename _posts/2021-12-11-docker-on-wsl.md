@@ -124,7 +124,7 @@ The post-installation steps also offer guidance on other challenges you might fa
 - Logging
 - Accepting connections to Docker daemon from remote hosts
 - Configuring remote access
-- Enabling IPv6 
+- Enabling IPv6
 - Fixing IP forwarding problems
 
 ## Troubleshooting: Cannot Connect to the Docker Daemon
@@ -138,7 +138,5 @@ You received this error because you are not working with a Debian-based distribu
 ```bash
 sudo service docker start
 ```
-
-You will need to do this yourself every time you reboot or restart WSL 2!
 
 When you rerun the `hello-world` test, you should now get a `“Hello from Docker!”`.
