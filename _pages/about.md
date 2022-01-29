@@ -14,7 +14,7 @@ Just getting started!
 
 🧙 In my spare time I provided technical expertise and technical writing products for Microsoft, Mattermost and other leading industry names (see below for examples).
 
-### 2018 ⇉⇉⇉ ... Technical Lead Engineer for C# .NET at a gov.uk
+### 2018 ⇉⇉⇉ 2022 Technical Lead Engineer for C# .NET at a gov.uk
 
 👷 For my day job I am 70% developer and 30% of my time driving knowledge, capability and standards across teams - primarily for the .NET ecosystem, doing things like [this internal .NET versions guidance](https://github.com/UKHO/dotnet-guild/blob/main/dotnetversions.md), and pushing an inclusive language initiative out teams along with authoring  an [inclusive language policy for development teams](https://github.com/UKHO/docs/blob/main/software-engineering-policies/InclusiveLanguage/InclusiveLanguagePolicy.md).
 
