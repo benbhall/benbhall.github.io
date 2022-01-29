@@ -6,6 +6,10 @@ classes: wide
 
 ## What I've been up to
 
+### 2022 ⇉⇉⇉ ...   Principal Software Developer at a gov.uk
+
+Just getting started!
+
 ### 2019 ⇉⇉⇉ ...   Technical Specialist & Author for ContentLab.io
 
 🧙 In my spare time I provided technical expertise and technical writing products for Microsoft, Mattermost and other leading industry names (see below for examples).
@@ -25,6 +29,10 @@ classes: wide
 ## Things I write about for other people
 
 Most of what I do is 👻 ghostwritten but I do get authorship credit sometimes:
+
+### Docker
+
+Guest post on Docker blog: [Deciding Between Docker Desktop and a DIY Solution](https://www.docker.com/blog/guest-blog-deciding-between-docker-desktop-and-a-diy-solution/)
 
 ### Mattermost (2 Blog Articles)
 
