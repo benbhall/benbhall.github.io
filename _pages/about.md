@@ -38,7 +38,7 @@ Most of what I do is 👻 ghostwritten but I do get authorship credit sometimes:
 
 ### Docker
 
-Guest post on Docker blog: [Deciding Between Docker Desktop and a DIY Solution](https://www.docker.com/blog/guest-blog-deciding-between-docker-desktop-and-a-diy-solution/)
+ Guest post on Docker blog: [Deciding Between Docker Desktop and a DIY Solution](https://www.docker.com/blog/guest-blog-deciding-between-docker-desktop-and-a-diy-solution/)
 
 ### Mattermost (2 Blog Articles)
 
@@ -64,6 +64,7 @@ Mattermost is the leading open source collaboration platform. I was asked to wri
 
 ### Some other topics I've ghostwritten on recently
 
+- A white paper on secure supply chains
 - Distributed systems tracing with OpenTelemetry in .NET Core (with example dockerized services)
 - Caching in ASP.NET Core
 - Distributed caching (example .NET application written)
