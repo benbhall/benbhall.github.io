@@ -12,7 +12,7 @@ Just getting started!
 
 ### 2019 ⇉⇉⇉ ...   Technical Specialist & Author for ContentLab.io
 
-🧙 In my spare time I provided technical expertise and technical writing products for Microsoft, Mattermost and other leading industry names (see below for examples).
+🧙 In my spare time I provided technical expertise and technical writing articles and whitepapers for Microsoft, Docker, Mattermost and other leading industry names (see below for examples).
 
 ### 2018 ⇉⇉⇉ 2022 Technical Lead Engineer for C# .NET at a gov.uk
 
@@ -30,6 +30,12 @@ Just getting started!
 
 Most of what I do is 👻 ghostwritten but I do get authorship credit sometimes:
 
+### Microsoft (3 Part Blog Series on Azure Arc)
+
+- **Part 1**: [Deploying to Azure Arc via Azure Application Services Part 1: Getting Started with Azure Application Services](https://www.codeproject.com/Articles/5329093/Deploying-to-Azure-Arc-via-Azure-Application-Servi)
+- **Part 2**: [Deploying to Azure Arc via Azure Application Services Part 2: Running Azure Functions Anywhere](https://www.codeproject.com/Articles/5329094/Deploying-to-Azure-Arc-via-Azure-Application-Ser-2)
+- **Part 3**: [Deploying to Azure Arc via Azure Application Services Part 3: Deploying a Multi-cloud Azure App Service Web App](https://www.codeproject.com/Articles/5329095/Deploying-to-Azure-Arc-via-Azure-Application-Ser-3)
+
 ### Docker
 
 Guest post on Docker blog: [Deciding Between Docker Desktop and a DIY Solution](https://www.docker.com/blog/guest-blog-deciding-between-docker-desktop-and-a-diy-solution/)
@@ -41,7 +47,7 @@ Mattermost is the leading open source collaboration platform. I was asked to wri
 - **Article 1**: [Mattermost Installation: The Important Details for Sysadmins](https://mattermost.com/blog/mattermost-installation-for-sysadmins/)
 - **Article 2**: [Getting started with Mattermost integrations](https://mattermost.com/blog/getting-started-with-mattermost-integrations/)
 
-### Microsoft (3 Part Blog Series)
+### Microsoft (3 Part Blog Series on Teams and PowerApps)
 
 - **Part 1**: [Build a Teams Power App for Manufacturing 1: Get Started with Dataverse](https://www.codeproject.com/Articles/5303169/Build-a-Teams-Power-App-for-Manufacturing-1-Get-St)
 - **Part 2**: [Build a Teams Power App for Manufacturing 2: Create the Customer UI](https://www.codeproject.com/Articles/5303170/Build-a-Teams-Power-App-for-Manufacturing-2-Create)
