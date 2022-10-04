@@ -30,6 +30,12 @@ Just getting started!
 
 Most of what I do is 👻 ghostwritten but I do get authorship credit sometimes:
 
+### Microsoft (3 Part Blog Series on GitOps with Terraform plans, GitHub, GitHub Actions, and Azure)
+
+- **Part 1**: [Introduction to GitOps](https://www.codeproject.com/Articles/5334970/Introduction-to-GitOps)
+- **Part 2**: [GitOps with Terraform and GitHub](https://www.codeproject.com/Articles/5334971/GitOps-with-Terraform-and-GitHub)
+- **Part 3**: [GitOps Provisioning with GitHub Actions](https://www.codeproject.com/Articles/5334972/GitOps-with-Azure-Terraform-and-GitHub-Part-3-GitO)
+
 ### Microsoft (3 Part Blog Series on Azure Arc)
 
 - **Part 1**: [Deploying to Azure Arc via Azure Application Services Part 1: Getting Started with Azure Application Services](https://www.codeproject.com/Articles/5329093/Deploying-to-Azure-Arc-via-Azure-Application-Servi)
@@ -65,6 +71,7 @@ Mattermost is the leading open source collaboration platform. I was asked to wri
 ### Some other topics I've ghostwritten on recently
 
 - A white paper on secure supply chains
+- Best Practices For Secure Development From Home
 - Distributed systems tracing with OpenTelemetry in .NET Core (with example dockerized services)
 - Caching in ASP.NET Core
 - Distributed caching (example .NET application written)
