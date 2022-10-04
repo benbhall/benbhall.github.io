@@ -86,9 +86,10 @@ Mattermost is the leading open source collaboration platform. I was asked to wri
 - Identity Management (a paper comparing customer-facing and internal systems)
 - Integrating a leading open source collaboration platform with Jenkins and other examples
 
-## Stuff I work with regularly
+## Tech I work with regularly
 
-- C# / ASP .NET – NETFx, .NET Core 3.1 + .NET 5
+- C# / ASP .NET
+- Kubernetes and Docker
 - Azure Cloud (Apps, Functions, Event Grid, and lots more...)
 - Azure DevOps
 - Terraform
@@ -101,7 +102,6 @@ Mattermost is the leading open source collaboration platform. I was asked to wri
 ## Other things I use lots in my own time
 
 - Python
-- Docker
 
 ## Talks
 
