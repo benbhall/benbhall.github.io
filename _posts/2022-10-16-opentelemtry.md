@@ -1,6 +1,6 @@
 ---
 title: OpenTelemetry, The Missing Ingredient
-excerpt: 
+excerpt: At its core, OpenTelemetry (OTeL) is a vendor-neutral standard for telemetry. But it also provides a complete end-to-end implementation for generating, emitting, collecting, processing and exporting telemetry data to any support observability back-end. 
 date: 2022-10-16
 permalink: /opentelemetry/
 categories:
@@ -10,7 +10,7 @@ tags: [OpenTelemetry, Observability]
 
 - [Part 1: The Modern Observability Problem](/opentelemetry-observability)
 - Part 2: OpenTelemetry, The Missing Ingredient
-- [Part 3: OpenTelemetry for .NET Developers](/opentelemetry-dotnet)
+- Part 3: OpenTelemetry for .NET Developers (COMING SOON)
 
 ----------------------------
 <br/>

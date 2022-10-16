@@ -1,6 +1,6 @@
 ---
 title: The Modern Observability Problem
-excerpt: 
+excerpt: The core observability problem - Why is the system exhibiting this behaviour?
 date: 2022-10-15
 permalink: /opentelemetry-observability/
 categories:
@@ -10,7 +10,7 @@ tags: [OpenTelemetry, Observability]
 
 - Part 1: The Modern Observability Problem
 - [Part 2: OpenTelemetry, The Missing Ingredient](/opentelemetry)
-- [Part 3: OpenTelemetry for .NET Developers](/opentelemetry-dotnet)
+- Part 3: OpenTelemetry for .NET Developers (COMING SOON)
 
 ----------------------------
 <br/>
