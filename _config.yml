@@ -4,10 +4,10 @@ masthead_title: " "
 subtitle: " "
 remote_theme: "mmistakes/minimal-mistakes@4.21.0"
 #theme: minimal-mistakes-jekyll
-description: Agile + Secure .NET Development
+description: ...
 twitter_username: benhall_io
 github_username: benbhall
-minimal_mistakes_skin: dark
+minimal_mistakes_skin: air
 search: true
 logo: "/assets/images/masthead-ff.png"
 
@@ -39,7 +39,7 @@ plugins:
 
 author:
   name   : "Ben Hall"
-  avatar : "/assets/images/bio-photo3.jpg"
+  avatar : "/assets/images/bbh-2022.jpg"
   bio: Iteration over perfection
   links:    
     - label: "Twitter"
