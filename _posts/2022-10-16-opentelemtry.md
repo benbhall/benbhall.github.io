@@ -41,7 +41,7 @@ For example, if only `service A` sees a user's ID, we could put in the baggage s
 
 ## The Vendor-Neutral Proxy
 
-The star of the show in my opinion, is the **Collector**. While most languages have exporters to send telemetry data directly to back-ends, which is fine during development, it is beneficial to offload data quickly to a collector to handle the resource intensive taks, such as:
+The star of the show in my opinion, is the **Collector**. While most languages have exporters to send telemetry data directly to back-ends, which is fine during development, it is beneficial to offload data quickly to a collector to handle the resource intensive tasks, such as:
 
 - Exporting to multiple places
 - Enhancing with metadata
