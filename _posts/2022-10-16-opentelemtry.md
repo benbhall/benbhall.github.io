@@ -21,6 +21,8 @@ In the [Part 1](/opentelemetry-observability), we looked at observability soluti
 
 > OpenTelemetry lets you replace the need for vendor-specific SDKs and tools for generating and exporting telemetry data.
 
+![image-center](/assets/images/opentelemetry/otel.png){: .align-center}
+
 At its core, OpenTelemetry (OTeL) is a vendor-neutral standard for telemetry. But it also provides a complete end-to-end implementation for generating, emitting, collecting, processing and exporting telemetry data to any support observability back-end. For each language currently supported there are:
 
 - **Core libraries**. We can use these for manual instrumentation of services (or your own libraries).
