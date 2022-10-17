@@ -31,7 +31,9 @@ Observability and monitoring are two different things. We're usually pretty good
 
 That, for me, is the core observability problem: **Why is the system exhibiting this behaviour?**
 
-That is, can you answer the question without having redeploy with extra logs and 'printlines'? Where you can only answer questions about expected problems - that's monitoring, not observability! 
+And if you're doing observability right, you should be able to answer that question without having to redeploy with additional logs or 'prints'.
+
+If you can only answer questions about predictable problems - that's monitoring, not observability.
 
 ## Telemetry and the Three Pillars of Observability
 
