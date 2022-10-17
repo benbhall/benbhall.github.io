@@ -31,9 +31,9 @@ At its core, OpenTelemetry (OTeL) is a vendor-neutral standard for telemetry. Bu
 
 ![image-center](/assets/images/opentelemetry/otel-libs.png){: .align-center}
 
-Vendors are also increasingly supporting direct ingress of native OTLP. See [this list](https://opentelemetry.io/vendors/) for updates. The Jaeger docs now state:
+Vendors are also increasingly supporting direct ingress of native OTLP. See [this list](https://opentelemetry.io/vendors/) for updates. The Jaeger docs now even state:
 
-` As of 2022, the Jaeger SDKs are no longer supported, and all users are advised to migrate to OpenTelemetry.
+> As of 2022, the Jaeger SDKs are no longer supported, and all users are advised to migrate to OpenTelemetry.
 
 ### Vendor-Neutral Context Propagation
 
