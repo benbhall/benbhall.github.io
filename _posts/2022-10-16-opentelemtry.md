@@ -96,4 +96,4 @@ Observability solutions, both open-source and commercial, have done a good job i
 
 OpenTelemetry is the missing ingredient, which is set to change the landscape significantly. It is incredibly easy to adopt with a real plug-and-play feel to it, and there is good transition support with libraries to translate between proprietary protocols and OpenTelemetry.
 
-In [Part 3](/opentelemetry-dotnet) we will look at the current state of OpenTelemetry in .NET and have a go at using OpenTelemetry with .NET and Azure Monitor.
+In Part 3 we will review the current state of OpenTelemetry in .NET and have a go at using OpenTelemetry with .NET and Azure Monitor.
