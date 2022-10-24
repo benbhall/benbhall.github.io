@@ -6,9 +6,7 @@ classes: wide
 
 ## What I've been up to
 
-### 2022 ⇉⇉⇉ ...   Principal Software Developer at a gov.uk
-
-Just getting started!
+### Jan 2022 ⇉⇉⇉ ...   Principal Software Developer at a gov.uk
 
 ### 2019 ⇉⇉⇉ ...   Technical Specialist & Author for ContentLab.io
 
@@ -16,7 +14,7 @@ Just getting started!
 
 ### 2018 ⇉⇉⇉ 2022 Technical Lead Engineer for C# .NET at a gov.uk
 
-👷 For my day job I am 70% developer and 30% of my time driving knowledge, capability and standards across teams - primarily for the .NET ecosystem, doing things like [this internal .NET versions guidance](https://github.com/UKHO/dotnet-guild/blob/main/dotnetversions.md), and pushing an inclusive language initiative out teams along with authoring  an [inclusive language policy for development teams](https://github.com/UKHO/docs/blob/main/software-engineering-policies/InclusiveLanguage/InclusiveLanguagePolicy.md).
+👷 For my day job I was 70% developer and 30% driving knowledge, capability and standards across teams - primarily for the .NET ecosystem, doing things like [this internal .NET versions guidance](https://github.com/UKHO/dotnet-guild/blob/main/dotnetversions.md), and pushing an inclusive language initiative out teams along with authoring  an [inclusive language policy for development teams](https://github.com/UKHO/docs/blob/main/software-engineering-policies/InclusiveLanguage/InclusiveLanguagePolicy.md).
 
 ### 2016 ⇉⇉⇉ 2018 Software Engineer at a gov.uk
 
@@ -30,13 +28,13 @@ Just getting started!
 
 Most of what I do is 👻 ghostwritten but I do get authorship credit sometimes:
 
-### Microsoft (3 Part Blog Series on GitOps with Terraform plans, GitHub, GitHub Actions, and Azure)
+### Microsoft-commissioned 3-Part Blog Series on GitOps with Terraform plans, GitHub, GitHub Actions, and Azure
 
 - **Part 1**: [Introduction to GitOps](https://www.codeproject.com/Articles/5334970/Introduction-to-GitOps)
 - **Part 2**: [GitOps with Terraform and GitHub](https://www.codeproject.com/Articles/5334971/GitOps-with-Terraform-and-GitHub)
 - **Part 3**: [GitOps Provisioning with GitHub Actions](https://www.codeproject.com/Articles/5334972/GitOps-with-Azure-Terraform-and-GitHub-Part-3-GitO)
 
-### Microsoft (3 Part Blog Series on Azure Arc)
+### Microsoft-commissioned 3-Part Blog Series on Azure Arc
 
 - **Part 1**: [Deploying to Azure Arc via Azure Application Services Part 1: Getting Started with Azure Application Services](https://www.codeproject.com/Articles/5329093/Deploying-to-Azure-Arc-via-Azure-Application-Servi)
 - **Part 2**: [Deploying to Azure Arc via Azure Application Services Part 2: Running Azure Functions Anywhere](https://www.codeproject.com/Articles/5329094/Deploying-to-Azure-Arc-via-Azure-Application-Ser-2)
@@ -53,7 +51,7 @@ Mattermost is the leading open source collaboration platform. I was asked to wri
 - **Article 1**: [Mattermost Installation: The Important Details for Sysadmins](https://mattermost.com/blog/mattermost-installation-for-sysadmins/)
 - **Article 2**: [Getting started with Mattermost integrations](https://mattermost.com/blog/getting-started-with-mattermost-integrations/)
 
-### Microsoft (3 Part Blog Series on Teams and PowerApps)
+### Microsoft-commissioned 3-Part Blog Series on Teams and PowerApps
 
 - **Part 1**: [Build a Teams Power App for Manufacturing 1: Get Started with Dataverse](https://www.codeproject.com/Articles/5303169/Build-a-Teams-Power-App-for-Manufacturing-1-Get-St)
 - **Part 2**: [Build a Teams Power App for Manufacturing 2: Create the Customer UI](https://www.codeproject.com/Articles/5303170/Build-a-Teams-Power-App-for-Manufacturing-2-Create)
@@ -72,7 +70,7 @@ Mattermost is the leading open source collaboration platform. I was asked to wri
 
 - A white paper on secure supply chains
 - Best Practices For Secure Development From Home
-- Distributed systems tracing with OpenTelemetry in .NET Core (with example dockerized services)
+- Distributed systems tracing with OpenTelemetry in .NET Core (with example dockerised services)
 - Caching in ASP.NET Core
 - Distributed caching (example .NET application written)
 - Breaking up monolithic applications into microservices
@@ -86,26 +84,12 @@ Mattermost is the leading open source collaboration platform. I was asked to wri
 - Identity Management (a paper comparing customer-facing and internal systems)
 - Integrating a leading open source collaboration platform with Jenkins and other examples
 
-## Tech I work with regularly
+## Talks and Conferences
 
-- C# / ASP .NET
-- Kubernetes and Docker
-- Azure Cloud (Apps, Functions, Event Grid, and lots more...)
-- Azure DevOps
-- Terraform
-- NServiceBus
-- PowerShell
-- SQL Server
-- JavaScript, jQuery etc.
-- Agile, SCRUM & all that good stuff
-
-## Other things I use lots in my own time
-
-- Python
-
-## Talks
-
-- Lightning talk: Introducing Azure App Configuration. January 2020, UK Hydrographic Office (10 minutes)
+- [The Modern Observability Problem and OpenTelemetry. November 2022, DevOps North East](https://www.meetup.com/devopsnortheast/events/289067495/). (CONFIRMED)
+- The Modern Observability Problem and OpenTelemetry. October 2022, Homes England.
+- [Contributor, Government Transformation Summit, September 2022](https://summit.govx.digital/speakers-summit-2022/ben-hall).
+- Lightning talk: Introducing Azure App Configuration. January 2020, UK Hydrographic Office
 
 ## Awards
 

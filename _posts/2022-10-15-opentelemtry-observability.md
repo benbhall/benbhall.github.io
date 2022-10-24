@@ -1,6 +1,6 @@
 ---
 title: The Modern Observability Problem
-excerpt: 
+excerpt: The core observability problem - Why is the system exhibiting this behaviour?
 date: 2022-10-15
 permalink: /opentelemetry-observability/
 categories:
@@ -10,7 +10,7 @@ tags: [OpenTelemetry, Observability]
 
 - Part 1: The Modern Observability Problem
 - [Part 2: OpenTelemetry, The Missing Ingredient](/opentelemetry)
-- [Part 3: OpenTelemetry for .NET Developers](/opentelemetry-dotnet)
+- Part 3: OpenTelemetry for the .NET Ecosystem
 
 ----------------------------
 <br/>
@@ -31,7 +31,9 @@ Observability and monitoring are two different things. We're usually pretty good
 
 That, for me, is the core observability problem: **Why is the system exhibiting this behaviour?**
 
-That is, can you answer the question without having redeploy with extra logs and 'printlines'? Where you can only answer questions about expected problems - that's monitoring, not observability! 
+And if you're doing observability right, you should be able to answer that question without having to redeploy with additional logs or 'prints'.
+
+If you can only answer questions about predictable problems - that's monitoring, not observability.
 
 ## Telemetry and the Three Pillars of Observability
 
@@ -47,21 +49,23 @@ And **instrumentation** is what *produces* the telemetry. When we talk about ins
 
 In software engineering, we tend to simplify telemetry  three distinct things:
 
-**Logs**: More specifically, centralised logging – shipping all the text log entries from our components to a single data source to easily draw correlations with searches. Logs typically describe in some detail, what is happening, so are expensive to store a long time. They are not always tied to a specific user/request and thus lack contect, but nonetheless, are still heavily relied on to understand system behaviour.
+**Logs**: More specifically, centralised logging – shipping all the text log entries from our components to a single data source to easily draw correlations with searches. Logs typically describe in some detail, what is happening, so are expensive to store a long time. They are not always tied to a specific user/request and thus lack context, but nonetheless, are still heavily relied on to understand system behaviour.
 
-**Metrics**: Typically focusing on reliability, the type of stuff discussed for service level indiciators (SLIs) and service level agreements (SLAs). As they are largely numerical data like counters and rates, they use significantly less storage than logging. This means it can be kept for longer, allowing for better analysis of trends over time. Caution though, size can increase with complexity – the cardinality – how much extra data we attach to each metric to make them more useful.
+**Metrics**: Typically focusing on reliability, the type of stuff discussed for service level indicators (SLIs) and service level agreements (SLAs). As they are largely numerical data like counters and rates, they use significantly less storage than logging. This means it can be kept for longer, allowing for better analysis of trends over time. Caution though, size can increase with complexity – the cardinality – how much extra data we attach to each metric to make them more useful.
 
-**Traces**: More specifically, distributed tracing. Think of this as **a stack trace across multiple components** (and boundaries) of a distributed or large system. It offers some of the analytical benefits of metrics but with the cardinality of logging. Distributed tracing also relies on **context propogation**, a simple but essential component to move information used to associate traces between the services.
+**Traces**: More specifically, distributed tracing. Think of this as **a stack trace across multiple components** (and boundaries) of a distributed or large system. It offers some of the analytical benefits of metrics but with the cardinality of logging. Distributed tracing also relies on **context propagation**, a simple but essential component to move shared information and that used to associate traces, between the services.
 
 With our tracing instrumented in all our services and properly correlated with logs, then in our fictional system we could see the route our imaginary workload has taken through the system, leading us to the problem service(s), which in our imagined scenario, is some dodgy data in `service F` and the code in `service B` not gracefully handling it, such that the error didn't surface until `service H`.
 
 ![image-center](/assets/images/opentelemetry/microservices2.png){: .align-center}
 
-Below is a simplified example, but demonstrates the view you would get in a typical observatility tool of traces and logs if an exception was thrown in `service B` after it was called from `service A`. We can see exactly what call from `service A` made the request and drill down into it further to see associated logs:
+Below is a simplified example, but demonstrates the view you would get in a typical observability tool of traces and logs if an exception was thrown in `service B` after it was called from `service A`. We can see exactly what call from `service A` made the request and drill down into it further to see associated logs:
 
 ![image-center](/assets/images/opentelemetry/ai-spans.png){: .align-center}
 
-Logs, metrics, and traces are the rehearsed '3 pillars' but there are others, like health checks. Whichever way that we choose to break it down, **we have some raw unstructured data that we need to transform to answer questions about the behaviour of our system**.
+We'll come back to traces in more detail for [part 2, on OpenTelemetry](/opentelemetry).
+
+Ultimately, logs, metrics, and traces are the rehearsed '3 pillars' but there are others, like health checks. Whichever way that we choose to break it down, **we have some raw unstructured data that we need to transform to answer questions about the behaviour of our system**.
 
 Shift away from that monitoring state of mind where you're looking for problems you can predict, and make sure your system emits enough of the right telemetry to allow you to troubleshoot the problems you cannot foresee, because microservice architectures in a production environment will provide plenty of those!
 
@@ -87,7 +91,7 @@ And we have all these options on the right (and more) that we want to use to col
 
 The reality will be a bit of all of it. Some files, some custom database, maybe one team has gone their own way with elastic on prem., another in the cloud.
 
-All emitting telemetry signals but not necessarily the same, which means it becomes difficult to get a joined up picture of what is going on in side the black box. For example, you're not going to be able to aggregate logs and run queries across the system if they're not using a shared format. I've seen log shipping agents written to reformat logs but that's no longterm solution. I've witnessed confusion between teams, each trying to find out what they should be adding to some common context - a gap that can be filled by establishing a standard.
+All emitting telemetry signals but not necessarily the same, which means it becomes difficult to get a joined up picture of what is going on in side the black box. For example, you're not going to be able to aggregate logs and run queries across the system if they're not using a shared format. I've seen log shipping agents written to reformat logs but that's no long term solution. I've witnessed confusion between teams, each trying to find out what they should be adding to some common context - a gap that can be filled by establishing a standard.
 
 ### Vendor Lock-in
 

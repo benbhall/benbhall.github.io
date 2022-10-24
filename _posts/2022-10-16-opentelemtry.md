@@ -1,6 +1,6 @@
 ---
 title: OpenTelemetry, The Missing Ingredient
-excerpt: 
+excerpt: At its core, OpenTelemetry (OTel) is a vendor-neutral standard for telemetry. But it also provides a complete end-to-end implementation for generating, emitting, collecting, processing and exporting telemetry data to any support observability back-end. 
 date: 2022-10-16
 permalink: /opentelemetry/
 categories:
@@ -10,30 +10,122 @@ tags: [OpenTelemetry, Observability]
 
 - [Part 1: The Modern Observability Problem](/opentelemetry-observability)
 - Part 2: OpenTelemetry, The Missing Ingredient
-- [Part 3: OpenTelemetry for .NET Developers](/opentelemetry-dotnet)
+- Part 3: OpenTelemetry for the .NET Ecosystem
 
 ----------------------------
 <br/>
 
-In the [Part 1](/opentelemetry-observability), we looked at observability solutions for complex microservices systems and emphasised the importance of the right data being instrumented. We concluded that there are many good observability solutions, both open-source and commercial. But they all do things their own way, greatly reducing our ability to flex and adapt.
+In [Part 1](/opentelemetry-observability), we looked at the observability challenges for modern systems - microservices, composable architectures, event-driven, shared components - all that good stuff solving problems well but they're really hard to support. We emphasised the importance of the right data being instrumented and we concluded that there are many good observability solutions, both open-source and commercial. But they all do things their own way, greatly reducing our ability to flex and adapt - letting our old opponent vendor lock-in in the door.
 
-## A Vendor-Neutral Standard + Much More
+![image-center](/assets/images/opentelemetry/otel.png){: .align-center}
 
-> OpenTelemetry lets you replace the need for vendor-specific SDKs and tools for generating and exporting telemetry data.
+In this article, we'll look at how OpenTelemetry supports a **move away from vendor-specific tooling** for generating and exporting telemetry data.
 
-At its core, OpenTelemetry (OTeL) is a vendor-neutral standard for telemetry. But it also provides a complete end-to-end implementation for generating, emitting, collecting, processing and exporting telemetry data to any support observability back-end. For each language currently supported there are:
+## A Quick Refresher
 
-- **Core libraries**. We can use these for manual instrumentation of services (or your own libraries).
-- **Automatic instrumentation common libraries and frameworks**. Plugin-and-go for common web frameworks, database clients, etc.
-- **Exporters**. Libraries to send the instrumented telemetry data to backends. This can, of course, be through the OpenTelemetry Protocol (OTLP) itself, or  vendor-specific such as Jaegar or Azure Monitor, where it would be translated from the OpenTelemetry data in memory, to the format of vendor tool.
+Before we get started, let's refresh our terminology from [Part 1](/opentelemetry-observability):
+
+![image-center](/assets/images/opentelemetry/refresher.png){: .align-right}
+
+- **Instrumentation** is what produces the telemetry. When we talk about instrumenting, we mean to add libraries and/or code to our applications to collect telemetry such as logs, metrics and traces.
+- **Telemetry** are insights into the behaviour or inner workings of a system – the data that the system emits about what’s happening inside the ‘black box’, collected via instrumentation. You may also hear these being called signals.
+
+## A Vendor-Neutral Standard
+
+At its core, OpenTelemetry (OTel) is a vendor-neutral standard for telemetry across languages. You only need to instrument your code once and can then easily change to other observability backends when your needs change.
+
+It is also means you can stick with your backend of choice while being able to change the language you use - all supported languages will adhere to the same API specification for instrumentation.
+
+## More Than A Vendor-Neutral Standard
+
+OTel also provides **a complete end-to-end implementation** for generating, emitting, collecting, processing and exporting telemetry data to any supported observability back-end. For each language currently supported there core libraries, automatic instrumentation libraries, and exporters.
 
 ![image-center](/assets/images/opentelemetry/otel-libs.png){: .align-center}
 
-Vendors are also increasingly supporting direct ingress of native OTLP. See [this list](https://opentelemetry.io/vendors/) for updates.
+### Core libraries
 
-### Vendor-Neutral Context Propagation
+**The API** is the bare bones interface for tracing, logging, metrics and baggage instrumentation. An API library for a language will just be minimal without the full implementation of an SDK, that is, no actual telemetry data will be sent to a backend. It's been done this way because third party libraries wishing to instrument their code should not need to be concerned with how the consuming application implements its OpenTelemetry i.e. if we use a Jaegar exporter.
 
-OTeL uses the concept of **baggage**, which standardises the format of a shared context for values across programming languages and platforms, removing the need for teams to develop their own custom solutions.
+**The SDK** is the complete language library. It is what we pull into our applications, and with this, we can manually instrument our code, as it implements everything we need to translate the API calls into telemetry data ready for exporting.
+
+Instrumentation libraries will depend directly on the API library. Whereas exporter libraries will implement interfaces on the SDK.
+
+![image-center](/assets/images/opentelemetry/sdk2.png){: .align-center}
+
+Any application that we wish to hook up to a observability backend with OTel will take dependencies on both of these indirectly, through dependencies on instrumentation libraries and exporters.
+
+### Instrumentation Libraries
+
+Plugin-and-go for many common libraries and frameworks, such as those for web and databases. For example, we can generate telemetry data automatically for ASP.NET Core incoming web requests and outgoing Entity Framework requests. The only steps required are adding the two packages:
+
+- OpenTelemetry.Instrumentation.AspNetCore
+- OpenTelemetry.Contrib.Instrumentation.EntityFrameworkCore
+
+ And adding them as services in code:
+
+ ```csharp
+ public void ConfigureServices(IServiceCollection services)
+{
+    services.AddOpenTelemetryTracing((builder) => builder
+        .AddAspNetCoreInstrumentation()
+        .AddEntityFrameworkCoreInstrumentation()
+        // Add your exporter(s) here
+    );
+}
+ ```
+
+The OTel project maintains instrumentation and exporter packages for key OSS projects and compliance with the OTel specification, in its main repository for each language. For .NET this is [open-telemetry/opentelemetry-dotnet](https://github.com/open-telemetry/opentelemetry-dotnet/tree/main/src). Many others are then available from a sister contrib repository, which for .NET is [open-telemetry/opentelemetry-dotnet-contrib](https://github.com/open-telemetry/opentelemetry-dotnet-contrib).
+
+### Exporters
+
+Libraries to send the instrumented telemetry data to backends. This can, of course, be through the OpenTelemetry Protocol (OTLP) itself, or  vendor-specific such as Jaegar or Azure Monitor, where it would be translated from the OpenTelemetry data in memory, to the format used by a vendor tool.
+
+Vendors are also increasingly supporting direct ingress of native OTLP. See [this list](https://opentelemetry.io/vendors/) for updates. The Jaeger docs now even state:
+
+> As of 2022, the Jaeger SDKs are no longer supported, and all users are advised to migrate to OpenTelemetry.
+
+## Vendor-Neutral Tracing
+
+The biggest problem I've faced when debugging in distributed systems is getting visibility of a complete end-to-end journey of a transaction through all the services involved.
+
+In [part 1](/opentelemetry-observability) we introduced distributed tracing as a key part of any observability solution to solve just this problem. We acknowledged that there are many open-source and commercial products that do this already, typically by propagating a trace ID between all operations in a transaction to tie everything together.
+
+More often than not, we end up with an incomplete picture that the business are content with, despite the increased effort for support. Such challenges include:
+
+- Services on mixed tech stacks require different solutions and resource constraints prevent us from instrumenting all services
+- Vendor lock-in, where our chosen backend does not support the tech stack of some of our services
+- Clients and agents to instrument and send telemetry are built in-house and resource constraints prevent us from maintaining them for all service tech stacks
+
+![image-center](/assets/images/opentelemetry/missing-id.png){: .align-center}
+
+As a single standard for tech stacks and backends, OTel eliminates these challenges. It brings a complete set of tools to 'plug in' to greatly reduce the resourcing required, and because it is an open standard, very little resources are required to switch to (or add) other backends.
+
+OTel represents each operation in a trace across a system using with the concept of a **span**. Amongst other things [defined in the OTel specification](https://github.com/open-telemetry/opentelemetry-specification/blob/main/specification/overview.md#spans), each span will hold:
+
+- The unique trace ID for the current 'journey# through the system
+- A unique ID for the span itself
+- A unique ID for the parent span so we can reconstruct the journey in an observability backend
+
+![image-center](/assets/images/opentelemetry/sendspans.png){: .align-center}
+
+This is enough for a backend to rebuild a complete picture of an transaction through a system.
+
+Each span represents a single operation in the overall transaction through a system. Most backends will represent these against time, in a way you might be familiar with from [Gantt charts](https://en.wikipedia.org/wiki/Gantt_chart).
+
+![image-center](/assets/images/opentelemetry/chart.png){: .align-center}
+
+In the simplified example:
+
+1. **Span A**: request comes into Service A for user details. This is the **root span** and of course, parent to **span B**. Most mainstream web frameworks will be able to auto-instrument this, meaning it will automatically create a trace span for this incoming request.
+2. **Span B**:Service A calls Service B to get a user's details. We might get this from a library to auto-instrument HTTP calls or we could manually add a trace signal 'around' the code that makes the call.
+3. **Span C**: Service B receives the request.
+4. **Span D**: Inside the code to handle the request, a child span represents an SQL query to the database for the user details.
+5. **Span E**: We manually instrument a signal for adding then user if it is not found.
+6. **Span F**: Service B has returned the user details and Service A returns that data to the caller, which is auto-instrumented by our web framework.
+
+## Vendor-Neutral Context Propagation
+
+OTel uses the concept of **baggage**, which standardises the format of a shared context for values across programming languages and platforms, removing the need for teams to develop their own custom solutions for propagating shared data.
 
 For example, if only `service A` sees a user's ID, we could put in the baggage so that `service B` could access in when called as a child/dependency.
 
@@ -41,7 +133,7 @@ For example, if only `service A` sees a user's ID, we could put in the baggage s
 
 ## The Vendor-Neutral Proxy
 
-The star of the show in my opinion, is the **Collector**. While most languages have exporters to send telemetry data directly to back-ends, which is fine during development, it is beneficial to offload data quickly to a collector to handle the resource intensive taks, such as:
+The star of the show in my opinion, is the **Collector**. While most languages have exporters to send telemetry data directly to back-ends, which is fine during development, it is beneficial to offload data quickly to a collector to handle the resource intensive tasks, such as:
 
 - Exporting to multiple places
 - Enhancing with metadata
@@ -57,6 +149,8 @@ The collector can receive and export data in multiple formats, to and from obser
 - **Exporters:** : Used to send data to observavility back-ends or other destinations. As well as the core OTLP exporter, there are many available from the [contrib repository](https://github.com/open-telemetry/opentelemetry-collector-contrib/tree/main/exporter)
 
 ![image-center](/assets/images/opentelemetry/pipeline.png){: .align-center}
+
+### The Sidecar Pattern
 
 Below is a snapshot of a typical use-case. We have a .NET web app exporting logs, metrics and traces using OTLP to a collector. The method of deployment depicted is where a collector is deployed alongside each service on a one-to-one basis, with a shared lifetime with the service. This tends to put ownership of the collector with the development team(s) and is useful if you need to do processing specific to a service.
 
@@ -80,16 +174,18 @@ service:
       exporters: [otlp, prometheus]
 ```
 
+### As a Single Gateway
+
 It's also possible to deploy the collector as standalone **gateway** component, to be scaled independently of the services. This tends to mean ownership of the collector is with platform teams who can then centrally manage policies and permission.
 
 ![image-center](/assets/images/opentelemetry/collector1.png){: .align-center}
 
-Even with a gateway deployment, you should give consideration to maintaining collector agents alongside each service too, sending data to the this one.
+The ideal setup is for each service or collection of services to have dedicated collectors as agents, owned by the development team. These would export to an instance run as a gateway by the ops teams to apply their own processes such as authentication or metadata.
 
 ## Summary
 
-Observability solutions, both open-source and commercial, have done a good job in catching up with the demands of supporting modern microservices architectures. The biggest problem is the lack of standardisation, which reduces are ability to flex and adapt - vendor-locking us.
+Observability solutions, both open-source and commercial, have done a good job in catching up with the demands of supporting complex modern architectures. The biggest problem is the lack of standards, which reduces our ability to flex and adapt and resulting in some level of vendor lock-in.
 
-OpenTelemetry is the missing ingredient, which is set to change the landscape significantly. It is incredibly easy to adopt with a real plug-and-play feel to it, and there is good transition support with libraries to translate between proprietary protocols and OpenTelemetry.
+OpenTelemetry is the missing ingredient, which is set to change the landscape significantly. It is very easy to adopt with a real plug-and-play feel to it, and there is good transition support with libraries to translate between proprietary protocols and OpenTelemetry.
 
-In [Part 3](/opentelemetry-dotnet) we will look at the current state of OpenTelemetry in .NET and have a go at using OpenTelemetry with .NET and Azure Monitor.
+In [Part 3](/opentelemetry-dotnet/) we will review the current state of OpenTelemetry in .NET and have a go at using OpenTelemetry with .NET and Azure Monitor.

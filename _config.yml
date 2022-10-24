@@ -7,15 +7,9 @@ remote_theme: "mmistakes/minimal-mistakes@4.21.0"
 description: ...
 twitter_username: benhall_io
 github_username: benbhall
-minimal_mistakes_skin: air
+minimal_mistakes_skin: dark
 search: true
 logo: "/assets/images/masthead-ff.png"
-
-analytics:
-  provider: "google-gtag"
-  google:
-    tracking_id: "G-KRNVNX2G6M"
-    anonymize_ip: false # default
 
 # Output options (more information on Jekyll's site)
 timezone: "Europe/London"
@@ -24,6 +18,18 @@ markdown: kramdown
 permalink: /:categories/:title/
 paginate: 3
 paginate_path: /page:num/
+
+repository: "benbhall/benbhall.github.io"
+
+comments:
+  provider: "giscus"
+  giscus:
+    repo_id              : "MDEwOlJlcG9zaXRvcnkxODgyOTk1Mjk="
+    category_name        : "Comments"
+    category_id          : "DIC_kwDOCzk5Cc4CSIoC"
+    discussion_term      : "pathname"
+    reactions_enabled    : 1
+    theme                : "light"
 
 include:
   - _pages
@@ -63,7 +69,7 @@ footer:
   links:
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
-      url: "https://twitter.com/"
+      url: "https://twitter.com/benhall_io"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/benbhall"
