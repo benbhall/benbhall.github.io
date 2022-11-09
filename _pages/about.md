@@ -6,23 +6,11 @@ classes: wide
 
 ## What I've been up to
 
-### Jan 2022 ⇉⇉⇉ ...   Principal Software Developer at a gov.uk
-
-### 2019 ⇉⇉⇉ ...   Technical Specialist & Author for ContentLab.io
-
-🧙 In my spare time I provided technical expertise and technical writing articles and whitepapers for Microsoft, Docker, Mattermost and other leading industry names (see below for examples).
-
-### 2018 ⇉⇉⇉ 2022 Technical Lead Engineer for C# .NET at a gov.uk
-
-👷 For my day job I was 70% developer and 30% driving knowledge, capability and standards across teams - primarily for the .NET ecosystem, doing things like [this internal .NET versions guidance](https://github.com/UKHO/dotnet-guild/blob/main/dotnetversions.md), and pushing an inclusive language initiative out teams along with authoring  an [inclusive language policy for development teams](https://github.com/UKHO/docs/blob/main/software-engineering-policies/InclusiveLanguage/InclusiveLanguagePolicy.md).
-
-### 2016 ⇉⇉⇉ 2018 Software Engineer at a gov.uk
-
-🤓 switched careers to Software Engineering ミミ★ 🥳
-
-### 2008 ⇉⇉⇉ 2016 School Teacher
-
-👨‍🏫🦸‍♂️ 11-18 Computer Science ☆ Head of Year ☆ Head of Department.
+- Jan 2022 ⇉⇉⇉ ...   Principal Software Developer at a gov.uk
+- 2019 ⇉⇉⇉ ...   Technical Specialist & Author for ContentLab.io
+- 2018 ⇉⇉⇉ 2022 Technical Lead Engineer for C# .NET at a gov.uk
+- 2016 ⇉⇉⇉ 2018 Software Engineer at a gov.uk
+- 2008 ⇉⇉⇉ 2016 School Teacher 11-18 Computer Science ☆ Head of Year ☆ Head of Department.
 
 ## Things I write about for other people
 
@@ -58,14 +46,6 @@ Mattermost is the leading open source collaboration platform. I was asked to wri
 - **Part 3**: [Build a Teams Power App for Manufacturing 3: Create the Manufacturer UI
 ](https://www.codeproject.com/Articles/5303171/Build-a-Teams-Power-App-for-Manufacturing-3-Create)
 
-### Orpalis
-
-- [Using PDF Layers or Optional Content Groups (OCG) in GdPicture.NET](https://www.gdpicture.com/blog/pdf-layers-ocg/)
-
-### Aspose
-
-- [Document Accessibility with Aspose.PDF for .NET](https://contentlab.io/aspose-pdf-net-accessibility/)
-
 ### Some other topics I've ghostwritten on recently
 
 - A white paper on secure supply chains
@@ -86,8 +66,7 @@ Mattermost is the leading open source collaboration platform. I was asked to wri
 
 ## Talks and Conferences
 
-- [The Modern Observability Problem and OpenTelemetry. November 2022, DevOps North East](https://www.meetup.com/devopsnortheast/events/289067495/). (CONFIRMED)
-- The Modern Observability Problem and OpenTelemetry. October 2022, Homes England.
+- The Modern Observability Problem and OpenTelemetry. October 2022, Homes England Software Community.
 - [Contributor, Government Transformation Summit, September 2022](https://summit.govx.digital/speakers-summit-2022/ben-hall).
 - Lightning talk: Introducing Azure App Configuration. January 2020, UK Hydrographic Office
 
