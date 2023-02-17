@@ -66,6 +66,7 @@ Mattermost is the leading open source collaboration platform. I was asked to wri
 
 ## Talks and Conferences
 
+- The Modern Observability Problem and OpenTelemetry. February 2023, DevOps North East.
 - The Modern Observability Problem and OpenTelemetry. October 2022, Homes England Software Community.
 - [Contributor, Government Transformation Summit, September 2022](https://summit.govx.digital/speakers-summit-2022/ben-hall).
 - Lightning talk: Introducing Azure App Configuration. January 2020, UK Hydrographic Office
