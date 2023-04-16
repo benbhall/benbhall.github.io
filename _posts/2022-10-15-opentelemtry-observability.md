@@ -66,7 +66,7 @@ A typical observability tool view of traces and logs, if an exception was thrown
 
 We'll look at traces in more detail for [part 2, on OpenTelemetry](/opentelemetry).
 
-Ultimately, logs, metrics, and traces are the rehearsed '3 pillars' but there are others, like health checks. Whichever way that we choose to break it down, **we have some raw unstructured data that we need to transform to answer questions about the behaviour of our system**.
+Ultimately, logs, metrics, and traces are the well-established '3 pillars' of observability, but there are others, like health checks. Whichever way we choose to break it down, we often have raw telemetry data in varying formats and structures that need to be processed and correlated to answer questions about the behavior of our system.
 
 ## What is the Right Telemetry?
 
