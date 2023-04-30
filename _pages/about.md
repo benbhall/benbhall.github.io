@@ -66,8 +66,10 @@ Mattermost is the leading open source collaboration platform. I was asked to wri
 
 ## Talks and Conferences
 
-- The Modern Observability Problem and OpenTelemetry. February 2023, DevOps North East.
-- The Modern Observability Problem and OpenTelemetry. October 2022, Homes England Software Community.
+- Contributor, Government Transformation Summit, May 2023.
+- Guest appearance on Day Two Cloud, a Packet Pushers podcast, to talk about OpenTelemetry. [Listen to it here](https://packetpushers.net/podcast/day-two-cloud-192-opentelemetry-getting-from-visibility-to-observability-with-ben-hall/) or on your favourite podcast platform via [pod.link](https://pod.link/1460004936/episode/20e545a2b4fd8e48142eb4a23e67d4ce).
+- Talk: The Modern Observability Problem and OpenTelemetry. February 2023, DevOps North East.
+- Talk: The Modern Observability Problem and OpenTelemetry. October 2022, Homes England Software Community.
 - [Contributor, Government Transformation Summit, September 2022](https://summit.govx.digital/speakers-summit-2022/ben-hall).
 - Lightning talk: Introducing Azure App Configuration. January 2020, UK Hydrographic Office
 

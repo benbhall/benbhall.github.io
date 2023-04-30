@@ -122,3 +122,5 @@ To resolve problems in a large microservice system:
 There are lots of open-source and commercial backends, available as self-hosted or SaaS, many of which are really good at this. The problem, is that they all do things in their own ways - there is no standard. Plumbing our logging, metrics and traces into all our services is a big task, meaning when you have done it once for any vendor, you probably won't be doing it again any time soon, greatly reducing your freedom to be flexible and adapt.
 
 OpenTelemetry (OTeL) is the evolution of ideas from the OpenTracing and OpenCensus projects, to build a single, vendor-neutral standard. We'll look at this in **[Part 2: OpenTelemetry, The Missing Ingredient](/opentelemetry)**.
+
+**EDIT April 2023**: Listen to me on the Day Two Cloud, a Packet Pushers podcast, talking about OpenTelemetry. [Use this direct link](https://packetpushers.net/podcast/day-two-cloud-192-opentelemetry-getting-from-visibility-to-observability-with-ben-hall/) or listen on your favourite podcast platform via [pod.link](https://pod.link/1460004936/episode/20e545a2b4fd8e48142eb4a23e67d4ce).
