@@ -10,6 +10,8 @@ tags: [OpenTelemetry, Observability]
 
 I was recently invited to be a guest on the Day 2 Cloud podcast (part of the Packet Pushers network), that covers DevOps and cloud-ops topics. The conversation was quite engaging, and although the episodes typically run for 40 minutes, we managed to fill an entire hour!
 
+![image-center](/assets/images/podcast192.png){: .align-right}
+
 In the podcast, we discussed OpenTelemetry and observability, which are not only areas of personal interest but should absolutely be something we are looking at for our long-term tech strategies. For those of you who have already heard me discuss these topics, I think this podcast presents a more dynamic and in-depth exploration.
 
 **You can listen to the episode here: [Day Two Cloud 192: OpenTelemetry - Getting From Visibility To Observability With Ben Hall - Packet Pushers](https://packetpushers.net/podcast/day-two-cloud-192-opentelemetry-getting-from-visibility-to-observability-with-ben-hall/)**.
