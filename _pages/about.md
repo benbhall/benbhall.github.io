@@ -6,7 +6,8 @@ classes: wide
 
 ## What I've been up to
 
-- Jan 2022 ⇉⇉⇉ ...   Principal Software Developer at a gov.uk
+- Jan 2022 ⇉⇉⇉ ...   Lead Software Developer at Mountain Warehouse
+- Jan 2022 ⇉⇉⇉ Jan 2024   Principal Software Developer at a gov.uk
 - 2019 ⇉⇉⇉ ...   Technical Specialist & Author for ContentLab.io
 - 2018 ⇉⇉⇉ 2022 Technical Lead Engineer for C# .NET at a gov.uk
 - 2016 ⇉⇉⇉ 2018 Software Engineer at a gov.uk
