@@ -1,11 +1,12 @@
 GEM
   remote: https://rubygems.org/
   specs:
-    activesupport (5.2.8.1)
+    activesupport (6.0.6.1)
       concurrent-ruby (~> 1.0, >= 1.0.2)
       i18n (>= 0.7, < 2)
       minitest (~> 5.1)
       tzinfo (~> 1.1)
+      zeitwerk (~> 2.2, >= 2.2.2)
     addressable (2.8.6)
       public_suffix (>= 2.0.2, < 6.0)
     coffee-script (2.4.1)
@@ -266,6 +267,7 @@ GEM
     uri (0.13.0)
     wdm (0.1.1)
     webrick (1.8.1)
+    zeitwerk (2.6.13)
 
 PLATFORMS
   x64-mingw-ucrt
@@ -273,7 +275,7 @@ PLATFORMS
   x86_64-linux
 
 DEPENDENCIES
-  activesupport (~> 5.1)
+  activesupport (~> 6.0)
   github-pages (~> 231)
   i18n (~> 0.7)
   jekyll (= 3.9.5)
