@@ -3,6 +3,8 @@ title: C# Async/Await
 subtitle: Addressing a simple yet common misconception
 date: 2018-01-28
 permalink: /correcting-a-common-c-async-await-misconception/
+redirect_from:
+  - /2018/01/28/correcting-a-common-c-async-await-misconception/
 excerpt: Async/await has been part of C# since C# 5.0 yet many developers have yet to explore how it works under the covers, which I would recommend for any syntactic sugar in C#. I won't be going into that level of detail now, nor will I explore the subtleties of IO and CPU bound operations.
 categories:
   - Asynchronous

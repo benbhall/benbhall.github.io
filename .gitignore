@@ -3,6 +3,7 @@ _site
 .sass-cache
 .vagrant
 _drafts
+AGENT.md
 
 # general
 .DS_Store
@@ -12,3 +13,4 @@ ehthumbs.db
 .vs/slnx.sqlite
 .vs/slnx.sqlite
 /.vs/benbhall.github.io/v16/.suo
+blog-video-plan.md

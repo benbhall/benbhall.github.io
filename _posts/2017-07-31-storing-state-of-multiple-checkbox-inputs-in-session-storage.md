@@ -2,6 +2,8 @@
 title: Persisting multiple checkbox states in session Storage (using jQuery)
 date: 2017-07-31
 permalink: /storing-state-of-multiple-checkbox-inputs-in-session-storage/
+redirect_from:
+  - /2017/07/21/storing-state-of-multiple-checkbox-inputs-in-session-storage/
 excerpt: A quick fix using session storage on the client.
 classes: wide
 categories:

@@ -1,0 +1,166 @@
+---
+---
+
+/* Light theme overrides for when body has .light-theme class */
+body.light-theme {
+  background-color: #fff;
+  color: #3d4144;
+  
+  .masthead {
+    background-color: #fff;
+    border-bottom-color: #f2f3f3;
+    
+    a {
+      color: #3d4144;
+      
+      &:hover {
+        color: #0092ca;
+      }
+    }
+  }
+  
+  .greedy-nav {
+    background: #fff;
+    
+    a {
+      color: #3d4144;
+      
+      &:hover {
+        color: #0092ca;
+      }
+    }
+    
+    .visible-links a:before {
+      background: #0092ca;
+    }
+  }
+  
+  .page__footer {
+    background-color: #f3f3f3;
+    color: #3d4144;
+    
+    a {
+      color: #3d4144;
+    }
+  }
+  
+  a {
+    color: #0092ca;
+    
+    &:visited {
+      color: #0092ca;
+    }
+    
+    &:hover {
+      color: #004c66;
+    }
+  }
+  
+  code {
+    background-color: #f3f4f4;
+    color: #3d4144;
+  }
+  
+  pre {
+    background-color: #f3f4f4;
+  }
+  
+  .page__content {
+    color: #3d4144;
+    
+    h1, h2, h3, h4, h5, h6 {
+      color: #3d4144;
+      border-bottom-color: #f2f3f3;
+    }
+  }
+  
+  .sidebar,
+  .page__meta,
+  .page__taxonomy,
+  .archive__item-excerpt {
+    color: #545454;
+  }
+  
+  .page__title,
+  h1, h2, h3, h4, h5, h6 {
+    color: #3d4144;
+  }
+  
+  .archive__item-title a {
+    color: #3d4144;
+    
+    &:hover {
+      color: #0092ca;
+    }
+  }
+  
+  .btn {
+    background-color: #0092ca;
+    color: #fff;
+    
+    &:hover {
+      background-color: #004c66;
+    }
+  }
+  
+  .taxonomy__index a {
+    border-bottom-color: #f2f3f3;
+    color: #3d4144;
+  }
+  
+  .page {
+    background-color: #fff;
+  }
+  
+  .notice,
+  .notice--primary {
+    background-color: #f2f3f3;
+    color: #3d4144;
+  }
+  
+  blockquote {
+    border-left-color: #0092ca;
+  }
+  
+  hr {
+    border-top-color: #f2f3f3;
+  }
+  
+  .page__hero-image {
+    filter: none;
+  }
+  
+  .archive__item-teaser img {
+    filter: none;
+  }
+}
+
+/* Theme toggle button */
+.theme-toggle {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #0092ca;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5em;
+  transition: all 0.3s ease;
+  
+  &:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+  }
+  
+  &:focus {
+    outline: 2px solid #0092ca;
+    outline-offset: 2px;
+  }
+}

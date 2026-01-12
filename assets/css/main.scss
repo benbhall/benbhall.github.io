@@ -1,0 +1,272 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+
+@charset "utf-8";
+
+@import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
+@import "minimal-mistakes"; // main partials
+
+// Custom theme toggle styles
+@import "custom/theme-toggle";
+
+// TOC styling improvements
+.toc {
+  font-size: 0.9em !important;  // Larger font
+  
+  .nav__title {
+    font-size: 1em !important;
+    font-weight: 500 !important;
+    padding: 0.5rem 0.75rem;
+  }
+  
+  .toc__menu {
+    font-size: 1em !important;
+    
+    a {
+      padding: 0.4rem 0.75rem;
+      display: block;
+      font-weight: 400 !important;
+    }
+  }
+  
+  // Mobile: make TOC more readable
+  @media (max-width: 768px) {
+    font-size: 1.05em !important;
+    
+    .nav__title {
+      font-size: 1.1em !important;
+      font-weight: 500 !important;
+      padding: 0.6rem 0.85rem;
+    }
+    
+    .toc__menu {
+      font-size: 1em !important;
+      
+      a {
+        padding: 0.5rem 0.85rem;
+        font-weight: 400 !important;
+      }
+    }
+  }
+}
+
+// Wide layout for posts with TOC - give content more room
+.page--wide {
+  .page__content {
+    max-width: 100%;
+  }
+}
+
+// Fix list item and paragraph font size (theme default 0.75em is too small, 1em too big)
+.page__content {
+  p,
+  li,
+  dl {
+    font-size: 0.75em !important;
+  }
+
+  // Prevent nested lists from shrinking on each level (em compounding)
+  li li {
+    font-size: 1em !important;
+  }
+  
+  // Mobile: increase base font size for better readability
+  @media (max-width: 768px) {
+    font-size: 1.2em;
+    
+    p,
+    li,
+    dl {
+      font-size: 1.05em !important;
+    }
+    
+    h1 { font-size: 1.9em !important; }
+    h2 { font-size: 1.6em !important; }
+    h3 { font-size: 1.4em !important; }
+    h4 { font-size: 1.25em !important; }
+  }
+}
+
+// Callout blocks and source boxes - normalize font size to match main content
+.page__content .callout,
+.page__content .source-box {
+  font-size: 0.75em !important;
+  
+  p, li, dl {
+    font-size: 1em !important;
+  }
+  
+  @media (max-width: 768px) {
+    font-size: 1em !important;
+  }
+}
+
+// Centered emphasis statement (not a notice/callout)
+.page__content .pull-quote {
+  font-size: 1.05em !important;
+  font-style: italic;
+  text-align: center;
+  margin: 1.6em auto;
+  max-width: 44em;
+  padding: 0.9em 1.1em;
+  border-radius: 0.6em;
+  background: rgba(255, 255, 255, 0.06);
+  line-height: 1.45;
+
+  @media (max-width: 768px) {
+    font-size: 1.15em !important;
+    padding: 0.95em 1em;
+    margin: 1.2em auto;
+  }
+}
+
+// Light theme: very light grey background
+body.light-theme .page__content .pull-quote {
+  background: rgba(0, 0, 0, 0.04);
+}
+
+// If used on blockquotes, remove the theme's quote styling
+.page__content blockquote.pull-quote {
+  border-left: 0;
+  padding-left: 0;
+}
+
+// Image popup styling - theme-aware borders
+.image-popup img {
+  border: 0.1em solid #000;  // Pure black border for dark theme
+  
+  // Mobile: full width, no float
+  @media (max-width: 768px) {
+    width: 100% !important;
+    float: none !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    margin-bottom: 1em !important;
+  }
+}
+
+// Hero overlay - ensure good contrast on dark backgrounds
+.page__hero--overlay {
+  .page__title,
+  h1.page__title {
+    color: #fff !important;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5) !important;
+  }
+  
+  .page__lead {
+    color: #eee !important;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5) !important;
+  }
+  
+  .page__meta {
+    color: #ccc !important;
+  }
+}
+
+// Light theme overrides
+body.light-theme {
+  .image-popup img {
+    border-color: #333;  // Off-black/charcoal border for light theme
+  }
+  
+  // Lighten hero overlay backgrounds in light theme
+  .page__hero--overlay {
+    background-color: #f5f5f5 !important;
+    
+    .page__title {
+      color: #111 !important;
+      text-shadow: none !important;
+    }
+    
+    .page__lead {
+      color: #333 !important;
+      text-shadow: none !important;
+    }
+    
+    .page__meta {
+      color: #555 !important;
+      text-shadow: none !important;
+    }
+  }
+}
+
+// Mobile: increase font sizes across the board for better readability
+@media (max-width: 768px) {
+  body {
+    font-size: 18px; // Increase base font size for mobile
+  }
+  
+  .page__meta {
+    font-size: 1.15em !important;
+  }
+  
+  .page__title {
+    font-size: 1.95em !important;
+  }
+  
+  .page__lead {
+    font-size: 1.15em !important;
+  }
+  
+  .archive__item-title {
+    font-size: 1.25em !important;
+  }
+  
+  .archive__item-excerpt {
+    font-size: 1em !important;
+  }
+  
+  .masthead {
+    font-size: 1.1em;
+  }
+  
+  .page__footer {
+    font-size: 1em;
+  }
+  
+  // Author sidebar - name and bio
+  .author__name,
+  .sidebar .author__name,
+  .author-profile .author__name,
+  h3.author__name {
+    font-size: 1.95em !important;
+  }
+  
+  .author__bio,
+  .sidebar .author__bio,
+  .author-profile .author__bio,
+  p.author__bio {
+    font-size: 1.6em !important;
+  }
+  
+  .author__urls,
+  .sidebar .author__urls {
+    font-size: 1em !important;
+  }
+  
+  // Hero title and excerpt - bigger on mobile
+  .page__hero-title,
+  .page__hero--overlay .page__title {
+    font-size: 2.4em !important;
+  }
+  
+  .page__hero--overlay .page__lead {
+    font-size: 1.36em !important;
+  }
+  
+  // Follow button - increase size and adjust alignment
+  .author__urls-wrapper .btn {
+    font-size: 1.1em !important;
+    padding: 0.6em 1.2em !important;
+    margin-top: 0.5em;
+  }
+}
+
+// Figure captions - inherit theme colors
+figure figcaption {
+  font-size: 0.85em;
+  font-style: italic;
+  color: inherit;
+  margin-top: 0.5em;
+}

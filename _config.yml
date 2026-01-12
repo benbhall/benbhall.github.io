@@ -1,28 +1,53 @@
-
 title: Failing Fast
 masthead_title: " "
-remote_theme: "mmistakes/minimal-mistakes@4.21.0"
+subtitle: " "
+remote_theme: "mmistakes/minimal-mistakes@4.27.3"
 #theme: minimal-mistakes-jekyll
-description: Agile + Secure .NET Development
+description: ...
 twitter_username: benhall_io
 github_username: benbhall
 minimal_mistakes_skin: dark
 search: true
-logo: "/assets/images/masthead-ff-plastic-672x168.png"
+logo: "/assets/images/masthead-ff.png"
 
-analytics:
-  provider: "google-gtag"
-  google:
-    tracking_id: "G-KRNVNX2G6M"
-    anonymize_ip: false # default
+# Site URL (required for proper social sharing cards)
+url: "https://failingfast.io"
+
+# Social sharing / SEO
+twitter:
+  username: benhall_io
+  card: summary_large_image
+
+social:
+  type: Person
+  name: Ben Hall
+  links:
+    - "https://twitter.com/benhall_io"
+    - "https://linkedin.com/in/ben-hall-software-engineer"
+    - "https://github.com/benbhall"
+
+# Default OG image for pages without a header image
+og_image: /assets/images/default-og-image.png
 
 # Output options (more information on Jekyll's site)
 timezone: "Europe/London"
 markdown: kramdown
 #permalink: /:year-:month-:day-:title/
 permalink: /:categories/:title/
-paginate: 3
+paginate: 4
 paginate_path: /page:num/
+
+repository: "benbhall/benbhall.github.io"
+
+comments:
+  provider: "giscus"
+  giscus:
+    repo_id              : "MDEwOlJlcG9zaXRvcnkxODgyOTk1Mjk="
+    category_name        : "Comments"
+    category_id          : "DIC_kwDOCzk5Cc4CSIoC"
+    discussion_term      : "pathname"
+    reactions_enabled    : 1
+    theme                : "preferred_color_scheme" # Dynamically follows user's system theme
 
 include:
   - _pages
@@ -34,11 +59,12 @@ plugins:
   - jekyll-feed
   - jemoji
   - jekyll-include-cache
+  - jekyll-redirect-from
 
 author:
   name   : "Ben Hall"
-  avatar : "/assets/images/bio-photo3.jpg"
-  bio    : "Agile + Secure .NET"
+  avatar : "/assets/images/bbh1.jpg"
+  bio: Iteration over perfection
   links:    
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
@@ -54,14 +80,14 @@ author:
       url: "https://linkedin.com/in/ben-hall-software-engineer"          
     - label: "Feed"
       icon: "fas fa-fw fa-rss-square"
-      url: "https://benhall.io/feed.xml"            
+      url: "https://failingfast.io/feed.xml"            
 
 
 footer:
   links:
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
-      url: "https://twitter.com/"
+      url: "https://twitter.com/benhall_io"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/benbhall"
@@ -102,3 +128,7 @@ category_archive:
 tag_archive:
   type: liquid
   path: /tags/
+
+# Custom JS for Magnific Popup and theme switcher
+after_footer_scripts:
+  - /assets/js/custom.js

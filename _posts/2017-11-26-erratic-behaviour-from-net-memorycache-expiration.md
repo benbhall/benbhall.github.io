@@ -2,8 +2,10 @@
 title: Erratic Behaviour from .NET MemoryCache Expiration Demystified
 date: 2017-11-26
 permalink: /erratic-behaviour-from-net-memorycache-expiration/
+redirect_from:
+  - /2017/11/26/erratic-behaviour-from-net-memorycache-expiration/
 categories:
-  - MemoryCache
+  - 'C# .NET'
 tags:
   - .NET
   - 'C#'

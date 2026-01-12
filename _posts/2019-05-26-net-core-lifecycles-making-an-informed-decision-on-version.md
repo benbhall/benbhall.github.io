@@ -4,6 +4,8 @@ subtitle: Making an Informed Decision on Version Path
 excerpt: I get regular queries about decisions on .NET Core versions so I have shared a snapshot of the key points to help you make an informed decision here. Remember, no support means no security updates! Microsoft's Modern Lifecycle Policy is going to keep us on our toes and require a little more forward-planning than Framework did, I think.
 date: 2019-05-26
 permalink: /net-core-lifecycles-making-an-informed-decision-on-version/
+redirect_from:  
+  - /2019/05/26/net-core-lifecycles-making-an-informed-decision-on-version/
 categories:
   - .NET Core
   - 'C# .NET'
@@ -26,7 +28,7 @@ I get regular queries about decisions on .NET Core versions so I have shared a s
 
 ## 1. .NET Framework applications
 
-The current version is 4.8 and no further major versions will be released.
+The current version is 4.8; no further major versions will be released.
 
 It will continue to receive updates for reliability, bugs or security fixes for as long as there is a Windows operating system.
 
@@ -38,7 +40,7 @@ It will continue to receive updates for reliability, bugs or security fixes for 
 
 All versions from 4.5.2 up to the the most recent release, 4.8, are supported.
 
-They are *components* of their parent OS. So a version goes out of support with the latest OS it is a component of. See the [.NET Framework Lifecycle FAQ](https://support.microsoft.com/en-gb/help/17455/lifecycle-faq-net-framework) for more details.
+There is a change of support for .NET Framework 4.5.2, 4.6, and 4.6.1, which will now end on April 26, 2022. This change is due to the [retirement of SHA-1](https://devblogs.microsoft.com/dotnet/net-framework-4-5-2-4-6-4-6-1-will-reach-end-of-support-on-april-26-2022).
 
 .NET 4.8 will be supported until at least 01/09/2029 (the end of Windows 10 / Server 2019).
 
@@ -53,12 +55,9 @@ They are *components* of their parent OS. So a version goes out of support with 
 
 As the bare minimum, ensure that the .NET Framework security updates are being applied via Windows Update.
 
-Plan upgrades to the latest 4.x.x in good time and know your end-of-support dates e.g. for .NET 4.5.2, you would:
+Plan upgrades to the latest 4.x.x in good time and know your end-of-support dates. **Support for .NET Framework 4.5.2, 4.6, and 4.6.1 will end on April 26, 2022**.
 
-1. Visit [.NET versions and dependencies](https://docs.microsoft.com/en-us/dotnet/framework/migration-guide/versions-and-dependencies#net-framework-452) to find the latest OS that it is supported by.
-2. Then check the support end date for that OS [here](https://docs.microsoft.com/en-us/lifecycle/products/).
-
-And see that 4.5.2 will go out of support 10/10/2023.
+Check the impact of migrating i.e. breaking changes, with the [tool available here](https://docs.microsoft.com/en-us/dotnet/framework/migration-guide/application-compatibility#retargeting-changes).
 
 Naturally, the risks associated with upgrading increase the longer it is delayed. Identify and fix problems early by keeping the runtime updated to the latest 4.x **and** ideally, re-targeting, rebuilding and redeploying also.
 

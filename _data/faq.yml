@@ -1,0 +1,97 @@
+- id: parameters
+  question: What are parameters?
+  answer: |
+    When you see "7B model" or "32B model", the B means *billions of parameters*.
+
+    A **parameter** is a number the model learned during training. When you give the model input, it multiplies that input by these numbers in various ways to produce output. Each parameter captures a tiny piece of "knowledge" - like how strongly one concept relates to another.
+
+    So a 7B model has 7 billion of these numbers stored. When you "load" a model, you're loading those 7 billion floats into memory - which is why VRAM matters.
+
+    **Parameters** and **weights** mean essentially the same thing in this context.
+
+- id: patterns
+  question: What do we mean by "patterns"?
+  answer: |
+    When people say a model has learned "patterns", they mean **learned associations** from training data. The model has seen millions of examples like:
+
+    - `if (user == null)` → usually followed by `throw` or `return`
+    - `async function` → usually has `await` somewhere inside
+    - `SELECT * FROM` → followed by a table name
+    - `try {` → needs a `catch` block
+    - "authentication" → related to "token", "JWT", "password", "session"
+
+    Each [parameter](#parameters) helps store these associations. More parameters = can store more complex relationships.
+
+    A smaller model (7 billion parameters aka 7B) knows all the basic patterns (syntax, common idioms, typical function structures). Where it struggles is holding *multiple complex patterns active simultaneously* - like "refactor this authentication flow while maintaining backward compatibility with the legacy API and handling token expiration edge cases."
+
+    That requires juggling several concerns at once. Bigger models (32B, 70B+) have more "headroom" to do this.
+
+    **Analogy**: Like a junior dev who knows syntax perfectly but struggles with complex architectural decisions that require holding many concerns in mind at once.
+
+- id: context-window
+  question: What's a context window?
+  answer: |
+    The **context window** is how much text the model can "see" at once - measured in tokens (roughly 0.75 words per token).
+
+    - 4K context ≈ ~500 lines of code
+    - 32K context ≈ ~4,000 lines of code
+    - 128K context ≈ ~15,000 lines of code
+
+    This is separate from parameters. A 7B model and a 32B model might both have 128K context - they can both "see" the same amount of code, but the 32B model reasons about it more deeply.
+
+    Context matters because:
+    - Longer context = can include more of your codebase
+    - But models often perform worse at the edges of their context window
+    - More context = slower inference and higher VRAM usage
+
+- id: quantization
+  question: What's quantization?
+  answer: |
+    **Quantization** compresses a model to use less memory, with minor quality loss.
+
+    Models are normally stored in FP16 (16-bit floating point) - each parameter uses 2 bytes. A 32B model needs ~64GB in FP16.
+
+    Quantized versions (Q4, Q5, Q8) use fewer bits per parameter:
+    - **Q4** = 4 bits per parameter → ~50% size, ~2-5% quality drop
+    - **Q5** = 5 bits per parameter → ~60% size, ~1-3% quality drop
+    - **Q8** = 8 bits per parameter → ~75% size, minimal quality drop
+
+    For local deployment, Q4 or Q5 is the sweet spot - significant VRAM savings with barely noticeable quality difference.
+
+- id: inference-vs-training
+  question: What's the difference between inference and training?
+  answer: |
+    **Training** = teaching the model (adjusting all those billions of parameters based on examples). Requires massive compute - weeks on thousands of GPUs.
+
+    **Inference** = using the model to generate responses. The model's parameters are fixed, you're just running input through them to get predictions.
+
+    When you use ChatGPT, Claude, or run a local model, you're doing inference - not training or modifying the model.
+
+- id: frontier-model
+  question: What's a "frontier" model?
+  answer: |
+    Industry term for the most capable models available - currently GPT-4, Claude Sonnet/Opus, Gemini Ultra. These are:
+    - Massive (hundreds of billions to trillions of parameters)
+    - Trained on enormous datasets with extensive fine-tuning
+    - Only available via API (cloud)
+    - Expensive to run
+
+    "Local" or "open-source" models are smaller, less capable, but runnable on consumer hardware.
+
+- id: fine-tuning
+  question: What's "fine-tuning"?
+  answer: |
+    Taking a pre-trained model and training it further on specific data.
+
+    Qwen 2.5 Coder is Qwen 2.5 (general model) fine-tuned on code. It starts with general language understanding, then learns coding patterns specifically.
+
+    You can fine-tune models yourself on your own codebase, but it requires significant compute and expertise. For most developers, using pre-fine-tuned coding models is simpler.
+
+- id: system-prompt
+  question: What's a "system prompt"?
+  answer: |
+    Instructions given to the model before your actual question. Sets the model's persona, constraints, and behavior.
+
+    Example: "You are a senior Python developer. Write clean, well-documented code. Always include error handling."
+
+    System prompts are part of your context window - longer system prompts leave less room for your actual code.

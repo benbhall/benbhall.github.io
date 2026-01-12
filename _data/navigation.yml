@@ -1,5 +1,13 @@
 main:
   - title: "Posts"
     url: /
+  - title: "AI Get Started"
+    url: /ai-coding-guide/
+  - title: "Compare AI Models"
+    url: /ai-coding-guide/compare/
+  - title: "AI Benchmarks"
+    url: /ai-coding-guide/benchmarks/
+  - title: "AI FAQ"
+    url: /ai-dev-faq/
   - title: "About"
     url: /about/

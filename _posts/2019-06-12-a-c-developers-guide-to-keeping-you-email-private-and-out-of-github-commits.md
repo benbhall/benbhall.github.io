@@ -4,8 +4,11 @@ subtitle: Keeping Your Email Private and Out Of GitHub Commits
 excerpt: Keeping your email private and out of GitHub commit history.
 date: 2019-06-12
 permalink: /a-c-developers-guide-to-keeping-you-email-private-and-out-of-github-commits/
+redirect_from:  
+  - /2019/06/12/a-c-developers-guide-to-keeping-you-email-private-and-out-of-github-commits/
 categories:
   - git
+  - privacy
 tags: [git,privacy]
 toc: true
 toc_label: "Contents"

@@ -3,8 +3,10 @@ title: .NET String Interning
 subtitle: To Improve String Comparison Performance (C# examples)
 date: 2017-12-02
 permalink: /net-string-interning-to-improve-performance/
+redirect_from:
+  - /2017/12/02/net-string-interning-to-improve-performance/
 categories:
-  - String Class
+  - 'C# .NET'
 tags:
   - .NET
   - 'C#'

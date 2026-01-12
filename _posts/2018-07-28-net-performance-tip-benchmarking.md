@@ -2,6 +2,8 @@
 title: .NET Performance Tip – Benchmarking
 date: 2018-07-28
 permalink: /net-performance-tip-benchmarking/
+redirect_from:
+  - /2018/07/28/net-performance-tip-benchmarking/
 excerpt: Micro-optimising has a bad reputation although I’d argue that knowledge of such things can help you write better code. We should also make the distinction clear between this and micro-benchmarking, on the other hand, which is a little risky but a lot safer if you know how to do it right.
 categories:
   - Benchmarking

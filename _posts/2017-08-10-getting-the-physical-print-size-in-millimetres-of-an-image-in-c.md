@@ -1,10 +1,12 @@
 ---
 title: C# Image class extension methods for physical print size in millimetres
-date: 2017-08-10T13:12:49+01:00
-except: Here’s a couple of extension methods that use the width and height in pixels, along with the DPI to return an Image object’s width and height in mm.
+date: 2017-08-10
+except: A couple of extension methods that use the width and height in pixels, along with the DPI to return an Image object’s width and height in mm.
 permalink: /getting-the-physical-print-size-in-millimetres-of-an-image-in-c/
+redirect_from:
+  - /2017/08/10/getting-the-physical-print-size-in-millimetres-of-an-image-in-c/
 categories:
-  - Image Class
+  - 'C# .NET'
 tags:
   - .NET
   - 'C#'

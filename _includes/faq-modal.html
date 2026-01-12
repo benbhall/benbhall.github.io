@@ -1,0 +1,225 @@
+<!-- FAQ Modal - for "what's this?" links -->
+{% include faq-data.html %}
+
+<div id="faq-modal" class="faq-modal" style="display: none;">
+  <div class="faq-modal-backdrop"></div>
+  <div class="faq-modal-content">
+    <button class="faq-modal-close" aria-label="Close">&times;</button>
+    <h3 id="faq-modal-title"></h3>
+    <div id="faq-modal-body"></div>
+    <a id="faq-modal-link" href="/ai-dev-faq/" class="faq-modal-fullpage">View full FAQ →</a>
+  </div>
+</div>
+
+<style>
+.faq-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.faq-modal-backdrop {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+}
+.faq-modal-content {
+  position: relative;
+  background: #1a1d23;
+  border: 1px solid #3d4144;
+  border-radius: 12px;
+  padding: 1.5em 2em;
+  max-width: 600px;
+  max-height: 80vh;
+  overflow-y: auto;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+  color: #e8e8e8;
+  font-size: 0.70em;
+}
+
+/* Mobile: increase FAQ modal font size */
+@media (max-width: 768px) {
+  .faq-modal-content {
+    font-size: 1em;
+    padding: 1.25em 1.5em;
+    max-width: 90%;
+    margin: 0 1em;
+  }
+  
+  .faq-modal-content h3 {
+    font-size: 1.5em !important;
+  }
+  
+  .faq-modal-close {
+    font-size: 2em !important;
+    top: 5px;
+    right: 10px;
+  }
+}
+
+.faq-modal-content h3 {
+  color: #00adb5;
+  margin-top: 0;
+  margin-bottom: 1em;
+  font-size: 1.4em;
+}
+.faq-modal-content p {
+  line-height: 1.7;
+  margin-bottom: 1em;
+}
+.faq-modal-content ul, .faq-modal-content ol {
+  margin-left: 1.5em;
+  margin-bottom: 1em;
+}
+.faq-modal-content li {
+  margin-bottom: 0.5em;
+  line-height: 1.6;
+}
+.faq-modal-content code {
+  background: #2d333b;
+  color: #00adb5;
+  font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  padding: 0.2em 0.4em;
+  border-radius: 4px;
+}
+.faq-modal-content pre {
+  background: #2d333b;
+  padding: 1em;
+  border-radius: 6px;
+  overflow-x: auto;
+  margin-bottom: 1em;
+}
+.faq-modal-content pre code {
+  padding: 0;
+  background: none;
+}
+.faq-modal-content strong {
+  color: #e05d45;
+}
+.faq-modal-close {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  background: none;
+  border: none;
+  color: #a8a8a8;
+  font-size: 1.8em;
+  cursor: pointer;
+  line-height: 1;
+  padding: 0;
+}
+.faq-modal-close:hover {
+  color: #fff;
+}
+.faq-modal-fullpage {
+  display: inline-block;
+  margin-top: 1em;
+  padding-top: 1em;
+  border-top: 1px solid #3d4144;
+  color: #00adb5;
+  text-decoration: none;
+  font-size: 0.9em;
+}
+.faq-modal-fullpage:hover {
+  color: #52edff;
+}
+
+/* Light theme */
+body.light-theme .faq-modal-content {
+  background: #fff;
+  border-color: #d1d5db;
+  color: #1f2937;
+}
+body.light-theme .faq-modal-content h3 {
+  color: #0891b2;
+}
+body.light-theme .faq-modal-content strong {
+  color: #dc2626;
+}
+body.light-theme .faq-modal-content code {
+  background: #f3f4f6;
+  color: #1f2937;
+}
+body.light-theme .faq-modal-content pre {
+  background: #f3f4f6;
+}
+body.light-theme .faq-modal-close {
+  color: #6b7280;
+}
+body.light-theme .faq-modal-close:hover {
+  color: #1f2937;
+}
+body.light-theme .faq-modal-fullpage {
+  border-color: #e5e7eb;
+  color: #0891b2;
+}
+</style>
+
+<script>
+(function() {
+  var modal = document.getElementById('faq-modal');
+  var modalTitle = document.getElementById('faq-modal-title');
+  var modalBody = document.getElementById('faq-modal-body');
+  var modalLink = document.getElementById('faq-modal-link');
+  var backdrop = modal.querySelector('.faq-modal-backdrop');
+  var closeBtn = modal.querySelector('.faq-modal-close');
+
+  function showModal(id) {
+    if (!window.faqData || !window.faqData[id]) {
+      console.warn('FAQ not found:', id);
+      return false;
+    }
+    var faq = window.faqData[id];
+    modalTitle.textContent = faq.question;
+    modalBody.innerHTML = faq.answer;
+    modalLink.href = '/ai-dev-faq/#' + id;
+    modal.style.display = 'flex';
+    document.body.style.overflow = 'hidden';
+    return true;
+  }
+
+  function hideModal() {
+    modal.style.display = 'none';
+    document.body.style.overflow = '';
+  }
+
+  // Close on backdrop click
+  backdrop.addEventListener('click', hideModal);
+  closeBtn.addEventListener('click', hideModal);
+
+  // Close on Escape
+  document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape' && modal.style.display === 'flex') {
+      hideModal();
+    }
+  });
+
+  // Intercept FAQ links
+  document.addEventListener('click', function(e) {
+    var link = e.target.closest('a[href*="/ai-dev-faq/#"]');
+    if (!link) return;
+
+    var href = link.getAttribute('href');
+    var match = href.match(/\/ai-dev-faq\/#([\w-]+)/);
+    if (match && match[1]) {
+      e.preventDefault();
+      if (!showModal(match[1])) {
+        // Fallback: navigate to FAQ page
+        window.location.href = href;
+      }
+    }
+  });
+
+  modalLink.addEventListener('click', function(e) {
+    e.stopPropagation(); // Prevent modal close on link click
+  });
+})();
+</script>
