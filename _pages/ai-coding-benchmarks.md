@@ -147,6 +147,50 @@ For the latest data, always check the original sources. Data current as of: SWE-
 
 ---
 
+## LiveBench
+
+<div class="source-box">
+<strong>Source:</strong> <a href="https://livebench.ai/">livebench.ai</a> (January 2026) · Contamination-free benchmark with 23 diverse tasks
+</div>
+
+**What it is:** A contamination-free benchmark with 23 diverse tasks spanning Coding, Agentic Coding, Data Analysis, Language, Instruction Following, Math, and Reasoning. Questions refresh every 6 months and are delay-released to minimize training contamination. Scores use objective ground-truth answers, not LLM judges.
+
+**Why it matters:** Most benchmarks face contamination (models train on test data). LiveBench addresses this with regular question rotation and delayed public release. The Global Average provides a single score across multiple capabilities, avoiding narrow specialization.
+
+| Model | Global Avg | Coding | Agentic | Data | Language | IF | Math | Reasoning |
+|-------|------------|--------|---------|------|----------|-----|------|-----------|
+| Claude 4.5 Opus Thinking High | 76.0 | 80.1 | 79.7 | 63.3 | 90.4 | 74.4 | 81.3 | 62.6 |
+| GPT-5.2 high reasoning | 74.8 | 83.2 | 76.1 | 51.7 | 93.2 | 78.2 | 79.8 | 61.8 |
+| Gemini 3 Pro | 73.4 | 77.4 | 74.6 | 55.0 | 81.8 | 74.4 | 84.6 | 65.9 |
+| Gemini 3 Flash | 72.4 | 76.3 | 71.8 | 56.7 | 86.6 | 75.6 | 81.2 | 58.5 |
+| GPT-5 | 70.5 | 77.5 | 68.9 | 45.0 | 86.4 | 75.1 | 77.2 | 63.4 |
+| DeepSeek V3.2 Reasoner | 62.2 | 65.3 | 58.4 | 41.7 | 78.0 | 65.9 | 75.4 | 51.1 |
+| Kimi K2 Thinking Turbo | 61.6 | 66.1 | 64.9 | 40.0 | 73.6 | 63.0 | 66.3 | 56.8 |
+| Grok 4.1 Fast | 60.0 | 58.4 | 63.6 | 40.0 | 78.4 | 61.4 | 71.2 | 47.3 |
+| GLM-4.7 | 58.1 | 60.1 | 57.2 | 36.7 | 69.6 | 57.5 | 68.8 | 56.8 |
+| Gemini 2.5 Pro | 58.3 | 57.1 | 55.9 | 46.7 | 70.2 | 56.9 | 69.6 | 51.7 |
+| Claude Opus 4.5 | 59.1 | 67.1 | 64.8 | 40.0 | 67.8 | 56.5 | 63.0 | 54.2 |
+| GLM-4.6 | 55.2 | 57.9 | 49.8 | 41.7 | 67.0 | 56.1 | 61.3 | 52.5 |
+| Claude Opus 4.1 | 54.5 | 59.3 | 56.8 | 30.0 | 62.9 | 52.0 | 58.7 | 61.8 |
+| Claude Sonnet 4.5 | 53.7 | 58.9 | 56.5 | 38.3 | 61.3 | 52.8 | 59.6 | 48.5 |
+| DeepSeek V3.2 Chat | 51.8 | 60.7 | 47.5 | 40.0 | 60.1 | 51.6 | 58.9 | 43.7 |
+| Gemini 2.5 Flash | 47.7 | 51.1 | 41.4 | 31.7 | 57.6 | 47.2 | 56.5 | 48.3 |
+| Claude Haiku 4.5 | 45.3 | 52.2 | 43.5 | 26.7 | 54.1 | 42.5 | 51.4 | 47.0 |
+| Devstral 2 | 41.2 | 49.4 | 39.1 | 26.7 | 48.3 | 38.1 | 45.5 | 41.4 |
+
+{: .table .table-striped }
+
+<div class="callout-box">
+<strong>⚡ Key takeaways:</strong><br>
+• <strong>Thinking models dominate:</strong> Claude Opus 4.5 Thinking (76.0) outperforms base version (59.1) by 17 points<br>
+• <strong>Contamination-free leader:</strong> GPT-5.2 high reasoning (74.8) maintains top-3 position with advantage on Language (93.2) and Coding (83.2)<br>
+• <strong>Flash punches above weight:</strong> Gemini 3 Flash (72.4) scores within 1 point of Pro (73.4), remarkable for a lightweight model<br>
+• <strong>Category variance reveals specialization:</strong> Models vary 20-40 points across categories (e.g., Claude 90.4 Language vs 62.6 Reasoning)<br>
+• <strong>Budget champion:</strong> GLM-4.7 (58.1) delivers 75% of top-tier performance at $0.05/task (10× cheaper than Claude Opus)
+</div>
+
+---
+
 ## Chatbot Arena Code
 
 <div class="source-box">
