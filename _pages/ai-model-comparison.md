@@ -252,13 +252,7 @@ jQuery(document).ready(function($) {
       infoEmpty: "No models found",
       infoFiltered: "(filtered from _MAX_ total)"
     },
-    dom: 'rtip', // Remove default dropdown and search box
-    drawCallback: function() {
-      // Prevent pagination clicks from scrolling to top
-      $('.paginate_button').off('click').on('click', function(e) {
-        e.preventDefault();
-      });
-    }
+    dom: 'rtip' // Remove default dropdown and search box
   });
 
   // Update table when dropdown changes
