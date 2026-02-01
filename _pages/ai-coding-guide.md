@@ -133,36 +133,36 @@ body.light-theme .update-badge {
 }
 </style>
 
-<span class="update-badge">📅 Last updated: December 2025</span>
+<span class="update-badge">📅 Last updated: February 2026</span>
 
 No-nonsense reference for developers who just want to know which AI model to pick. Bookmark this and stop Googling.
 
 <div class="quick-pick">
-<h3> Quick pick - just tell me what to use</h3>
+<h3>📌 Quick pick - just tell me what to use</h3>
 <div class="quick-pick-grid">
 <div class="pick-card">
 <div class="use-case">Features / bugs / tests</div>
-<div class="models">Claude Sonnet<br>GPT-4o<br>Gemini Pro</div>
+<div class="models">Claude Sonnet 4.5<br>Gemini 3 Pro<br>GPT-5.2</div>
 </div>
 <div class="pick-card">
 <div class="use-case">Agentic / CLI / scaffolding</div>
-<div class="models">Claude Haiku<br>GPT-4o-mini<br>Gemini 2.5 Flash</div>
+<div class="models">Claude Haiku 4.5<br>Gemini 3 Flash<br>GPT-4o</div>
 </div>
 <div class="pick-card">
 <div class="use-case">Architecture / refactors</div>
-<div class="models">Claude Opus<br>GPT-5<br>Gemini Pro</div>
+<div class="models">Claude Opus 4.5<br>Gemini 3 Pro<br>GPT-5.2 high</div>
 </div>
 <div class="pick-card">
 <div class="use-case">Code review</div>
-<div class="models">Claude Sonnet or Opus<br>GPT-4o or 5<br>Gemini Pro</div>
+<div class="models">Claude Sonnet 4.5<br>Gemini 3 Pro<br>GPT-5.2</div>
 </div>
 <div class="pick-card">
 <div class="use-case">Documentation</div>
-<div class="models">Claude Sonnet<br>GPT-4o<br>Gemini Pro</div>
+<div class="models">Claude Sonnet 4.5<br>Gemini 3 Pro<br>GPT-4o</div>
 </div>
 <div class="pick-card">
 <div class="use-case">Design / planning</div>
-<div class="models">Claude Opus<br>GPT-5<br>Gemini Pro</div>
+<div class="models">Claude Opus 4.5<br>Gemini 3 Pro<br>GPT-5.2 high</div>
 </div>
 </div>
 </div>
@@ -229,8 +229,9 @@ Want numbers?
 
 **The TLDR:**
 
-- **Sonnet-class models hit 70%+ on SWE-bench** at half the cost of Opus-class
-- **o1 scores 84% on Aider** but costs $1.35/task - 4× more than Sonnet for similar results
+- **Claude Opus 4.5 & Gemini 3 Pro tie at 74% on SWE-bench** - but Gemini costs half as much ($0.22 vs $0.50/task)
+- **GPT-5 high reasoning dominates Aider at 88%** - followed by Gemini 2.5 Pro thinking (83%) and Sonnet 4.5 (82%)
+- **Budget champions:** GLM-4.7 ($0.05/task, 1440 Arena Elo) and Minimax M2 ($0.03/task, 1408 Elo) punch way above their weight
 - **The most expensive model is not automatically the best at coding**
 
 Benchmarks are useful for gut-checking, but the real test is running a model on your own work.

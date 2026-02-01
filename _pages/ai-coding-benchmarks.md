@@ -61,39 +61,51 @@ toc_icon: "file-alt"
 }
 </style>
 
-<span class="update-badge">📅 Snapshot: December 2025</span>
+<span class="update-badge">📅 Snapshot: February 2026</span>
 
 This page collates benchmark data from independent sources to help you compare models. **These aren't my benchmarks** - I'm just pulling highlights so you don't have to tab between sites.
 
-For the latest data, always check the original sources.
+For the latest data, always check the original sources. Data current as of: SWE-bench (December 2025), Aider (October 2025), Arena Code (February 2026).
 
 ---
 
 ## SWE-bench Verified
 
 <div class="source-box">
-<strong>Source:</strong> <a href="https://www.swebench.com/">swebench.com</a> · Tests whether models can fix real GitHub issues
+<strong>Source:</strong> <a href="https://www.swebench.com/">swebench.com</a> (December 2025) · Tests whether models can fix real GitHub issues
 </div>
 
 | Model | Score | $/task | Copilot |
 |-------|-------|--------|---------|
-| Claude 4.5 Opus | 74.4% | $0.72 | 3× |
-| Gemini 3 Pro | 74.2% | $0.46 | 1× |
-| GPT-5.2 (high reasoning) | 71.8% | $0.52 | 1× |
-| Claude 4.5 Sonnet | 70.6% | $0.56 | 1× |
-| GPT-5.2 | 69.0% | $0.27 | 1× |
-| Claude Opus 4.1 | 67.6% | $1.13 | 10× |
-| GPT-5 (medium reasoning) | 65.0% | $0.28 | 1× |
-| o3 | 58.4% | $0.33 | - |
-| Gemini 2.5 Pro | 53.6% | $0.29 | 1× |
-| o4-mini | 45.0% | $0.21 | - |
-| GPT-4.1 | 39.6% | $0.15 | 0× |
-| Gemini 2.5 Flash | 28.7% | $0.13 | - |
+| Claude Opus 4.5 | 74.4% | $0.50 | 3× |
+| Gemini 3 Pro | 74.2% | $0.22 | 1× |
+| GPT-5.2 (high reasoning) | 71.8% | $0.53 | 1× |
+| Claude Sonnet 4.5 | 70.6% | $0.30 | 1× |
+| GPT-5.2 | 69.0% | $0.23 | 1× |
+| Claude Opus 4.1 | 67.6% | $1.50 | 10× |
+| GPT-5 (medium reasoning) | 65.0% | $0.16 | 1× |
+| Gemini 3 Flash | 63.8% | $0.08 | 0.33× |
+| Kimi K2 Thinking Turbo | 63.4% | $0.06 | - |
+| Minimax M2 | 61.0% | $0.03 | - |
+| DeepSeek V3.2 Reasoner | 60.0% | $0.02 | - |
+| o3 | 58.4% | $0.18 | - |
+| GLM-4.6 | 55.4% | $0.05 | - |
+| Devstral 2 | 53.8% | - | - |
+| Gemini 2.5 Pro | 53.6% | $0.16 | 1× |
+| GPT-4o | 48.9% | $0.23 | 0× |
+| Claude Haiku 4.5 | 48.4% | $0.10 | 0.33× |
+| o4-mini | 45.0% | $0.10 | - |
+| GPT-4.1 | 39.6% | $0.18 | 0× |
+| DeepSeek V3.2 Chat | 39.0% | $0.02 | - |
+| Gemini 2.5 Flash | 28.7% | $0.04 | - |
+| Gemini 2.0 Flash | 22.0% | $0.01 | - |
+| GPT-4o-mini | 18.6% | $0.01 | - |
+| GPT-5 mini | 14.2% | $0.03 | 0× |
 
 **$/task** = cost to solve one benchmark task via direct API (based on token usage × provider pricing). Useful for API users and for comparing relative costs. **Copilot** = GitHub Copilot premium request multiplier (0× = free on paid plans).
 
 <div class="callout tip">
-<strong>Takeaway:</strong> Sonnet 4.5 hits 70% at $0.56/task and 1× Copilot cost. Opus 4.5 is marginally better but 3× in Copilot. The older Opus 4.1 costs 10× - always use 4.5 if you need Opus.
+<strong>Takeaway:</strong> Claude Opus 4.5 and Gemini 3 Pro are neck-and-neck at 74%, but Gemini costs half as much ($0.22 vs $0.50). Claude Sonnet 4.5 at 70.6% for $0.30 is the sweet spot. Budget pick: Kimi K2 Thinking (63.4%) at just $0.06/task, or Minimax M2 (61%) at $0.03.
 </div>
 
 ---
@@ -101,50 +113,77 @@ For the latest data, always check the original sources.
 ## Aider Polyglot
 
 <div class="source-box">
-<strong>Source:</strong> <a href="https://aider.chat/docs/leaderboards/">aider.chat/docs/leaderboards</a> · Tests code editing across C++, Go, Java, JavaScript, Python, Rust
+<strong>Source:</strong> <a href="https://aider.chat/docs/leaderboards/">aider.chat/docs/leaderboards</a> (October 2025) · Tests code editing across C++, Go, Java, JavaScript, Python, Rust
 </div>
 
 <div class="callout">
-<strong>Why so few Copilot models?</strong> Aider benchmarks older model versions (Claude 3.5, not 4.5). GitHub Copilot has moved on to newer models, so there's limited overlap. GPT-4o is the main one you can directly compare.
+<strong>Note:</strong> Aider's latest batch includes GPT-5 series, Claude 4.x, and Gemini 2.5/3 models with October 2025 data.
 </div>
 
 | Model | % Correct | Copilot |
 |-------|-----------|---------|
-| o1 | 84.2% | - |
-| Claude 3.5 Sonnet | 84.2% | - |
-| Gemini exp | 80.5% | - |
-| Claude 3.5 Haiku | 75.2% | - |
+| GPT-5 (high reasoning) | 88.0% | 1× |
+| o3-pro (high) | 84.9% | - |
+| Gemini 2.5 Pro 32k (think) | 83.1% | 1× |
+| Claude Sonnet 4.5 | 82.4% | 1× |
+| Claude Opus 4.1 | 82.1% | 10× |
+| o3 (high) | 81.3% | - |
+| o4-mini | 75.4% | - |
+| DeepSeek V3.2 Exp Reasoner | 74.2% | - |
+| Claude Haiku 4.5 | 73.5% | 0.33× |
 | GPT-4o | 72.9% | 0× |
-| DeepSeek Coder V2 | 72.9% | - |
-| Claude 3 Opus | 68.4% | - |
+| Claude Opus 4.5 | 70.7% | 3× |
+| DeepSeek V3.2 Chat | 70.2% | - |
+| Gemini 2.5 Flash | 68.0% | - |
+| GPT-4.1 | 66.4% | 0× |
+| Kimi K2 | 59.1% | - |
+| Gemini 2.0 Flash | 58.0% | - |
 | GPT-4o-mini | 55.6% | - |
-| Claude 3 Haiku | 47.4% | - |
+| GPT-5 mini | 50.2% | 0× |
 
 <div class="callout tip">
-<strong>Takeaway:</strong> On this benchmark, GPT-4o (0× in Copilot - free on paid plans) scores 72.9%. That's your baseline. If Aider updates with Claude 4.5/GPT-5 results, expect higher scores.
+<strong>Takeaway:</strong> GPT-5 high reasoning dominates at 88%, followed by o3-pro (84.9%) and Gemini 2.5 Pro thinking (83.1%). Claude Sonnet 4.5 (82.4%) is the practical choice at 1× Copilot cost. Surprisingly, Claude Opus 4.5 underperforms here (70.7%) despite topping SWE-bench—different benchmarks favor different strengths.
 </div>
 
 ---
 
-## Chatbot Arena WebDev
+## Chatbot Arena Code
 
 <div class="source-box">
-<strong>Source:</strong> <a href="https://lmarena.ai/leaderboard/webdev">lmarena.ai/leaderboard/webdev</a> · Human preference voting on web development tasks
+<strong>Source:</strong> <a href="https://lmarena.ai/">lmarena.ai</a> Code category (February 2026) · Human preference voting on coding tasks
 </div>
 
-| Rank | Model | Score | $/task | Copilot | Notes |
-|------|-------|-------|--------|---------|-------|
-| 1 | Claude Opus 4.5 **thinking** | 1520 | $0.72 | 3× | Thinking variant |
-| 2 | GPT-5.2 high | 1484 | $0.52 | 1× | High reasoning mode |
-| 3 | Claude Opus 4.5 | 1480 | $0.72 | 3× | Standard (non-thinking) |
-| 4 | Gemini 3 Pro | 1478 | $0.46 | 1× | |
-| 5 | Gemini 3 Flash | 1465 | $0.13 | 0.33× | |
-| 8 | Claude Sonnet 4.5 **thinking** | 1393 | $0.56 | 1× | Thinking variant |
-| 11 | Claude Sonnet 4.5 | 1387 | $0.56 | 1× | Standard (non-thinking) |
-| 21 | Claude Haiku 4.5 | 1290 | $0.21 | 0.33× | |
+| Rank | Model | Elo Score | $/task | Copilot | Notes |
+|------|-------|-----------|--------|---------|-------|
+| 1 | Claude Opus 4.5 thinking-32k | 1497 | $0.50 | - | Thinking variant |
+| 2 | GPT-5.2 high reasoning | 1470 | $0.53 | 1× | High reasoning mode |
+| 3 | Claude Opus 4.5 | 1468 | $0.50 | 3× | Standard (non-thinking) |
+| 4 | Gemini 3 Pro | 1454 | $0.22 | 1× | |
+| 5 | Gemini 3 Flash | 1443 | $0.08 | 0.33× | |
+| 6 | GLM-4.7 | 1440 | $0.05 | - | |
+| 7 | GPT-5.2 | 1432 | $0.23 | 1× | |
+| 8 | Claude Opus 4.1 | 1431 | $1.50 | 10× | |
+| 9 | o3 | 1417 | $0.18 | - | |
+| 10 | Minimax M2.1 preview | 1408 | $0.03 | - | |
+| 11 | GPT-5 | 1407 | $0.16 | 1× | |
+| 12 | Grok 4.1 Fast | 1393 | - | 0.25× | |
+| 13 | Claude Sonnet 4.5 | 1383 | $0.30 | 1× | |
+| 14 | GPT-4o | 1372 | $0.23 | 0× | |
+| 15 | Gemini 2.5 Pro | 1372 | $0.16 | 1× | |
+| 16 | Devstral 2 | 1363 | - | - | |
+| 17 | Kimi K2 Thinking Turbo | 1356 | $0.06 | - | |
+| 18 | DeepSeek V3.2 Reasoner | 1350 | $0.02 | - | |
+| 19 | o4-mini | 1310 | $0.10 | - | |
+| 20 | GPT-4.1 | 1305 | $0.18 | 0× | |
+| 21 | Claude Haiku 4.5 | 1290 | $0.10 | 0.33× | |
+| 22 | DeepSeek V3.2 Chat | 1287 | $0.02 | - | |
 
 <div class="callout">
-<strong>"Thinking" variants are labeled explicitly.</strong> Claude Opus 4.5 (rank 3) is NOT a thinking model - it's just big. The thinking variant (rank 1) is a separate model that does explicit reasoning passes. Same for Sonnet: standard (rank 11) vs thinking (rank 8). The thinking versions score higher but are slower and cost more.
+<strong>"Thinking" variants are labeled explicitly.</strong> Claude Opus 4.5 thinking-32k (rank 1, 1497 Elo) does explicit reasoning passes. The standard Opus 4.5 (rank 3, 1468 Elo) is still excellent but slightly lower. Both cost $0.50/task but thinking models are slower and burn more tokens on complex tasks.
+</div>
+
+<div class="callout tip">
+<strong>Takeaway:</strong> Top tier is tightly packed (1468-1497 Elo). Gemini 3 Pro (1454) at $0.22/task offers frontier performance at half the cost of Claude Opus. For budget: GLM-4.7 (1440 Elo) at $0.05/task or Minimax M2.1 (1408) at $0.03/task punch way above their weight.
 </div>
 
 ---
