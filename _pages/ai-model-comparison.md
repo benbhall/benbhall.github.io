@@ -58,9 +58,11 @@ toc_icon: "file-alt"
 .dataTables_filter input { background: #2d333b !important; border: 1px solid #3d4144 !important; border-radius: 6px !important; color: #e8e8e8 !important; padding: 8px 12px !important; }
 .dataTables_length select { background: #2d333b !important; border: 1px solid #3d4144 !important; border-radius: 6px !important; color: #e8e8e8 !important; }
 .dataTables_info { color: #a8a8a8 !important; }
-.dataTables_paginate .paginate_button { background: #2d333b !important; border: 1px solid #3d4144 !important; color: #e8e8e8 !important; }
-.dataTables_paginate .paginate_button:hover { background: #373b44 !important; color: #00adb5 !important; }
-.dataTables_paginate .paginate_button.current { background: #e05d45 !important; color: white !important; }
+.dataTables_paginate { display: flex; gap: 6px; align-items: center; justify-content: flex-end; margin-top: 1em; }
+.dataTables_paginate .paginate_button { background: #2d333b !important; border: 1px solid #3d4144 !important; color: #e8e8e8 !important; padding: 6px 12px !important; border-radius: 6px !important; cursor: pointer !important; transition: all 0.2s !important; text-decoration: none !important; }
+.dataTables_paginate .paginate_button:hover:not(.disabled) { background: #373b44 !important; color: #00adb5 !important; border-color: #00adb5 !important; }
+.dataTables_paginate .paginate_button.current { background: #e05d45 !important; color: white !important; border-color: #e05d45 !important; }
+.dataTables_paginate .paginate_button.disabled { opacity: 0.4 !important; cursor: not-allowed !important; }
 .model-name { color: #e8e8e8 !important; }
 .copilot-free { color: #4ade80 !important; font-weight: 600; }
 .copilot-cheap { color: #00adb5 !important; font-weight: 600; }
@@ -90,9 +92,10 @@ body.light-theme .dataTables_length label, body.light-theme .dataTables_filter l
 body.light-theme .dataTables_info { color: #4b5563 !important; }
 body.light-theme .dataTables_filter input { background: #fff !important; border: 1px solid #d1d5db !important; color: #1f2937 !important; }
 body.light-theme .dataTables_length select { background: #fff !important; border: 1px solid #d1d5db !important; color: #1f2937 !important; }
-body.light-theme .dataTables_paginate .paginate_button { background: #f3f4f6 !important; border: 1px solid #d1d5db !important; color: #1f2937 !important; }
-body.light-theme .dataTables_paginate .paginate_button:hover { background: #e5e7eb !important; color: #0891b2 !important; }
-body.light-theme .dataTables_paginate .paginate_button.current { background: #dc2626 !important; color: white !important; }
+body.light-theme .dataTables_paginate .paginate_button { background: #f3f4f6 !important; border: 1px solid #d1d5db !important; color: #1f2937 !important; padding: 6px 12px !important; border-radius: 6px !important; }
+body.light-theme .dataTables_paginate .paginate_button:hover:not(.disabled) { background: #e5e7eb !important; color: #0891b2 !important; border-color: #0891b2 !important; }
+body.light-theme .dataTables_paginate .paginate_button.current { background: #dc2626 !important; color: white !important; border-color: #dc2626 !important; }
+body.light-theme .dataTables_paginate .paginate_button.disabled { opacity: 0.4 !important; }
 body.light-theme .model-name { color: #1f2937 !important; }
 body.light-theme .copilot-free { color: #16a34a !important; }
 body.light-theme .copilot-cheap { color: #0891b2 !important; }
@@ -249,7 +252,13 @@ jQuery(document).ready(function($) {
       infoEmpty: "No models found",
       infoFiltered: "(filtered from _MAX_ total)"
     },
-    dom: 'rtip' // Remove default dropdown and search box
+    dom: 'rtip', // Remove default dropdown and search box
+    drawCallback: function() {
+      // Prevent pagination clicks from scrolling to top
+      $('.paginate_button').off('click').on('click', function(e) {
+        e.preventDefault();
+      });
+    }
   });
 
   // Update table when dropdown changes
