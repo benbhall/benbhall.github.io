@@ -184,7 +184,7 @@ For the latest data, always check the original sources. Data current as of: SWE-
 <strong>⚡ Key takeaways:</strong><br>
 • <strong>Thinking models dominate:</strong> Claude Opus 4.5 Thinking (76.0) outperforms base version (59.1) by 17 points<br>
 • <strong>Contamination-free leader:</strong> GPT-5.2 high reasoning (74.8) maintains top-3 position with advantage on Language (93.2) and Coding (83.2)<br>
-• <strong>Flash punches above weight:</strong> Gemini 3 Flash (72.4) scores within 1 point of Pro (73.4), remarkable for a lightweight model<br>
+• <strong>Flash vs Pro nuance:</strong> Gemini 3 Flash (72.4) rivals Pro (73.4) on average due to strong Language scores, but Pro leads significantly on <strong>Reasoning (+7.4 points)</strong> where complex coding happens (e.g. untangling messy refactors)<br>
 • <strong>Category variance reveals specialization:</strong> Models vary 20-40 points across categories (e.g., Claude 90.4 Language vs 62.6 Reasoning)<br>
 • <strong>Budget champion:</strong> GLM-4.7 (58.1) delivers 75% of top-tier performance at $0.05/task (10× cheaper than Claude Opus)
 </div>

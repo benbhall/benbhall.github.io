@@ -231,6 +231,7 @@ Want numbers?
 
 - **Claude Opus 4.5 & Gemini 3 Pro tie at 74% on SWE-bench** - but Gemini costs half as much ($0.22 vs $0.50/task)
 - **GPT-5 high reasoning dominates Aider at 88%** - followed by Gemini 2.5 Pro thinking (83%) and Sonnet 4.5 (82%)
+- **Don't trust the average:** Gemini 3 Flash looks equal to Pro in benchmarks (72 vs 73), but Pro wins where it counts: reasoning. Flash is great for simple edits; Pro handles the "wait, what happens if..." moments.
 - **Budget champions:** GLM-4.7 ($0.05/task, 1440 Arena Elo) and Minimax M2 ($0.03/task, 1408 Elo) punch way above their weight
 - **The most expensive model is not automatically the best at coding**
 
