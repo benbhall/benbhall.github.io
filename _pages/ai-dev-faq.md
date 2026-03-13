@@ -48,6 +48,9 @@ In model terms, "reasoning" is the ability to maintain logic across multiple ste
 - Adding a simple API endpoint
 - Explaining an error message
 
+**The "Flash" shortcut:**
+You *can* use cheaper models for complex tasks if **you** do the reasoning first. If you break a massive architecture downward into tiny, specific steps (effectively treating the AI as a fast typist), Flash works fine. You are trading your planning time to save execution cost.
+
 If your model writes code that compiles but introduces subtle bugs, you probably need a model with better reasoning.
 
 {% for item in site.data.faq %}
