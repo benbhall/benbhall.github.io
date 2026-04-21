@@ -61,7 +61,7 @@ toc_icon: "file-alt"
 }
 </style>
 
-<span class="update-badge">📅 Snapshot: March 2026</span>
+<span class="update-badge">📅 Snapshot: April 2026</span>
 
 This page collates benchmark data from independent sources to help you compare models. **These aren't my benchmarks** - I'm just pulling highlights so you don't have to tab between sites.
 
@@ -166,21 +166,29 @@ For the latest data, always check the original sources. Data current as of: SWE-
 |-------|------------|--------|---------|------|----------|-----|------|-----------|
 | GPT-5.4 Thinking xHigh | 80.3 | 88.1 | 77.5 | 70.0 | 94.2 | 79.3 | 82.6 | 70.2 |
 | Gemini 3.1 Pro | 79.9 | 84.0 | 76.5 | 65.0 | 91.0 | 78.5 | 85.4 | 79.1 |
+| Claude 4.7 Opus Thinking xHigh | 76.9 | - | - | - | - | - | - | - |
 | Claude 4.6 Opus Thinking | 76.3 | 88.7 | 78.2 | 61.7 | 89.3 | 69.9 | 83.3 | 63.3 |
 | Claude 4.5 Opus Thinking High | 76.0 | 80.1 | 79.7 | 63.3 | 90.4 | 74.4 | 81.3 | 62.6 |
 | Claude 4.6 Sonnet Thinking | 75.5 | 84.8 | 79.3 | 60.0 | 87.0 | 78.0 | 76.1 | 63.2 |
 | GPT-5.2 high reasoning | 74.8 | 83.2 | 76.1 | 51.7 | 93.2 | 78.2 | 79.8 | 61.8 |
 | GPT-5.1 Codex Max | 74.0 | - | - | - | - | - | - | - |
+| GPT-5.3 Codex High | 72.8 | - | - | - | - | - | - | - |
 | GPT-5.1 | 72.0 | - | - | - | - | - | - | - |
 | Gemini 3 Flash | 72.4 | 76.3 | 71.8 | 56.7 | 86.6 | 75.6 | 81.2 | 58.5 |
 | Kimi K2.5 Thinking | 69.1 | - | - | - | - | - | - | - |
 | GLM-5 | 68.9 | - | - | - | - | - | - | - |
 | GPT-5 | 70.5 | 77.5 | 68.9 | 45.0 | 86.4 | 75.1 | 77.2 | 63.4 |
+| Qwen 3.6 Plus | 70.9 | - | - | - | - | - | - | - |
+| GPT-5.4 nano | 70.1 | - | - | - | - | - | - | - |
+| Grok 4.20 Beta | 68.0 | - | - | - | - | - | - | - |
+| GPT-5.4 mini | 67.5 | - | - | - | - | - | - | - |
 | DeepSeek V3.2 Reasoner | 62.2 | 65.3 | 58.4 | 41.7 | 78.0 | 65.9 | 75.4 | 51.1 |
 | Grok 4 | 62.0 | - | - | - | - | - | - | - |
 | Kimi K2 Thinking Turbo | 61.6 | 66.1 | 64.9 | 40.0 | 73.6 | 63.0 | 66.3 | 56.8 |
+| Minimax M2.7 | 63.5 | - | - | - | - | - | - | - |
 | Minimax M2.5 | 60.1 | - | - | - | - | - | - | - |
 | Grok 4.1 Fast | 60.0 | 58.4 | 63.6 | 40.0 | 78.4 | 61.4 | 71.2 | 47.3 |
+| Gemini 3.1 Flash-Lite | 61.7 | - | - | - | - | - | - | - |
 | GLM-4.7 | 58.1 | 60.1 | 57.2 | 36.7 | 69.6 | 57.5 | 68.8 | 56.8 |
 | Gemini 2.5 Pro | 58.3 | 57.1 | 55.9 | 46.7 | 70.2 | 56.9 | 69.6 | 51.7 |
 | Claude Opus 4.5 | 59.1 | 67.1 | 64.8 | 40.0 | 67.8 | 56.5 | 63.0 | 54.2 |
@@ -196,9 +204,9 @@ For the latest data, always check the original sources. Data current as of: SWE-
 
 <div class="callout-box">
 <strong>⚡ Key takeaways:</strong><br>
-• <strong>New #1:</strong> GPT-5.4 Thinking (80.3) edges out Gemini 3.1 Pro (79.9) and Claude 4.6 Opus Thinking (76.3) at the top<br>
-• <strong>Gemini 3.1 Pro replaces deprecated 3.0:</strong> Gemini 3 Pro was shut down March 9, 2026; 3.1 Pro (79.9) actually scores higher<br>
-• <strong>New Claude 4.6 series:</strong> Opus 4.6 Thinking (76.3) and Sonnet 4.6 Thinking (75.5) slot just below the old Opus 4.5<br>
+• <strong>New #1:</strong> GPT-5.4 Thinking (80.3) still leads, with Gemini 3.1 Pro (79.9) close behind<br>
+• <strong>New Claude 4.7 Opus:</strong> Claude 4.7 Opus Thinking (76.9) slots in at #3, above Claude 4.6 Opus (76.3) — Copilot cost jumped from 3× to 7.5×<br>
+• <strong>New budget Copilot options:</strong> GPT-5.4 nano (0.25×, 70.1) and GPT-5.4 mini (0.33×, 67.5) are genuinely useful at very low cost<br>
 • <strong>Category variance reveals specialization:</strong> Models vary 20-40 points across categories (e.g., Claude 90.4 Language vs 62.6 Reasoning)<br>
 • <strong>Budget champion:</strong> GLM-4.7 (58.1) delivers 75% of top-tier performance at $0.05/task (10× cheaper than Claude Opus)
 </div>
@@ -278,10 +286,11 @@ The **Copilot** column shows the premium request multiplier for GitHub Copilot (
 | Multiplier | What it means |
 |------------|---------------|
 | **0×** | Included free (GPT-4.1, GPT-4o, GPT-5 mini) - no premium requests used |
-| **0.25×** | Very cheap (Grok Code Fast) - 4 requests for the price of 1 |
-| **0.33×** | Cheap (Haiku 4.5, Gemini 3 Flash, GPT-5.1-Codex-Mini) - 3 requests for the price of 1 |
-| **1×** | Standard (Sonnet 4/4.5/4.6, GPT-5/5.1/5.2/5.4, Gemini 2.5 Pro/3 Pro/3.1 Pro) - 1 premium request per use |
+| **0.25×** | Very cheap (Grok Code Fast, GPT-5.4 nano) - 4 requests for the price of 1 |
+| **0.33×** | Cheap (Haiku 4.5, Gemini 3 Flash, GPT-5.1-Codex-Mini, GPT-5.4 mini) - 3 requests for the price of 1 |
+| **1×** | Standard (Sonnet 4/4.5/4.6, GPT-5/5.1/5.2/5.3-Codex/5.4, Gemini 2.5 Pro/3 Pro/3.1 Pro) - 1 premium request per use |
 | **3×** | Expensive (Opus 4.5, Opus 4.6) - costs 3 premium requests per use |
+| **7.5×** | Very expensive (Opus 4.7) - costs 7.5 premium requests per use |
 | **10×** | Very expensive (Opus 4.1) - costs 10 premium requests per use |
 | **30×** | Extreme (Opus 4.6 fast mode preview) - costs 30 premium requests per use |
 | **-** | Not available in GitHub Copilot |
