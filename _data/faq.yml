@@ -33,16 +33,18 @@
   answer: |
     The **context window** is how much text the model can "see" at once - measured in tokens (roughly 0.75 words per token).
 
-    - 4K context ≈ ~500 lines of code
     - 32K context ≈ ~4,000 lines of code
     - 128K context ≈ ~15,000 lines of code
+    - 1M context ≈ ~125,000 lines of code (roughly a large codebase)
 
-    This is separate from parameters. A 7B model and a 32B model might both have 128K context - they can both "see" the same amount of code, but the 32B model reasons about it more deeply.
+    Most frontier models in 2026 support 200K–1M+ token windows. Gemini 3.x and Claude support up to 1M tokens.
+
+    This is separate from parameters. A smaller model and a larger model might both have 1M context - they can both "see" the same amount of code, but the larger model reasons about it more deeply.
 
     Context matters because:
     - Longer context = can include more of your codebase
     - But models often perform worse at the edges of their context window
-    - More context = slower inference and higher VRAM usage
+    - More context = slower and higher cost (you pay per input token)
 
 - id: quantization
   question: What's quantization?
@@ -70,13 +72,13 @@
 - id: frontier-model
   question: What's a "frontier" model?
   answer: |
-    Industry term for the most capable models available - currently GPT-4, Claude Sonnet/Opus, Gemini Ultra. These are:
+    Industry term for the most capable models available at any given time. In mid-2026, that means GPT-5.5, Claude Fable 5, and Gemini 3.1 Pro. These are:
     - Massive (hundreds of billions to trillions of parameters)
     - Trained on enormous datasets with extensive fine-tuning
-    - Only available via API (cloud)
-    - Expensive to run
+    - Only available via API or cloud services (not locally runnable)
+    - Expensive to run per token
 
-    "Local" or "open-source" models are smaller, less capable, but runnable on consumer hardware.
+    "Local" or "open-weight" models (like Llama, Gemma, Qwen) are smaller, less capable, but runnable on consumer hardware without per-query costs.
 
 - id: fine-tuning
   question: What's "fine-tuning"?

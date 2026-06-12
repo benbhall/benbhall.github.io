@@ -288,7 +288,7 @@ jQuery(document).ready(function($) {
     if (filter === '') {
       // "All models" - already cleared above
     } else if (filter === 'copilot-available') {
-      table.column(2).search('^[0-9]', true, false).draw();
+      table.column(2).search('^✓$', true, false).draw();
     } else {
       // Family filter (Anthropic, OpenAI, Google)
       table.column(1).search('^' + filter + '$', true, false).draw();
