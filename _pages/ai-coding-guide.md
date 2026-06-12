@@ -133,7 +133,7 @@ body.light-theme .update-badge {
 }
 </style>
 
-<span class="update-badge">📅 Last updated: April 2026</span>
+<span class="update-badge">📅 Last updated: June 2026</span>
 
 No-nonsense reference for developers who just want to know which AI model to pick. Bookmark this and stop Googling.
 
@@ -150,7 +150,7 @@ No-nonsense reference for developers who just want to know which AI model to pic
 </div>
 <div class="pick-card">
 <div class="use-case">Architecture / refactors</div>
-<div class="models">Claude Opus 4.5/4.6/4.7<br>Gemini 3.1 Pro<br>GPT-5.2 high</div>
+<div class="models">Claude Fable 5 / Opus 4.8<br>Gemini 3.1 Pro<br>GPT-5.5 / 5.4</div>
 </div>
 <div class="pick-card">
 <div class="use-case">Code review</div>
@@ -162,7 +162,7 @@ No-nonsense reference for developers who just want to know which AI model to pic
 </div>
 <div class="pick-card">
 <div class="use-case">Design / planning</div>
-<div class="models">Claude Opus 4.5/4.6/4.7<br>Gemini 3.1 Pro<br>GPT-5.4</div>
+<div class="models">Claude Fable 5 / Opus 4.8<br>Gemini 3.1 Pro<br>GPT-5.5 / 5.4</div>
 </div>
 </div>
 </div>
@@ -186,23 +186,21 @@ When this page says "Sonnet", it means whatever the current Sonnet is. Same for 
 | **Haiku** | Fast tasks, scaffolding, CLI | ⚡⚡⚡ | 💰 |
 | **Sonnet** | Everyday coding | ⚡⚡ | 💰💰 |
 | **Opus** | Complex reasoning, design | ⚡ | 💰💰💰 |
+| **Fable** | Frontier reasoning, highest quality | ⚡ | 💰💰💰💰 |
 
 <div class="callout tip">
-<strong>Start with Sonnet.</strong> It's the workhorse. Only reach for Opus when Sonnet genuinely can't handle the complexity.
+<strong>Start with Sonnet.</strong> It's the workhorse. Reach for Opus when Sonnet can't handle the complexity. <strong>Fable 5</strong> is the new top tier — only worth it for genuinely hard reasoning tasks at $1/task.
 </div>
 
 ### OpenAI (GPT) {#openai-gpt}
 
 | Model | What it's for | Speed | Cost |
 |-------|---------------|-------|------|
-| **GPT-4o-mini** | Fast tasks, high volume | ⚡⚡⚡ | 💰 |
-| **GPT-4o** | Everyday coding | ⚡⚡ | 💰💰 |
-| **GPT-4.1** | Complex coding | ⚡⚡ | 💰💰 |
-| **GPT-5 / 5.2** | Heavy lifting | ⚡ | 💰💰💰 |
-| **GPT-5.1 / 5.3-Codex / 5.4** | Heavy lifting (latest) | ⚡ | 💰💰💰 |
-| **GPT-5.4 mini / nano** | Cheap Copilot options (0.33×/0.25×) | ⚡⚡ | 💰💰 |
-| **o1** | Deep reasoning (expensive) | ⚡ | 💰💰💰💰 |
-| **o3 / o4-mini** | Reasoning (cheaper) | ⚡ | 💰💰 |
+| **GPT-5 mini** | Quick questions, completions | ⚡⚡⚡ | 💰 |
+| **GPT-5.4 mini / nano** | Budget options, high volume | ⚡⚡⚡ | 💰 |
+| **GPT-5.2 / 5.3-Codex** | Reliable everyday coding | ⚡⚡ | 💰💰💰 |
+| **GPT-5.4** | Versatile, all-round | ⚡⚡ | 💰💰💰 |
+| **GPT-5.5** | Latest, highest performance | ⚡ | 💰💰💰💰 |
 
 <div class="callout">
 <strong>Skip the "o-series" reasoning models (o1, o3, o4)</strong> for everyday coding. They think longer and cost more - o1 is particularly expensive at ~$1.35/task. Save them for:
@@ -216,13 +214,13 @@ When this page says "Sonnet", it means whatever the current Sonnet is. Same for 
 ### Google (Gemini) {#google-gemini}
 
 | Model | What it's for | Speed | Cost |
-|-------|---------------|-------|------|
-| **Gemini 2.0 Flash** | ~~Ultra-cheap, simple tasks~~ **⚠️ Deprecated - June 1, 2026** | ⚡⚡⚡ | 💰 (cheapest) |
+|-------|---------------|----------|------|
 | **Gemini 2.5 Flash** | Fast tasks, high volume | ⚡⚡⚡ | 💰 |
 | **Gemini 2.5 Pro** | Complex reasoning | ⚡ | 💰💰💰 |
 | **Gemini 3 Flash** | Everyday coding | ⚡⚡ | 💰💰 |
 | **Gemini 3.1 Flash-Lite** | Ultra-cheap agentic tasks | ⚡⚡⚡ | 💰 |
 | **Gemini 3.1 Pro** | Heavy lifting | ⚡ | 💰💰💰 |
+| **Gemini 3.5 Flash** | Latest, high performance | ⚡⚡ | 💰💰💰 |
 
 ## Benchmarks {#benchmarks}
 
@@ -232,15 +230,13 @@ Want numbers?
 
 **The TLDR:**
 
-- **GPT-5.4 Thinking is the new #1 on LiveBench (80.3)** — Gemini 3.1 Pro (79.9) and Claude Opus 4.7 Thinking (76.9) follow
-- **Claude Opus 4.7 is new (April 2026)** — slots at #3 on LiveBench but Copilot cost jumped to 7.5× (up from 3× for 4.6)
-- **Gemini 2.0 Flash is deprecated** — shuts down June 1, 2026. Use **Gemini 2.5 Flash** or **Gemini 3 Flash** instead
-- **Gemini 3 Pro is deprecated** (shut down March 9, 2026) — use **Gemini 3.1 Pro** instead (same Copilot cost, scores even higher)
-- **Claude Opus 4.5 leads SWE-bench at 76.8%** — Minimax M2.5 (75.8%, $0.07) is now the best-value SWE choice
-- **GPT-5 high reasoning dominates Aider at 88%** - followed by Gemini 2.5 Pro thinking (83.1%) and Sonnet 4.5 (82.4%)
-- **Don't trust the average:** Gemini 3 Flash looks equal to 3.1 Pro in benchmarks, but Pro wins where it counts: reasoning. Flash is great for simple edits; Pro handles the "wait, what happens if..." moments.
-- **Budget champions:** GLM-4.7 ($0.05/task, 1440 Arena Elo) and Minimax M2 ($0.03/task, 1408 Elo) punch way above their weight
-- **The most expensive model is not automatically the best at coding**
+- **GPT-5.5 is the new LiveBench #1 (80.7)** — edges out GPT-5.4 (80.3) and Gemini 3.1 Pro (79.9)
+- **Anthropic has two new top-tier models:** Claude Fable 5 (78.3, $1/task) and Claude Opus 4.8 (77.2, $0.50/task) — Fable 5 is a new model tier above Opus
+- **Gemini 3.5 Flash** is Google's new model (75.0 LiveBench) — available in Copilot
+- **Gemini 2.0 Flash is gone** — shut down June 1, 2026. Migrate to Gemini 2.5 Flash or 3 Flash
+- **Copilot billing changed June 1, 2026** — moved from "premium request multipliers" to token-based AI credits. Cost per interaction = tokens × model price (same as direct API). See [benchmark details](/ai-coding-guide/benchmarks/) for the full breakdown
+- **Claude Opus 4.5 leads SWE-bench at 76.8%** — DeepSeek V4 Pro (73.6 LB) and V4 Flash (70% SWE) are the standout budget options
+- **GPT-5 high reasoning dominates Aider at 88%** — Gemini 2.5 Pro thinking (83.1%) and Sonnet 4.5 (82.4%) follow
 
 Benchmarks are useful for gut-checking, but the real test is running a model on your own work.
 

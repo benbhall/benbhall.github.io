@@ -61,11 +61,11 @@ toc_icon: "file-alt"
 }
 </style>
 
-<span class="update-badge">📅 Snapshot: April 2026</span>
+<span class="update-badge">📅 Snapshot: June 2026</span>
 
 This page collates benchmark data from independent sources to help you compare models. **These aren't my benchmarks** - I'm just pulling highlights so you don't have to tab between sites.
 
-For the latest data, always check the original sources. Data current as of: SWE-bench (February 2026), Aider (October 2025), Arena Code (February 2026).
+For the latest data, always check the original sources. Data current as of: SWE-bench (February 2026), Aider (June 2025), Arena Code (February 2026).
 
 ---
 
@@ -77,39 +77,28 @@ For the latest data, always check the original sources. Data current as of: SWE-
 
 | Model | Score | $/task | Copilot |
 |-------|-------|--------|---------|
-| Claude Opus 4.5 | 76.8% | $0.50 | 3× |
+| Claude Opus 4.5 | 76.8% | $0.50 | ✓ |
 | Minimax M2.5 | 75.8% | $0.07 | - |
-| Gemini 3 Flash | 75.8% | $0.06 | 0.33× |
-| Claude Opus 4.6 | 75.6% | $0.50 | 3× |
-| GPT-5.2 (high reasoning) | 72.8% | $0.23 | 1× |
+| Gemini 3 Flash | 75.8% | $0.06 | ✓ |
+| Claude Opus 4.6 | 75.6% | $0.50 | ✓ |
+| GPT-5.2 (high reasoning) | 72.8% | $0.23 | ✓ |
 | GLM-5 | 72.8% | $0.05 | - |
-| GPT-5.2 | 72.8% | $0.23 | 1× |
-| Claude Sonnet 4.5 | 71.4% | $0.30 | 1× |
+| GPT-5.2 | 72.8% | $0.23 | ✓ |
+| Claude Sonnet 4.5 | 71.4% | $0.30 | ✓ |
 | Kimi K2.5 | 70.8% | $0.15 | - |
-| DeepSeek V3.2 Reasoner | 70.0% | $0.02 | - |
-| Gemini 3.1 Pro | 69.6% | $0.22 | 1× |
-| Claude Opus 4.1 | 67.6% | $1.50 | 10× |
-| Claude Haiku 4.5 | 66.6% | $0.10 | 0.33× |
-| GPT-5 | 65.0% | $0.16 | 1× |
+| DeepSeek V4 Flash | 70.0% | $0.01 | - |
+| Gemini 3.1 Pro | 69.6% | $0.22 | ✓ |
+| Claude Opus 4.1 | 67.6% | $1.50 | ✓ |
+| Claude Haiku 4.5 | 66.6% | $0.10 | ✓ |
+| GPT-5 | 65.0% | $0.16 | ✓ |
 | Kimi K2 Thinking Turbo | 63.4% | $0.06 | - |
-| Minimax M2 | 61.0% | $0.03 | - |
-| o3 | 58.4% | $0.18 | - |
-| GPT-5 mini | 56.2% | $0.03 | 0× |
-| GLM-4.6 | 55.4% | $0.05 | - |
-| Devstral 2 | 53.8% | - | - |
-| Gemini 2.5 Pro | 53.6% | $0.16 | 1× |
-| GPT-4o | 48.9% | $0.23 | 0× |
-| o4-mini | 45.0% | $0.10 | - |
-| GPT-4.1 | 39.6% | $0.18 | 0× |
-| DeepSeek V3.2 Chat | 39.0% | $0.02 | - |
-| Gemini 2.5 Flash | 28.7% | $0.04 | - |
-| Gemini 2.0 Flash | 22.0% | $0.01 | - |
-| GPT-4o-mini | 18.6% | $0.01 | - |
+| GPT-5 mini | 56.2% | $0.03 | ✓ |
+| Gemini 2.5 Pro | 53.6% | $0.16 | ✓ |
 
-**$/task** = cost to solve one benchmark task via direct API (based on token usage × provider pricing). Useful for API users and for comparing relative costs. **Copilot** = GitHub Copilot premium request multiplier (0× = free on paid plans).
+**$/task** = cost to solve one benchmark task via direct API (based on token usage × provider pricing). **Copilot** = available in GitHub Copilot (✓ = yes, token-based AI credit billing since Jun 2026).
 
 <div class="callout tip">
-<strong>Takeaway:</strong> Scores across the board are higher with the standardized harness. Claude Opus 4.5 leads at 76.8%, but now Minimax M2.5 (75.8%, $0.07) and Gemini 3 Flash (75.8%, $0.06) are right behind — at a fraction of the cost. Claude Haiku 4.5 jumped from 48% to 67% under high reasoning mode, making it a viable mid-range option. <strong>Note: Gemini 3 Pro has been deprecated (March 9, 2026); replaced by Gemini 3.1 Pro</strong> (69.6%).
+<strong>Takeaway:</strong> Scores across the board are higher with the standardized harness. Claude Opus 4.5 leads at 76.8%, but Minimax M2.5 (75.8%, $0.07) and Gemini 3 Flash (75.8%, $0.06) are right behind — at a fraction of the cost. DeepSeek V4 Flash (70.0%, $0.01) is the extreme budget option. <strong>Note: Gemini 2.0 Flash has been shut down (June 1, 2026). DeepSeek V3.2 Reasoner was renamed DeepSeek V4 Flash</strong> — same API, new name.
 </div>
 
 ---
@@ -117,37 +106,38 @@ For the latest data, always check the original sources. Data current as of: SWE-
 ## Aider Polyglot
 
 <div class="source-box">
-<strong>Source:</strong> <a href="https://aider.chat/docs/leaderboards/">aider.chat/docs/leaderboards</a> (October 2025) · Tests code editing across C++, Go, Java, JavaScript, Python, Rust
+<strong>Source:</strong> <a href="https://aider.chat/docs/leaderboards/">aider.chat/docs/leaderboards</a> (June 2025) · Tests code editing across C++, Go, Java, JavaScript, Python, Rust
 </div>
 
 <div class="callout">
-<strong>Note:</strong> Aider's latest batch includes GPT-5 series, Claude 4.x, and Gemini 2.5/3 models with October 2025 data.
+<strong>Note:</strong> Aider's latest entries run up to June 2025. Includes GPT-5, Claude 4.x, Gemini 2.5 Pro, and Grok 4 variants.
 </div>
 
 | Model | % Correct | Copilot |
 |-------|-----------|---------|
-| GPT-5 (high reasoning) | 88.0% | 1× |
+| GPT-5 (high reasoning) | 88.0% | ✓ |
 | o3-pro (high) | 84.9% | - |
-| Gemini 2.5 Pro 32k (think) | 83.1% | 1× |
-| Claude Sonnet 4.5 | 82.4% | 1× |
-| Claude Opus 4.1 | 82.1% | 10× |
+| Gemini 2.5 Pro 06-05 (32k think) | 83.1% | ✓ |
+| Claude Sonnet 4.5 | 82.4% | ✓ |
+| Claude Opus 4.1 | 82.1% | ✓ |
 | o3 (high) | 81.3% | - |
 | Grok 4 (high) | 79.6% | - |
-| DeepSeek V3.2 Exp Reasoner | 74.2% | - |
-| Claude Haiku 4.5 | 73.5% | 0.33× |
-| GPT-4o | 72.9% | 0× |
+| DeepSeek V4 Flash (Reasoner) | 74.2% | - |
+| Claude Haiku 4.5 | 73.5% | ✓ |
 | o4-mini | 72.0% | - |
-| Claude Opus 4.5 | 70.7% | 3× |
-| DeepSeek V3.2 Chat | 70.2% | - |
-| GPT-4.1 | 52.4% | 0× |
-| Gemini 2.5 Flash (thinking) | 55.1% | - |
+| Claude Opus 4.5 | 70.7% | ✓ |
+| DeepSeek V4 Flash (Chat) | 70.2% | - |
 | Kimi K2 | 59.1% | - |
-| Gemini 2.0 Flash | 58.0% | - |
-| GPT-4o-mini | 55.6% | - |
-| GPT-5 mini | 50.2% | 0× |
+| Claude Sonnet 4 | 56.4% | ✓ |
+| Gemini 2.5 Flash (thinking) | 55.1% | - |
+| DeepSeek V3 (0324) | 55.1% | - |
+| Grok 3 Beta | 53.3% | - |
+| GPT-4.1 | 52.4% | - |
+| Grok 3 Mini Beta (high) | 49.3% | - |
+| GPT-5 mini | 50.2% | ✓ |
 
 <div class="callout tip">
-<strong>Takeaway:</strong> GPT-5 high reasoning dominates at 88%, followed by o3-pro (84.9%) and Gemini 2.5 Pro thinking (83.1%). Claude Sonnet 4.5 (82.4%) is the practical choice at 1× Copilot cost. Grok 4 enters the picture at 79.6% with no Copilot cost. Surprisingly, Claude Opus 4.5 underperforms here (70.7%) despite topping SWE-bench—different benchmarks favor different strengths.
+<strong>Takeaway:</strong> GPT-5 high reasoning still dominates at 88%, followed by o3-pro (84.9%) and Gemini 2.5 Pro 06-05 thinking (83.1%). Claude Sonnet 4.5 (82.4%) remains the practical choice. DeepSeek V4 Flash is V3.2 rebranded — same strong scores (74.2% reasoner, 70.2% chat). Claude Sonnet 4 plain (56.4%) shows the thinking tokens really do matter for Aider tasks.
 </div>
 
 ---
@@ -155,7 +145,7 @@ For the latest data, always check the original sources. Data current as of: SWE-
 ## LiveBench
 
 <div class="source-box">
-<strong>Source:</strong> <a href="https://livebench.ai/">livebench.ai</a> (January 2026) · Contamination-free benchmark with 23 diverse tasks
+<strong>Source:</strong> <a href="https://livebench.ai/">livebench.ai</a> (June 2026) · Contamination-free benchmark with 23 diverse tasks
 </div>
 
 **What it is:** A contamination-free benchmark with 23 diverse tasks spanning Coding, Agentic Coding, Data Analysis, Language, Instruction Following, Math, and Reasoning. Questions refresh every 6 months and are delay-released to minimize training contamination. Scores use objective ground-truth answers, not LLM judges.
@@ -164,51 +154,58 @@ For the latest data, always check the original sources. Data current as of: SWE-
 
 | Model | Global Avg | Coding | Agentic | Data | Language | IF | Math | Reasoning |
 |-------|------------|--------|---------|------|----------|-----|------|-----------|
+| GPT-5.5 Thinking xHigh | 80.7 | 87.7 | 82.5 | 56.7 | 96.3 | 81.1 | 87.7 | 73.0 |
 | GPT-5.4 Thinking xHigh | 80.3 | 88.1 | 77.5 | 70.0 | 94.2 | 79.3 | 82.6 | 70.2 |
 | Gemini 3.1 Pro | 79.9 | 84.0 | 76.5 | 65.0 | 91.0 | 78.5 | 85.4 | 79.1 |
-| Claude 4.7 Opus Thinking xHigh | 76.9 | - | - | - | - | - | - | - |
+| Claude Fable 5 Thinking xHigh | 78.3 | 87.3 | 78.6 | 60.0 | 93.9 | 80.0 | 88.5 | 60.0 |
+| Claude 4.8 Opus Thinking xHigh | 77.2 | 89.7 | 79.3 | 60.0 | 84.3 | 78.3 | 81.4 | 67.5 |
+| Claude 4.7 Opus Thinking xHigh | 76.9 | 87.7 | 82.1 | 60.0 | 93.1 | 78.3 | 77.9 | 59.3 |
 | Claude 4.6 Opus Thinking | 76.3 | 88.7 | 78.2 | 61.7 | 89.3 | 69.9 | 83.3 | 63.3 |
 | Claude 4.5 Opus Thinking High | 76.0 | 80.1 | 79.7 | 63.3 | 90.4 | 74.4 | 81.3 | 62.6 |
 | Claude 4.6 Sonnet Thinking | 75.5 | 84.8 | 79.3 | 60.0 | 87.0 | 78.0 | 76.1 | 63.2 |
+| Gemini 3.5 Flash High | 75.0 | 82.0 | 78.2 | 51.7 | 88.2 | 64.9 | 84.6 | 75.6 |
 | GPT-5.2 high reasoning | 74.8 | 83.2 | 76.1 | 51.7 | 93.2 | 78.2 | 79.8 | 61.8 |
-| GPT-5.1 Codex Max | 74.0 | - | - | - | - | - | - | - |
-| GPT-5.3 Codex High | 72.8 | - | - | - | - | - | - | - |
-| GPT-5.1 | 72.0 | - | - | - | - | - | - | - |
+| Qwen 3.7 Max | 74.3 | 83.3 | 74.2 | 51.7 | 85.3 | 71.8 | 79.7 | 74.0 |
+| GPT-5.1 Codex Max | 74.0 | 83.7 | 80.7 | 53.3 | 83.2 | 70.1 | 76.5 | 70.4 |
+| DeepSeek V4 Pro | 73.6 | 82.7 | 70.0 | 56.7 | 90.7 | 74.5 | 78.1 | 62.4 |
+| GPT-5.3 Codex High | 72.8 | 80.2 | 78.2 | 55.0 | 87.8 | 62.7 | 80.1 | 65.4 |
 | Gemini 3 Flash | 72.4 | 76.3 | 71.8 | 56.7 | 86.6 | 75.6 | 81.2 | 58.5 |
-| Kimi K2.5 Thinking | 69.1 | - | - | - | - | - | - | - |
-| GLM-5 | 68.9 | - | - | - | - | - | - | - |
+| Kimi K2.6 Thinking | 72.2 | 79.4 | 78.6 | 58.3 | 84.3 | 65.1 | 75.1 | 64.4 |
+| GPT-5.1 | 72.0 | 78.8 | 72.5 | 53.3 | 86.9 | 69.6 | 79.3 | 63.9 |
+| GLM-5 | 68.9 | 69.1 | 73.6 | 55.0 | 83.5 | 67.9 | 77.5 | 55.3 |
 | GPT-5 | 70.5 | 77.5 | 68.9 | 45.0 | 86.4 | 75.1 | 77.2 | 63.4 |
-| Qwen 3.6 Plus | 70.9 | - | - | - | - | - | - | - |
-| GPT-5.4 nano | 70.1 | - | - | - | - | - | - | - |
-| Grok 4.20 Beta | 68.0 | - | - | - | - | - | - | - |
-| GPT-5.4 mini | 67.5 | - | - | - | - | - | - | - |
-| DeepSeek V3.2 Reasoner | 62.2 | 65.3 | 58.4 | 41.7 | 78.0 | 65.9 | 75.4 | 51.1 |
-| Grok 4 | 62.0 | - | - | - | - | - | - | - |
-| Kimi K2 Thinking Turbo | 61.6 | 66.1 | 64.9 | 40.0 | 73.6 | 63.0 | 66.3 | 56.8 |
-| Minimax M2.7 | 63.5 | - | - | - | - | - | - | - |
-| Minimax M2.5 | 60.1 | - | - | - | - | - | - | - |
+| Qwen 3.6 Plus | 70.9 | 75.8 | 78.2 | 55.0 | 83.7 | 69.9 | 75.0 | 58.3 |
+| GPT-5.4 nano | 70.1 | 81.1 | 72.1 | 49.1 | 91.3 | 67.6 | 62.5 | 67.2 |
+| Minimax M3 | 70.0 | 74.5 | 68.2 | 60.0 | 77.0 | 76.2 | 76.8 | 57.5 |
+| Kimi K2.5 Thinking | 69.1 | 76.0 | 77.9 | 48.3 | 84.9 | 61.4 | 77.7 | 57.4 |
+| GPT-5.4 mini | 67.5 | 72.5 | 71.6 | 47.5 | 78.6 | 71.0 | 71.5 | 60.3 |
+| DeepSeek V4 Flash | 67.3 | 70.6 | 69.2 | 50.0 | 79.7 | 68.0 | 70.1 | 63.1 |
+| Grok 4.3 | 66.7 | 70.8 | 69.9 | 50.0 | 84.3 | 55.8 | 73.6 | 62.8 |
+| Grok 4.20 Beta | 68.0 | 75.3 | 66.1 | 43.3 | 87.1 | 62.9 | 77.7 | 63.4 |
 | Grok 4.1 Fast | 60.0 | 58.4 | 63.6 | 40.0 | 78.4 | 61.4 | 71.2 | 47.3 |
-| Gemini 3.1 Flash-Lite | 61.7 | - | - | - | - | - | - | - |
-| GLM-4.7 | 58.1 | 60.1 | 57.2 | 36.7 | 69.6 | 57.5 | 68.8 | 56.8 |
+| Grok 4 | 62.0 | 79.1 | 73.1 | 30.0 | 83.0 | 63.4 | 76.4 | 29.1 |
+| Minimax M2.7 | 63.5 | 74.8 | 54.9 | 50.0 | 80.5 | 56.3 | 66.8 | 61.1 |
+| Kimi K2 Thinking Turbo | 61.6 | 66.1 | 64.9 | 40.0 | 73.6 | 63.0 | 66.3 | 56.8 |
+| Gemini 3.1 Flash-Lite | 61.7 | 59.7 | 68.5 | 33.3 | 73.6 | 54.9 | 73.2 | 68.6 |
+| Minimax M2.5 | 60.1 | 59.3 | 70.7 | 51.7 | 77.4 | 49.6 | 55.1 | 57.2 |
+| DeepSeek V3.2 Thinking | 62.2 | 65.3 | 58.4 | 41.7 | 78.0 | 65.9 | 75.4 | 51.1 |
 | Gemini 2.5 Pro | 58.3 | 57.1 | 55.9 | 46.7 | 70.2 | 56.9 | 69.6 | 51.7 |
+| GLM-4.7 | 58.1 | 60.1 | 57.2 | 36.7 | 69.6 | 57.5 | 68.8 | 56.8 |
 | Claude Opus 4.5 | 59.1 | 67.1 | 64.8 | 40.0 | 67.8 | 56.5 | 63.0 | 54.2 |
-| GLM-4.6 | 55.2 | 57.9 | 49.8 | 41.7 | 67.0 | 56.1 | 61.3 | 52.5 |
 | Claude Opus 4.1 | 54.5 | 59.3 | 56.8 | 30.0 | 62.9 | 52.0 | 58.7 | 61.8 |
 | Claude Sonnet 4.5 | 53.7 | 58.9 | 56.5 | 38.3 | 61.3 | 52.8 | 59.6 | 48.5 |
-| DeepSeek V3.2 Chat | 51.8 | 60.7 | 47.5 | 40.0 | 60.1 | 51.6 | 58.9 | 43.7 |
 | Gemini 2.5 Flash | 47.7 | 51.1 | 41.4 | 31.7 | 57.6 | 47.2 | 56.5 | 48.3 |
 | Claude Haiku 4.5 | 45.3 | 52.2 | 43.5 | 26.7 | 54.1 | 42.5 | 51.4 | 47.0 |
-| Devstral 2 | 41.2 | 49.4 | 39.1 | 26.7 | 48.3 | 38.1 | 45.5 | 41.4 |
 
 {: .table .table-striped }
 
 <div class="callout-box">
 <strong>⚡ Key takeaways:</strong><br>
-• <strong>New #1:</strong> GPT-5.4 Thinking (80.3) still leads, with Gemini 3.1 Pro (79.9) close behind<br>
-• <strong>New Claude 4.7 Opus:</strong> Claude 4.7 Opus Thinking (76.9) slots in at #3, above Claude 4.6 Opus (76.3) — Copilot cost jumped from 3× to 7.5×<br>
-• <strong>New budget Copilot options:</strong> GPT-5.4 nano (0.25×, 70.1) and GPT-5.4 mini (0.33×, 67.5) are genuinely useful at very low cost<br>
-• <strong>Category variance reveals specialization:</strong> Models vary 20-40 points across categories (e.g., Claude 90.4 Language vs 62.6 Reasoning)<br>
-• <strong>Budget champion:</strong> GLM-4.7 (58.1) delivers 75% of top-tier performance at $0.05/task (10× cheaper than Claude Opus)
+• <strong>New #1: GPT-5.5</strong> (80.7) edges out GPT-5.4 (80.3) and Gemini 3.1 Pro (79.9) at the top<br>
+• <strong>New Anthropic models:</strong> Claude Fable 5 (78.3) and Claude 4.8 Opus (77.2) — Fable 5 is now Anthropic's top-tier at $1.00/task<br>
+• <strong>Gemini 3.5 Flash:</strong> New Google model (75.0) slots just below Claude Fable 5, available in Copilot at $0.17/task<br>
+• <strong>DeepSeek V4 Pro</strong> (73.6) competes with GPT-5.3 Codex at just $0.03/task<br>
+• <strong>Copilot billing changed June 1, 2026:</strong> Moved to token-based AI credits. Multipliers are gone — see appendix.
 </div>
 
 ---
@@ -221,29 +218,26 @@ For the latest data, always check the original sources. Data current as of: SWE-
 
 | Rank | Model | Elo Score | $/task | Copilot | Notes |
 |------|-------|-----------|--------|---------|-------|
-| 1 | Claude Opus 4.5 thinking-32k | 1497 | $0.50 | - | Thinking variant |
-| 2 | GPT-5.2 high reasoning | 1470 | $0.23 | 1× | High reasoning mode |
-| 3 | Claude Opus 4.5 | 1468 | $0.50 | 3× | Standard (non-thinking) |
+| 1 | Claude Opus 4.5 thinking-32k | 1497 | $0.50 | ✓ | Thinking variant |
+| 2 | GPT-5.2 high reasoning | 1470 | $0.23 | ✓ | High reasoning mode |
+| 3 | Claude Opus 4.5 | 1468 | $0.50 | ✓ | Standard (non-thinking) |
 | 4 | GLM-4.7 | 1440 | $0.05 | - | |
-| 5 | Gemini 3 Flash | 1443 | $0.06 | 0.33× | |
-| 6 | GPT-5.2 | 1432 | $0.23 | 1× | |
-| 7 | Claude Opus 4.1 | 1431 | $1.50 | 10× | |
+| 5 | Gemini 3 Flash | 1443 | $0.06 | ✓ | |
+| 6 | GPT-5.2 | 1432 | $0.23 | ✓ | |
+| 7 | Claude Opus 4.1 | 1431 | $1.50 | ✓ | |
 | 8 | o3 | 1417 | $0.18 | - | |
 | 9 | Minimax M2.1 preview | 1408 | $0.03 | - | |
-| 10 | GPT-5 | 1407 | $0.16 | 1× | |
-| 11 | Grok 4.1 Fast | 1393 | - | 0.25× | |
-| 12 | Claude Sonnet 4.5 | 1383 | $0.30 | 1× | |
-| 13 | GPT-4o | 1372 | $0.23 | 0× | |
-| 14 | Gemini 2.5 Pro | 1372 | $0.16 | 1× | |
-| 15 | Devstral 2 | 1363 | - | - | |
-| 16 | Kimi K2 Thinking Turbo | 1356 | $0.06 | - | |
-| 17 | DeepSeek V3.2 Reasoner | 1350 | $0.02 | - | |
-| 18 | o4-mini | 1310 | $0.10 | - | |
-| 19 | GPT-4.1 | 1305 | $0.18 | 0× | |
-| 20 | Claude Haiku 4.5 | 1290 | $0.10 | 0.33× | |
-| 21 | DeepSeek V3.2 Chat | 1287 | $0.02 | - | |
+| 10 | GPT-5 | 1407 | $0.16 | ✓ | |
+| 11 | Grok 4.1 Fast | 1393 | - | - | |
+| 12 | Claude Sonnet 4.5 | 1383 | $0.30 | ✓ | |
+| 13 | GPT-4o | 1372 | $0.23 | - | |
+| 14 | Gemini 2.5 Pro | 1372 | $0.16 | ✓ | |
+| 15 | Kimi K2 Thinking Turbo | 1356 | $0.06 | - | |
+| 16 | DeepSeek V4 Flash | 1350 | $0.01 | - | |
+| 17 | Claude Haiku 4.5 | 1290 | $0.10 | ✓ | |
+| 18 | GPT-4.1 | 1305 | $0.18 | - | |
 
-*Note: Arena Code data not refreshed this update (access issues). Data as of February 2026. Gemini 3 Pro removed — deprecated March 9, 2026.*
+*Note: Arena Code data not refreshed this update (access issues). Data as of February 2026. DeepSeek V3.2 Reasoner renamed to DeepSeek V4 Flash.*
 
 <div class="callout">
 <strong>"Thinking" variants are labeled explicitly.</strong> Claude Opus 4.5 thinking-32k (rank 1, 1497 Elo) does explicit reasoning passes. The standard Opus 4.5 (rank 3, 1468 Elo) is still excellent but slightly lower. Both cost $0.50/task but thinking models are slower and burn more tokens on complex tasks.
@@ -279,26 +273,27 @@ For day-to-day coding, SWE-bench and Aider are most relevant.
 
 ---
 
-## Appendix: GitHub Copilot cost column
+## Appendix: GitHub Copilot — billing changed June 1, 2026
 
-The **Copilot** column shows the premium request multiplier for GitHub Copilot (VS Code, etc.):
+GitHub moved Copilot to **usage-based AI credit billing** on June 1, 2026. The old "premium request multiplier" system is now legacy-only (affects only Copilot Pro/Pro+ users who were on existing annual plans). For everyone else:
 
-| Multiplier | What it means |
-|------------|---------------|
-| **0×** | Included free (GPT-4.1, GPT-4o, GPT-5 mini) - no premium requests used |
-| **0.25×** | Very cheap (Grok Code Fast, GPT-5.4 nano) - 4 requests for the price of 1 |
-| **0.33×** | Cheap (Haiku 4.5, Gemini 3 Flash, GPT-5.1-Codex-Mini, GPT-5.4 mini) - 3 requests for the price of 1 |
-| **1×** | Standard (Sonnet 4/4.5/4.6, GPT-5/5.1/5.2/5.3-Codex/5.4, Gemini 2.5 Pro/3 Pro/3.1 Pro) - 1 premium request per use |
-| **3×** | Expensive (Opus 4.5, Opus 4.6) - costs 3 premium requests per use |
-| **7.5×** | Very expensive (Opus 4.7) - costs 7.5 premium requests per use |
-| **10×** | Very expensive (Opus 4.1) - costs 10 premium requests per use |
-| **30×** | Extreme (Opus 4.6 fast mode preview) - costs 30 premium requests per use |
-| **-** | Not available in GitHub Copilot |
+- **1 AI credit = $0.01 USD**
+- Models are priced per token (same rates as direct API access)
+- The Copilot column in these tables now simply shows **✓** (available) or **-** (not available)
 
-Paid plans get 300-1500 premium requests/month depending on tier. Extra requests cost $0.04 each.
+Models available in Copilot as of June 2026:
+
+| Provider | Models |
+|----------|--------|
+| OpenAI | GPT-5.5, GPT-5.4, GPT-5.4 mini, GPT-5.4 nano, GPT-5.3-Codex, GPT-5 mini |
+| Anthropic | Claude Fable 5, Claude Opus 4.5–4.8, Claude Sonnet 4–4.6, Claude Haiku 4.5 |
+| Google | Gemini 3.5 Flash, Gemini 3.1 Pro, Gemini 3 Flash, Gemini 2.5 Pro |
+| Other | Raptor mini (GitHub), MAI-Code-1-Flash (Microsoft) |
+
+Note: GPT-4o and GPT-4.1 are no longer listed in Copilot's published model pricing as of June 2026.
 
 <div class="source-box">
-<strong>Source:</strong> <a href="https://docs.github.com/en/copilot/managing-copilot/monitoring-usage-and-entitlements/about-premium-requests">GitHub Copilot premium requests docs</a>
+<strong>Source:</strong> <a href="https://docs.github.com/en/copilot/reference/copilot-billing/models-and-pricing">GitHub Copilot models and pricing</a>
 </div>
 
 ← Back to [AI Guide](/ai-coding-guide/)
