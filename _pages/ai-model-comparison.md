@@ -143,6 +143,10 @@ body.light-theme .source-box { background: #f3f4f6 !important; border-color: #d1
 
 <span class="update-badge">📅 Data snapshot: June 2026</span>
 
+<div class="callout">
+<strong>Using GitHub Copilot?</strong> Hit the <strong>Copilot</strong> filter above to see only models available in Copilot. Since June 2026, Copilot uses per-token AI credit billing — the $/task column directly reflects your cost.
+</div>
+
 <div class="filter-buttons">
   <button class="filter-btn active" data-filter="">All models</button>
   <button class="filter-btn" data-filter="copilot-available">Copilot</button>
@@ -228,7 +232,7 @@ body.light-theme .source-box { background: #f3f4f6 !important; border-color: #d1
 | **Copilot** | Available in GitHub Copilot (✓ = yes, - = not listed). Since June 1, 2026 Copilot uses token-based AI credit billing — same per-token rates as direct API. |
 | **$/task** | Estimated cost per task if using APIs directly (50K in + 10K out tokens). Also reflects Copilot AI credit cost since Jun 2026 billing change. |
 | **SWE-bench** | % of real GitHub issues the model can fix autonomously ([source](https://www.swebench.com/)) - February 2026 data (standardized harness, high reasoning mode) |
-| **Aider** | % correct on multi-language code editing ([source](https://aider.chat/docs/leaderboards/)) - October 2025 data |
+| **Aider** | % correct on multi-language code editing ([source](https://aider.chat/docs/leaderboards/)) - June 2025 data · Best signal for CLI/agentic use cases |
 | **Arena** | Elo rating from human preference voting on Code category ([source](https://lmarena.ai/)) - February 2026 data |
 | **LiveBench** | Global average score across 23 diverse tasks ([source](https://livebench.ai/)) - June 2026 data, contamination-free |
 

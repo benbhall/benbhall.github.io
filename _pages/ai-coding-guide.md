@@ -146,7 +146,7 @@ No-nonsense reference for developers who just want to know which AI model to pic
 </div>
 <div class="pick-card">
 <div class="use-case">Agentic / CLI / scaffolding</div>
-<div class="models">Claude Haiku 4.5<br>Gemini 3 Flash<br>GPT-4o</div>
+<div class="models">Claude Haiku 4.5<br>Gemini 3 Flash<br>GPT-5.4 mini</div>
 </div>
 <div class="pick-card">
 <div class="use-case">Architecture / refactors</div>
@@ -159,6 +159,10 @@ No-nonsense reference for developers who just want to know which AI model to pic
 <div class="pick-card">
 <div class="use-case">Documentation</div>
 <div class="models">Claude Sonnet 4.5/4.6<br>Gemini 3.1 Pro<br>GPT-4o</div>
+</div>
+<div class="pick-card">
+<div class="use-case">GitHub Copilot users</div>
+<div class="models">Filter the <a href="/ai-coding-guide/compare/">comparison table</a> by Copilot to see what's available and at what cost</div>
 </div>
 <div class="pick-card">
 <div class="use-case">Design / planning</div>
