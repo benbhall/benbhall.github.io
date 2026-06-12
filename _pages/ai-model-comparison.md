@@ -145,7 +145,7 @@ body.light-theme .source-box { background: #f3f4f6 !important; border-color: #d1
 
 <div class="filter-buttons">
   <button class="filter-btn active" data-filter="">All models</button>
-  <button class="filter-btn" data-filter="copilot-available">Copilot only</button>
+  <button class="filter-btn" data-filter="copilot-available">Copilot</button>
   <button class="filter-btn" data-filter="Anthropic">Claude</button>
   <button class="filter-btn" data-filter="OpenAI">GPT/o-series</button>
   <button class="filter-btn" data-filter="Google">Gemini</button>
