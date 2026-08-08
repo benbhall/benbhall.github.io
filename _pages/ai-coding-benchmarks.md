@@ -61,7 +61,7 @@ toc_icon: "file-alt"
 }
 </style>
 
-<span class="update-badge">📅 Snapshot: June 2026</span>
+<span class="update-badge">📅 Snapshot: August 2026</span>
 
 This page collates benchmark data from independent sources to help you compare models. **These aren't my benchmarks** - I'm just pulling highlights so you don't have to tab between sites.
 
@@ -98,7 +98,7 @@ For the latest data, always check the original sources. Data current as of: SWE-
 **$/task** = cost to solve one benchmark task via direct API (based on token usage × provider pricing). **Copilot** = available in GitHub Copilot (✓ = yes, token-based AI credit billing since Jun 2026).
 
 <div class="callout tip">
-<strong>Takeaway:</strong> Scores across the board are higher with the standardized harness. Claude Opus 4.5 leads at 76.8%, but Minimax M2.5 (75.8%, $0.07) and Gemini 3 Flash (75.8%, $0.06) are right behind — at a fraction of the cost. DeepSeek V4 Flash (70.0%, $0.01) is the extreme budget option. <strong>Note: Gemini 2.0 Flash has been shut down (June 1, 2026). DeepSeek V3.2 Reasoner was renamed DeepSeek V4 Flash</strong> — same API, new name.
+<strong>Takeaway:</strong> No new SWE-bench data since Feb 2026. Claude Opus 4.5 remains leader at 76.8%, with DeepSeek V4 Flash (70%, $0.01/task) as the extreme budget option. Note: Claude Opus 4.1 has been retired from the main Anthropic API.
 </div>
 
 ---
@@ -145,7 +145,7 @@ For the latest data, always check the original sources. Data current as of: SWE-
 ## LiveBench
 
 <div class="source-box">
-<strong>Source:</strong> <a href="https://livebench.ai/">livebench.ai</a> (June 2026) · Contamination-free benchmark with 23 diverse tasks
+<strong>Source:</strong> <a href="https://livebench.ai/">livebench.ai</a> (August 2026, release 2026-06-25) · Contamination-free benchmark with 23 diverse tasks
 </div>
 
 **What it is:** A contamination-free benchmark with 23 diverse tasks spanning Coding, Agentic Coding, Data Analysis, Language, Instruction Following, Math, and Reasoning. Questions refresh every 6 months and are delay-released to minimize training contamination. Scores use objective ground-truth answers, not LLM judges.
@@ -154,46 +154,37 @@ For the latest data, always check the original sources. Data current as of: SWE-
 
 | Model | Global Avg | Coding | Agentic | Data | Language | IF | Math | Reasoning |
 |-------|------------|--------|---------|------|----------|-----|------|-----------|
-| GPT-5.5 Thinking xHigh | 80.7 | 87.7 | 82.5 | 56.7 | 96.3 | 81.1 | 87.7 | 73.0 |
-| GPT-5.4 Thinking xHigh | 80.3 | 88.1 | 77.5 | 70.0 | 94.2 | 79.3 | 82.6 | 70.2 |
-| Gemini 3.1 Pro | 79.9 | 84.0 | 76.5 | 65.0 | 91.0 | 78.5 | 85.4 | 79.1 |
-| Claude Fable 5 Thinking xHigh | 78.3 | 87.3 | 78.6 | 60.0 | 93.9 | 80.0 | 88.5 | 60.0 |
-| Claude 4.8 Opus Thinking xHigh | 77.2 | 89.7 | 79.3 | 60.0 | 84.3 | 78.3 | 81.4 | 67.5 |
-| Claude 4.7 Opus Thinking xHigh | 76.9 | 87.7 | 82.1 | 60.0 | 93.1 | 78.3 | 77.9 | 59.3 |
-| Claude 4.6 Opus Thinking | 76.3 | 88.7 | 78.2 | 61.7 | 89.3 | 69.9 | 83.3 | 63.3 |
-| Claude 4.5 Opus Thinking High | 76.0 | 80.1 | 79.7 | 63.3 | 90.4 | 74.4 | 81.3 | 62.6 |
-| Claude 4.6 Sonnet Thinking | 75.5 | 84.8 | 79.3 | 60.0 | 87.0 | 78.0 | 76.1 | 63.2 |
-| Gemini 3.5 Flash High | 75.0 | 82.0 | 78.2 | 51.7 | 88.2 | 64.9 | 84.6 | 75.6 |
-| GPT-5.2 high reasoning | 74.8 | 83.2 | 76.1 | 51.7 | 93.2 | 78.2 | 79.8 | 61.8 |
-| Qwen 3.7 Max | 74.3 | 83.3 | 74.2 | 51.7 | 85.3 | 71.8 | 79.7 | 74.0 |
-| GPT-5.1 Codex Max | 74.0 | 83.7 | 80.7 | 53.3 | 83.2 | 70.1 | 76.5 | 70.4 |
-| DeepSeek V4 Pro | 73.6 | 82.7 | 70.0 | 56.7 | 90.7 | 74.5 | 78.1 | 62.4 |
-| GPT-5.3 Codex High | 72.8 | 80.2 | 78.2 | 55.0 | 87.8 | 62.7 | 80.1 | 65.4 |
-| Gemini 3 Flash | 72.4 | 76.3 | 71.8 | 56.7 | 86.6 | 75.6 | 81.2 | 58.5 |
-| Kimi K2.6 Thinking | 72.2 | 79.4 | 78.6 | 58.3 | 84.3 | 65.1 | 75.1 | 64.4 |
-| GPT-5.1 | 72.0 | 78.8 | 72.5 | 53.3 | 86.9 | 69.6 | 79.3 | 63.9 |
-| GLM-5 | 68.9 | 69.1 | 73.6 | 55.0 | 83.5 | 67.9 | 77.5 | 55.3 |
-| GPT-5 | 70.5 | 77.5 | 68.9 | 45.0 | 86.4 | 75.1 | 77.2 | 63.4 |
-| Qwen 3.6 Plus | 70.9 | 75.8 | 78.2 | 55.0 | 83.7 | 69.9 | 75.0 | 58.3 |
-| GPT-5.4 nano | 70.1 | 81.1 | 72.1 | 49.1 | 91.3 | 67.6 | 62.5 | 67.2 |
-| Minimax M3 | 70.0 | 74.5 | 68.2 | 60.0 | 77.0 | 76.2 | 76.8 | 57.5 |
-| Kimi K2.5 Thinking | 69.1 | 76.0 | 77.9 | 48.3 | 84.9 | 61.4 | 77.7 | 57.4 |
-| GPT-5.4 mini | 67.5 | 72.5 | 71.6 | 47.5 | 78.6 | 71.0 | 71.5 | 60.3 |
-| DeepSeek V4 Flash | 67.3 | 70.6 | 69.2 | 50.0 | 79.7 | 68.0 | 70.1 | 63.1 |
-| Grok 4.3 | 66.7 | 70.8 | 69.9 | 50.0 | 84.3 | 55.8 | 73.6 | 62.8 |
-| Grok 4.20 Beta | 68.0 | 75.3 | 66.1 | 43.3 | 87.1 | 62.9 | 77.7 | 63.4 |
-| Grok 4.1 Fast | 60.0 | 58.4 | 63.6 | 40.0 | 78.4 | 61.4 | 71.2 | 47.3 |
-| Grok 4 | 62.0 | 79.1 | 73.1 | 30.0 | 83.0 | 63.4 | 76.4 | 29.1 |
-| Minimax M2.7 | 63.5 | 74.8 | 54.9 | 50.0 | 80.5 | 56.3 | 66.8 | 61.1 |
-| Kimi K2 Thinking Turbo | 61.6 | 66.1 | 64.9 | 40.0 | 73.6 | 63.0 | 66.3 | 56.8 |
-| Gemini 3.1 Flash-Lite | 61.7 | 59.7 | 68.5 | 33.3 | 73.6 | 54.9 | 73.2 | 68.6 |
-| Minimax M2.5 | 60.1 | 59.3 | 70.7 | 51.7 | 77.4 | 49.6 | 55.1 | 57.2 |
-| DeepSeek V3.2 Thinking | 62.2 | 65.3 | 58.4 | 41.7 | 78.0 | 65.9 | 75.4 | 51.1 |
+| Claude Fable 5 xHigh | 83.0 | 89.7 | 86.0 | 62.2 | 96.0 | 80.5 | 90.7 | 75.8 |
+| GPT-5.6 Sol xHigh | 81.0 | 91.7 | 83.9 | 56.2 | 96.2 | 79.8 | 87.7 | 71.8 |
+| GPT-5.5 Thinking xHigh | 80.2 | 89.7 | 82.1 | 54.0 | 95.9 | 81.6 | 87.4 | 70.7 |
+| Claude Opus 5 Thinking Max | 80.1 | 91.2 | 81.4 | 65.2 | 95.7 | 74.6 | 88.7 | 63.8 |
+| Kimi K3 | 79.2 | 90.7 | 81.4 | 62.2 | 84.4 | 78.7 | 85.5 | 71.4 |
+| Qwen 3.8 Max | 78.5 | 88.2 | 72.9 | 64.6 | 91.3 | 78.4 | 79.7 | 74.1 |
+| GPT-5.4 Thinking xHigh | 78.0 | 88.1 | 77.5 | 53.8 | 94.1 | 79.3 | 82.6 | 70.2 |
+| GPT-5.6 Terra xHigh | 77.9 | 90.6 | 78.2 | 54.9 | 94.9 | 79.3 | 82.9 | 64.6 |
+| Gemini 3.1 Pro High | 77.0 | 84.0 | 76.5 | 44.1 | 91.0 | 78.5 | 85.4 | 79.1 |
+| Claude Opus 4.7 Thinking xHigh | 76.5 | 87.2 | 82.1 | 50.7 | 92.9 | 78.3 | 77.9 | 66.7 |
+| Claude Opus 4.8 Thinking Max | 76.2 | 89.2 | 81.8 | 50.5 | 94.3 | 66.0 | 79.7 | 72.0 |
+| Claude Sonnet 5 xHigh | 76.0 | 88.7 | 80.7 | 59.4 | 92.9 | 71.7 | 75.0 | 63.9 |
+| Grok 4.5 | 75.8 | 87.2 | 68.6 | 56.5 | 90.8 | 73.0 | 82.8 | 71.5 |
+| Gemini 3.5 Flash High | 74.6 | 82.0 | 78.2 | 49.0 | 88.2 | 64.9 | 84.6 | 75.6 |
+| GPT-5.2 High | 74.6 | 83.2 | 76.1 | 50.3 | 93.2 | 78.2 | 79.8 | 61.8 |
+| Claude Opus 4.6 Thinking | 74.5 | 88.7 | 78.2 | 49.0 | 89.3 | 69.9 | 83.3 | 63.3 |
+| DeepSeek V4 Flash (Jul 31) | 74.2 | 86.6 | 75.0 | 46.8 | 86.8 | 79.3 | 79.2 | 65.5 |
+| GPT-5.2 Codex | 74.0 | 77.7 | 83.6 | 49.4 | 88.8 | 78.2 | 73.7 | 66.4 |
+| Gemini 3.6 Flash High | 73.6 | 85.1 | 77.9 | 43.4 | 86.4 | 63.0 | 83.9 | 75.4 |
+| GPT-5.6 Luna xHigh | 73.6 | 85.6 | 82.9 | 48.4 | 87.2 | 78.0 | 72.6 | 60.1 |
+| GLM-5.2 | 73.2 | 78.6 | 79.7 | 51.8 | 89.8 | 73.7 | 76.2 | 62.3 |
+| Claude Sonnet 4.6 Thinking | 73.0 | 84.8 | 79.3 | 42.6 | 87.0 | 77.9 | 76.1 | 63.2 |
+| Claude Opus 4.5 Thinking High | 72.6 | 80.1 | 79.7 | 39.7 | 90.4 | 74.4 | 81.3 | 62.5 |
+| DeepSeek V4 Pro | 71.6 | 82.7 | 70.0 | 42.6 | 90.7 | 74.5 | 78.1 | 62.4 |
+| GPT-5.4 Nano xHigh | 69.6 | 81.1 | 70.8 | 46.8 | 91.0 | 67.6 | 62.5 | 67.2 |
+| Minimax M3 | 67.3 | 74.5 | 68.2 | 40.7 | 76.9 | 76.2 | 76.8 | 57.5 |
+| GPT-5.4 Mini xHigh | 66.4 | 71.3 | 71.6 | 41.7 | 78.5 | 70.8 | 71.0 | 59.8 |
+| DeepSeek V4 Flash | 65.5 | 70.6 | 69.2 | 37.6 | 79.6 | 68.0 | 70.1 | 63.1 |
+| Gemini 3.5 Flash-Lite High | 63.9 | 60.2 | 76.1 | 45.3 | 73.7 | 53.2 | 71.8 | 67.2 |
 | Gemini 2.5 Pro | 58.3 | 57.1 | 55.9 | 46.7 | 70.2 | 56.9 | 69.6 | 51.7 |
-| GLM-4.7 | 58.1 | 60.1 | 57.2 | 36.7 | 69.6 | 57.5 | 68.8 | 56.8 |
-| Claude Opus 4.5 | 59.1 | 67.1 | 64.8 | 40.0 | 67.8 | 56.5 | 63.0 | 54.2 |
-| Claude Opus 4.1 | 54.5 | 59.3 | 56.8 | 30.0 | 62.9 | 52.0 | 58.7 | 61.8 |
-| Claude Sonnet 4.5 | 53.7 | 58.9 | 56.5 | 38.3 | 61.3 | 52.8 | 59.6 | 48.5 |
+| GPT-5.2 No Thinking | 48.9 | 42.8 | 76.5 | 40.0 | 58.3 | 47.7 | 50.0 | 27.2 |
 | Gemini 2.5 Flash | 47.7 | 51.1 | 41.4 | 31.7 | 57.6 | 47.2 | 56.5 | 48.3 |
 | Claude Haiku 4.5 | 45.3 | 52.2 | 43.5 | 26.7 | 54.1 | 42.5 | 51.4 | 47.0 |
 
@@ -201,11 +192,11 @@ For the latest data, always check the original sources. Data current as of: SWE-
 
 <div class="callout-box">
 <strong>⚡ Key takeaways:</strong><br>
-• <strong>New #1: GPT-5.5</strong> (80.7) edges out GPT-5.4 (80.3) and Gemini 3.1 Pro (79.9) at the top<br>
-• <strong>New Anthropic models:</strong> Claude Fable 5 (78.3) and Claude 4.8 Opus (77.2) — Fable 5 is now Anthropic's top-tier at $1.00/task<br>
-• <strong>Gemini 3.5 Flash:</strong> New Google model (75.0) slots just below Claude Fable 5, available in Copilot at $0.17/task<br>
-• <strong>DeepSeek V4 Pro</strong> (73.6) competes with GPT-5.3 Codex at just $0.03/task<br>
-• <strong>Copilot billing changed June 1, 2026:</strong> Moved to token-based AI credits. Multipliers are gone — see appendix.
+• <strong>LiveBench refreshed to v2026-06-25</strong> — scores shifted for all models; compare within this version only<br>
+• <strong>New #1: Claude Fable 5</strong> (83.0) leads, with GPT-5.6 Sol (81.0) and GPT-5.5 (80.2) close behind<br>
+• <strong>New Anthropic models:</strong> Claude Opus 5 (80.1) and Claude Sonnet 5 (76.0) — two new tiers to choose from<br>
+• <strong>GPT-5.6 family:</strong> Sol ($0.55), Terra ($0.22), Luna ($0.02) — three variants across the price spectrum<br>
+• <strong>DeepSeek V4 Flash Jul 31 update</strong> jumped from 65.5 → 74.2 — best-value model for agentic tasks at $0.01/task
 </div>
 
 ---
