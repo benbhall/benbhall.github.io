@@ -41,6 +41,8 @@ toc_icon: "file-alt"
 .family-zhipu { border-left: 3px solid #ec4899 !important; padding-left: 8px !important; }
 .family-minimax { border-left: 3px solid #14b8a6 !important; padding-left: 8px !important; }
 .family-moonshot { border-left: 3px solid #f59e0b !important; padding-left: 8px !important; }
+.family-meta { border-left: 3px solid #1877f2 !important; padding-left: 8px !important; }
+.family-alibaba { border-left: 3px solid #ff6a00 !important; padding-left: 8px !important; }
 .family-mistral { border-left: 3px solid #6366f1 !important; padding-left: 8px !important; }
 .family-xai { border-left: 3px solid #ef4444 !important; padding-left: 8px !important; }
 
@@ -141,10 +143,10 @@ body.light-theme .source-box { background: #f3f4f6 !important; border-color: #d1
 }
 </style>
 
-<span class="update-badge">📅 Data snapshot: August 2026</span>
+<span class="update-badge">📅 Data snapshot: October 2026</span>
 
 <div class="callout">
-<strong>Using GitHub Copilot?</strong> Hit the <strong>Copilot</strong> filter above to see only models available in Copilot. Since June 2026, Copilot uses per-token AI credit billing — the $/task column directly reflects your cost.
+<strong>Using GitHub Copilot?</strong> Hit the <strong>Copilot</strong> filter above to see models listed as available there. Copilot uses per-token AI credit billing; the $/task column estimates a separate direct-API task cost. See <a href="https://docs.github.com/en/copilot/reference/copilot-billing/models-and-pricing">GitHub's rate card</a> for Copilot-specific rates.
 </div>
 
 <div class="filter-buttons">
@@ -153,10 +155,13 @@ body.light-theme .source-box { background: #f3f4f6 !important; border-color: #d1
   <button class="filter-btn" data-filter="Anthropic">Claude</button>
   <button class="filter-btn" data-filter="OpenAI">GPT/o-series</button>
   <button class="filter-btn" data-filter="Google">Gemini</button>
+  <button class="filter-btn" data-filter="xAI">Grok</button>
   <button class="filter-btn" data-filter="DeepSeek">DeepSeek</button>
   <button class="filter-btn" data-filter="Zhipu">GLM</button>
   <button class="filter-btn" data-filter="Minimax">Minimax</button>
   <button class="filter-btn" data-filter="Moonshot">Kimi</button>
+  <button class="filter-btn" data-filter="Meta">Meta</button>
+  <button class="filter-btn" data-filter="Alibaba">Qwen</button>
 </div>
 
 <div style="display: flex; align-items: center; gap: 1em;">
@@ -184,41 +189,55 @@ body.light-theme .source-box { background: #f3f4f6 !important; border-color: #d1
     </tr>
   </thead>
   <tbody>
-    <tr><td class="model-name family-anthropic">Claude Fable 5</td><td>Anthropic</td><td class="copilot-standard">✓</td><td>$1.00</td><td>-</td><td>-</td><td>-</td><td class="score-high">83.0</td></tr>
-    <tr><td class="model-name family-openai">GPT-5.6 Sol</td><td>OpenAI</td><td class="copilot-standard">✓</td><td>$0.55</td><td>-</td><td>-</td><td>-</td><td class="score-high">81.0</td></tr>
-    <tr><td class="model-name family-openai">GPT-5.5</td><td>OpenAI</td><td class="copilot-standard">✓</td><td>$0.55</td><td>-</td><td>-</td><td>-</td><td class="score-high">80.2</td></tr>
-    <tr><td class="model-name family-anthropic">Claude Opus 5</td><td>Anthropic</td><td class="copilot-standard">✓</td><td>$0.50</td><td>-</td><td>-</td><td>-</td><td class="score-high">80.1</td></tr>
-    <tr><td class="model-name family-moonshot">Kimi K3</td><td>Moonshot</td><td class="copilot-none">-</td><td>-</td><td>-</td><td>-</td><td>-</td><td class="score-high">79.2</td></tr>
-    <tr><td class="model-name">Qwen 3.8 Max</td><td>Alibaba</td><td class="copilot-none">-</td><td>-</td><td>-</td><td>-</td><td>-</td><td class="score-high">78.5</td></tr>
-    <tr><td class="model-name family-openai">GPT-5.4</td><td>OpenAI</td><td class="copilot-standard">✓</td><td>$0.28</td><td>-</td><td>-</td><td>-</td><td class="score-high">78.0</td></tr>
-    <tr><td class="model-name family-openai">GPT-5.6 Terra</td><td>OpenAI</td><td class="copilot-standard">✓</td><td>$0.22</td><td>-</td><td>-</td><td>-</td><td class="score-high">77.9</td></tr>
-    <tr><td class="model-name family-google">Gemini 3.1 Pro</td><td>Google</td><td class="copilot-standard">✓</td><td>$0.22</td><td class="score-mid">69.6%</td><td>-</td><td>-</td><td class="score-high">77.0</td></tr>
-    <tr><td class="model-name family-anthropic" title="Intro pricing through Aug 31, 2026; rises to $0.30/task from Sep 1">Claude Sonnet 5</td><td>Anthropic</td><td class="copilot-standard">✓</td><td>$0.20†</td><td>-</td><td>-</td><td>-</td><td class="score-high">76.0</td></tr>
+    <tr><td class="model-name family-anthropic">Claude Fable 5.1 Max</td><td>Anthropic</td><td class="copilot-standard">✓</td><td>$1.00</td><td>-</td><td>-</td><td>-</td><td class="score-high">83.4</td></tr>
+    <tr><td class="model-name family-anthropic">Claude Opus 5.5 Thinking Max</td><td>Anthropic</td><td class="copilot-standard">✓</td><td>$0.40</td><td>-</td><td>-</td><td>-</td><td class="score-high">83.2</td></tr>
+    <tr><td class="model-name family-anthropic">Claude Opus 5 Thinking Max</td><td>Anthropic</td><td class="copilot-standard">✓</td><td>$0.50</td><td>-</td><td>-</td><td>-</td><td class="score-high">80.1</td></tr>
+    <tr><td class="model-name family-anthropic">Claude Fable 5 Max</td><td>Anthropic</td><td class="copilot-standard">✓</td><td>$1.00</td><td>-</td><td>-</td><td>-</td><td class="score-high">83.0</td></tr>
+    <tr><td class="model-name family-openai">GPT-5.6 Sol Max</td><td>OpenAI</td><td class="copilot-standard">✓</td><td>$0.40</td><td>-</td><td>-</td><td>-</td><td class="score-high">81.0</td></tr>
+    <tr><td class="model-name family-openai">GPT-5.5 Thinking xHigh</td><td>OpenAI</td><td class="copilot-standard">✓</td><td>$0.55</td><td>-</td><td>-</td><td>-</td><td class="score-high">80.2</td></tr>
+    <tr><td class="model-name family-openai">GPT-6 Astra Max</td><td>OpenAI</td><td class="copilot-standard">✓</td><td>$1.00</td><td>-</td><td>-</td><td>-</td><td class="score-high">82.2</td></tr>
+    <tr><td class="model-name family-openai">GPT-6.1 Sol Max</td><td>OpenAI</td><td class="copilot-standard">✓</td><td>$0.20</td><td>-</td><td>-</td><td>-</td><td class="score-high">81.6</td></tr>
+    <tr><td class="model-name">Muse Spark 1.3 xHigh</td><td>Meta</td><td class="copilot-none">-</td><td>-</td><td>-</td><td>-</td><td>-</td><td class="score-high">81.6</td></tr>
+    <tr><td class="model-name family-deepseek">DeepSeek V4.1 Flash Max</td><td>DeepSeek</td><td class="copilot-none">-</td><td>$0.03*</td><td>-</td><td>-</td><td>-</td><td class="score-high">81.1</td></tr>
+    <tr><td class="model-name family-openai">GPT-6 Sol Max</td><td>OpenAI</td><td class="copilot-standard">✓</td><td>$0.20</td><td>-</td><td>-</td><td>-</td><td class="score-high">79.3</td></tr>
+    <tr><td class="model-name family-openai">GPT-6 Luna Max</td><td>OpenAI</td><td class="copilot-standard">✓</td><td>$0.01</td><td>-</td><td>-</td><td>-</td><td class="score-high">72.0</td></tr>
+    <tr><td class="model-name family-google">Gemini 3.8 Flash</td><td>Google</td><td class="copilot-standard">✓</td><td>$0.075†</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td class="model-name family-google">Gemini 3.7 Flash</td><td>Google</td><td class="copilot-standard">✓</td><td>$0.075†</td><td>-</td><td>-</td><td>-</td><td class="score-high">78.8</td></tr>
+    <tr><td class="model-name family-moonshot">Kimi K3</td><td>Moonshot</td><td class="copilot-standard">✓</td><td>-</td><td>-</td><td>-</td><td>-</td><td class="score-high">79.2</td></tr>
+    <tr><td class="model-name family-xai">Grok 4.6</td><td>xAI</td><td class="copilot-standard">✓</td><td>-</td><td>-</td><td>-</td><td>-</td><td class="score-high">78.0</td></tr>
+    <tr><td class="model-name family-xai">Grok 4.7</td><td>xAI</td><td class="copilot-standard">✓</td><td>-</td><td>-</td><td>-</td><td>-</td><td class="score-high">77.4</td></tr>
+    <tr><td class="model-name family-anthropic">Claude Sonnet 5.5 xHigh</td><td>Anthropic</td><td class="copilot-standard">✓</td><td>$0.20</td><td>-</td><td>-</td><td>-</td><td class="score-high">77.8</td></tr>
+    <tr><td class="model-name family-zhipu">GLM-5.3</td><td>Zhipu</td><td class="copilot-none">-</td><td>-</td><td>-</td><td>-</td><td>-</td><td class="score-high">76.1</td></tr>
+    <tr><td class="model-name family-alibaba">Qwen 3.8 Flash Next</td><td>Alibaba</td><td class="copilot-none">-</td><td>-</td><td>-</td><td>-</td><td>-</td><td class="score-high">76.2</td></tr>
+    <tr><td class="model-name family-alibaba">Qwen 3.8 27B</td><td>Alibaba</td><td class="copilot-none">-</td><td>-</td><td>-</td><td>-</td><td>-</td><td class="score-high">75.3</td></tr>
+    <tr><td class="model-name family-deepseek">DeepSeek V4 Pro 0813</td><td>DeepSeek</td><td class="copilot-none">-</td><td>$0.106*</td><td>-</td><td>-</td><td>-</td><td class="score-high">77.4</td></tr>
+    <tr><td class="model-name family-meta">Muse Spark 1.2 xHigh</td><td>Meta</td><td class="copilot-none">-</td><td>-</td><td>-</td><td>-</td><td>-</td><td class="score-high">78.0</td></tr>
+    <tr><td class="model-name family-openai">GPT-5.4 Thinking xHigh</td><td>OpenAI</td><td class="copilot-standard">✓</td><td>$0.28</td><td>-</td><td>-</td><td>-</td><td class="score-high">78.0</td></tr>
+    <tr><td class="model-name family-openai">GPT-5.6 Terra Max</td><td>OpenAI</td><td class="copilot-standard">✓</td><td>$0.22</td><td>-</td><td>-</td><td>-</td><td class="score-high">77.9</td></tr>
+    <tr><td class="model-name family-google">Gemini 3.1 Pro</td><td>Google</td><td class="copilot-none">-</td><td>$0.22</td><td class="score-mid">69.6%</td><td>-</td><td>-</td><td class="score-high">77.0</td></tr>
+    <tr><td class="model-name family-anthropic">Claude Sonnet 5</td><td>Anthropic</td><td class="copilot-standard">✓</td><td>$0.20</td><td>-</td><td>-</td><td>-</td><td class="score-high">76.0</td></tr>
     <tr><td class="model-name family-anthropic">Claude Opus 4.8</td><td>Anthropic</td><td class="copilot-standard">✓</td><td>$0.50</td><td>-</td><td>-</td><td>-</td><td class="score-high">76.2</td></tr>
-    <tr><td class="model-name family-anthropic">Claude Opus 4.7</td><td>Anthropic</td><td class="copilot-standard">✓</td><td>$0.50</td><td>-</td><td>-</td><td>-</td><td class="score-high">76.5</td></tr>
+    <tr><td class="model-name family-anthropic">Claude Opus 4.7</td><td>Anthropic</td><td class="copilot-none">-</td><td>$0.50</td><td>-</td><td>-</td><td>-</td><td class="score-high">76.5</td></tr>
     <tr><td class="model-name family-xai">Grok 4.5</td><td>xAI</td><td class="copilot-none">-</td><td>-</td><td>-</td><td>-</td><td>-</td><td class="score-high">75.8</td></tr>
-    <tr><td class="model-name family-anthropic">Claude Opus 4.6</td><td>Anthropic</td><td class="copilot-standard">✓</td><td>$0.50</td><td class="score-high">75.6%</td><td>-</td><td>-</td><td class="score-high">74.5</td></tr>
-    <tr><td class="model-name family-google">Gemini 3.5 Flash</td><td>Google</td><td class="copilot-standard">✓</td><td>$0.17</td><td>-</td><td>-</td><td>-</td><td class="score-high">74.6</td></tr>
-    <tr><td class="model-name family-openai">GPT-5.2 high reasoning</td><td>OpenAI</td><td class="copilot-standard">✓</td><td>$0.23</td><td class="score-high">72.8%</td><td class="score-high">88.0%</td><td class="score-high">1470</td><td class="score-high">74.6</td></tr>
-    <tr><td class="model-name family-deepseek">DeepSeek V4 Flash (Jul 31)</td><td>DeepSeek</td><td class="copilot-none">-</td><td>$0.01</td><td class="score-high">70.0%</td><td class="score-high">74.2%</td><td class="score-mid">1350</td><td class="score-high">74.2</td></tr>
-    <tr><td class="model-name family-google">Gemini 3.6 Flash</td><td>Google</td><td class="copilot-standard">✓</td><td>$0.15</td><td>-</td><td>-</td><td>-</td><td class="score-high">73.6</td></tr>
-    <tr><td class="model-name family-openai">GPT-5.6 Luna</td><td>OpenAI</td><td class="copilot-standard">✓</td><td>$0.02</td><td>-</td><td>-</td><td>-</td><td class="score-high">73.6</td></tr>
+    <tr><td class="model-name family-anthropic">Claude Opus 4.6</td><td>Anthropic</td><td class="copilot-none">-</td><td>$0.50</td><td class="score-high">75.6%</td><td>-</td><td>-</td><td class="score-high">74.5</td></tr>
+    <tr><td class="model-name family-google">Gemini 3.5 Flash</td><td>Google</td><td class="copilot-none">-</td><td>$0.17</td><td>-</td><td>-</td><td>-</td><td class="score-high">74.6</td></tr>
+    <tr><td class="model-name family-openai">GPT-5.2 high reasoning</td><td>OpenAI</td><td class="copilot-none">-</td><td>$0.23</td><td class="score-high">72.8%</td><td class="score-high">88.0%</td><td class="score-high">1470</td><td class="score-high">74.6</td></tr>
+    <tr><td class="model-name family-google">Gemini 3.6 Flash</td><td>Google</td><td class="copilot-none">-</td><td>$0.075†</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
     <tr><td class="model-name family-zhipu">GLM-5.2</td><td>Zhipu</td><td class="copilot-none">-</td><td>-</td><td>-</td><td>-</td><td>-</td><td class="score-high">73.2</td></tr>
     <tr><td class="model-name family-anthropic">Claude Sonnet 4.6</td><td>Anthropic</td><td class="copilot-standard">✓</td><td>$0.30</td><td>-</td><td>-</td><td>-</td><td class="score-high">73.0</td></tr>
-    <tr><td class="model-name family-anthropic">Claude Opus 4.5 thinking-32k</td><td>Anthropic</td><td class="copilot-standard">✓</td><td>$0.50</td><td class="score-high">76.8%</td><td class="score-mid">72.0%</td><td class="score-high">1497</td><td class="score-high">72.6</td></tr>
-    <tr><td class="model-name family-anthropic">Claude Opus 4.5</td><td>Anthropic</td><td class="copilot-standard">✓</td><td>$0.50</td><td class="score-high">76.8%</td><td class="score-mid">70.7%</td><td class="score-high">1468</td><td class="score-high">72.6</td></tr>
-    <tr><td class="model-name family-deepseek">DeepSeek V4 Pro</td><td>DeepSeek</td><td class="copilot-none">-</td><td>$0.03</td><td>-</td><td>-</td><td>-</td><td class="score-mid">71.6</td></tr>
+    <tr><td class="model-name family-anthropic">Claude Opus 4.5 thinking-32k</td><td>Anthropic</td><td class="copilot-none">-</td><td>$0.50</td><td class="score-high">76.8%</td><td class="score-mid">72.0%</td><td class="score-high">1497</td><td class="score-high">72.6</td></tr>
+    <tr><td class="model-name family-anthropic">Claude Opus 4.5</td><td>Anthropic</td><td class="copilot-none">-</td><td>$0.50</td><td class="score-high">76.8%</td><td class="score-mid">70.7%</td><td class="score-high">1468</td><td class="score-high">72.6</td></tr>
     <tr><td class="model-name family-openai">GPT-5.4 nano</td><td>OpenAI</td><td class="copilot-standard">✓</td><td>$0.02</td><td>-</td><td>-</td><td>-</td><td class="score-mid">69.6</td></tr>
-    <tr><td class="model-name family-google">Gemini 3 Flash</td><td>Google</td><td class="copilot-standard">✓</td><td>$0.06</td><td class="score-high">75.8%</td><td>-</td><td class="score-high">1443</td><td>-</td></tr>
+    <tr><td class="model-name family-google">Gemini 3 Flash</td><td>Google</td><td class="copilot-none">-</td><td>$0.06</td><td class="score-high">75.8%</td><td>-</td><td class="score-high">1443</td><td>-</td></tr>
     <tr><td class="model-name family-openai">GPT-5.4 mini</td><td>OpenAI</td><td class="copilot-standard">✓</td><td>$0.08</td><td>-</td><td>-</td><td>-</td><td class="score-mid">66.4</td></tr>
     <tr><td class="model-name family-google">Gemini 3.5 Flash-Lite</td><td>Google</td><td class="copilot-none">-</td><td>$0.04</td><td>-</td><td>-</td><td>-</td><td class="score-mid">63.9</td></tr>
     <tr><td class="model-name family-minimax">Minimax M3</td><td>Minimax</td><td class="copilot-none">-</td><td>-</td><td>-</td><td>-</td><td>-</td><td class="score-mid">67.3</td></tr>
     <tr><td class="model-name family-moonshot">Kimi K2.5</td><td>Moonshot</td><td class="copilot-none">-</td><td>$0.15</td><td class="score-high">70.8%</td><td>-</td><td>-</td><td>-</td></tr>
     <tr><td class="model-name family-minimax">Minimax M2.5</td><td>Minimax</td><td class="copilot-none">-</td><td>$0.07</td><td class="score-high">75.8%</td><td>-</td><td>-</td><td>-</td></tr>
-    <tr><td class="model-name family-google">Gemini 2.5 Pro</td><td>Google</td><td class="copilot-standard">✓</td><td>$0.16</td><td class="score-mid">53.6%</td><td class="score-high">83.1%</td><td class="score-mid">1372</td><td class="score-mid">58.3</td></tr>
+    <tr><td class="model-name family-google">Gemini 2.5 Pro</td><td>Google</td><td class="copilot-none">-</td><td>$0.16</td><td class="score-mid">53.6%</td><td class="score-high">83.1%</td><td class="score-mid">1372</td><td class="score-mid">58.3</td></tr>
     <tr><td class="model-name family-zhipu">GLM-4.7</td><td>Zhipu</td><td class="copilot-none">-</td><td>$0.05</td><td>-</td><td>-</td><td class="score-high">1440</td><td>-</td></tr>
-    <tr><td class="model-name family-anthropic">Claude Sonnet 4.5</td><td>Anthropic</td><td class="copilot-standard">✓</td><td>$0.30</td><td class="score-high">71.4%</td><td class="score-high">82.4%</td><td class="score-mid">1383</td><td>-</td></tr>
-    <tr><td class="model-name family-openai">GPT-5.2</td><td>OpenAI</td><td class="copilot-standard">✓</td><td>$0.23</td><td class="score-high">72.8%</td><td class="score-high">88.0%</td><td class="score-mid">1432</td><td class="score-low">48.9</td></tr>
+    <tr><td class="model-name family-anthropic">Claude Sonnet 4.5</td><td>Anthropic</td><td class="copilot-none">-</td><td>$0.30</td><td class="score-high">71.4%</td><td class="score-high">82.4%</td><td class="score-mid">1383</td><td>-</td></tr>
+    <tr><td class="model-name family-openai">GPT-5.2</td><td>OpenAI</td><td class="copilot-none">-</td><td>$0.23</td><td class="score-high">72.8%</td><td class="score-high">88.0%</td><td class="score-mid">1432</td><td class="score-low">48.9</td></tr>
     <tr><td class="model-name family-anthropic">Claude Haiku 4.5</td><td>Anthropic</td><td class="copilot-standard">✓</td><td>$0.10</td><td class="score-mid">66.6%</td><td class="score-mid">73.5%</td><td class="score-low">1290</td><td class="score-mid">45.3</td></tr>
     <tr><td class="model-name family-openai">GPT-4o</td><td>OpenAI</td><td class="copilot-none">-</td><td>$0.23</td><td class="score-low">48.9%</td><td class="score-high">72.9%</td><td class="score-mid">1372</td><td>-</td></tr>
     <tr><td class="model-name family-google">Gemini 2.5 Flash</td><td>Google</td><td class="copilot-none">-</td><td>$0.04</td><td class="score-low">28.7%</td><td class="score-mid">55.1%</td><td class="score-low">1233</td><td class="score-low">47.7</td></tr>
@@ -231,21 +250,22 @@ body.light-theme .source-box { background: #f3f4f6 !important; border-color: #d1
 
 | Column | What it means |
 |--------|---------------|
-| **Copilot** | Available in GitHub Copilot (✓ = yes, - = not listed). Since June 1, 2026 Copilot uses token-based AI credit billing — same per-token rates as direct API. |
-| **$/task** | Estimated cost per task if using APIs directly (50K in + 10K out tokens). Also reflects Copilot AI credit cost since Jun 2026 billing change. |
+| **Copilot** | Available in GitHub Copilot (✓ = listed, - = not listed). Copilot usage is billed in AI credits based on tokens used. |
+| **$/task** | Estimated direct-API cost for 50K input + 10K output tokens; it is not a Copilot bill estimate. |
 | **SWE-bench** | % of real GitHub issues the model can fix autonomously ([source](https://www.swebench.com/)) - February 2026 data (standardized harness, high reasoning mode) |
-| **Aider** | % correct on multi-language code editing ([source](https://aider.chat/docs/leaderboards/)) - June 2025 data · Best signal for CLI/agentic use cases |
+| **Aider** | % correct on multi-language code editing ([source](https://aider.chat/docs/leaderboards/)) - latest listed runs are October 2025; historical comparison only |
 | **Arena** | Elo rating from human preference voting on Code category ([source](https://lmarena.ai/)) - February 2026 data |
-| **LiveBench** | Global average score across 23 diverse tasks ([source](https://livebench.ai/)) - Aug 2026 data (LiveBench-2026-06-25), contamination-free |
+| **LiveBench** | Global average score across 23 diverse tasks ([source](https://livebench.ai/)) - current scores shown from release 2026-06-25 |
 
-†Claude Sonnet 5 intro pricing through Aug 31, 2026; rises to $0.30/task from Sep 1.
+*DeepSeek V4.1 Flash has time-based peak/off-peak rates; this task estimate uses peak pricing. †Gemini 3.7/3.8 Flash promotional API pricing runs through Dec 31, 2026.*
 
 <div class="source-box">
 <strong>Data sources:</strong> 
 <a href="https://www.swebench.com/">SWE-bench</a> (Feb 2026) · 
-<a href="https://aider.chat/docs/leaderboards/">Aider</a> (Oct 2025) · 
+<a href="https://aider.chat/docs/leaderboards/">Aider</a> (latest listed runs: Oct 2025) ·
 <a href="https://lmarena.ai/">Arena Code</a> (Feb 2026, not refreshed) · 
-<a href="https://livebench.ai/">LiveBench</a> (Aug 2026, v2026-06-25) · 
+<a href="https://livebench.ai/">LiveBench</a> (latest release: v2026-06-25; leaderboard includes newer models) ·
+<a href="https://programbench.com/">ProgramBench</a> (leaderboard updated Sep 28, 2026) ·
 <a href="https://docs.github.com/en/copilot/reference/copilot-billing/models-and-pricing">GitHub Copilot</a> (AI credit billing since Jun 2026)<br>
 <strong>API pricing:</strong> 
 <a href="https://platform.claude.com/docs/en/about-claude/pricing">Anthropic</a> · 
@@ -262,7 +282,7 @@ jQuery.noConflict();
 jQuery(document).ready(function($) {
   var table = $('#model-table').DataTable({
     pageLength: parseInt($('#model-count').val()) || 25,
-    order: [[4, 'desc']],
+    order: [[7, 'desc']],
     language: {
       search: "🔍",
       lengthMenu: "Show _MENU_ models",
