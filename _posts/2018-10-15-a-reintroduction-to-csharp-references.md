@@ -22,9 +22,9 @@ header:
   teaser: /assets/images/refs/1-typesvenn.png
 ---
 
-[![image-center](/assets/images/refs/novcpwin.png){: .align-center}](https://www.codeproject.com/Competitions/1064/Best-Article-of-October-2018.aspx)
+![image-center](/assets/images/refs/novcpwin.png){: .align-center}
 
-Super happy to have won First Prize @ [Codeproject](https://www.codeproject.com/Articles/1263638/A-Re-Introduction-to-Csharp-References-Post-Csharp) for best article.
+Super happy to have won First Prize @ CodeProject for best article. *(CodeProject has closed.)*
 
 ***
 

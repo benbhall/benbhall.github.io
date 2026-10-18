@@ -1,6 +1,10 @@
 ---
-layout: redirected
+layout: single
+title: "Azure Arc: Getting Started with Azure Application Services"
 sitemap: false
 permalink: /arc1/
-redirect_to: https://www.codeproject.com/Articles/5329093/Deploying-to-Azure-Arc-via-Azure-Application-Servi
 ---
+
+This Microsoft-commissioned article was published on CodeProject, which has since closed. The original link is no longer available.
+
+[More of my writing](/about/)

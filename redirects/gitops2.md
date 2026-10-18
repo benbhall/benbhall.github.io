@@ -1,6 +1,10 @@
 ---
-layout: redirected
+layout: single
+title: "GitOps with Terraform and GitHub"
 sitemap: false
 permalink: /gitops2/
-redirect_to: https://www.codeproject.com/Articles/5334971/GitOps-with-Terraform-and-GitHub
 ---
+
+This Microsoft-commissioned article was published on CodeProject, which has since closed. The original link is no longer available.
+
+[About the GitOps series](/gitops/)

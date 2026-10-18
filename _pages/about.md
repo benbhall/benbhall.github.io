@@ -6,7 +6,7 @@ classes: wide
 
 ## What I've been up to
 
-- Jan 2024 ⇉⇉⇉ ...   Lead Software Developer at Mountain Warehouse
+- Lead Software Developer at Mountain Warehouse, also serving as Interim Engineering Manager across all three e-commerce web teams
 - Jan 2022 ⇉⇉⇉ Jan 2024   Principal Software Developer at a gov.uk
 - 2019 ⇉⇉⇉ ...   Technical Specialist & Author for ContentLab.io
 - 2018 ⇉⇉⇉ 2022 Technical Lead Engineer for C# .NET at a gov.uk
@@ -19,15 +19,15 @@ Most of what I do is 👻 ghostwritten but I do get authorship credit sometimes:
 
 ### Microsoft-commissioned 3-Part Blog Series on GitOps with Terraform plans, GitHub, GitHub Actions, and Azure
 
-- **Part 1**: [Introduction to GitOps](https://www.codeproject.com/Articles/5334970/Introduction-to-GitOps)
-- **Part 2**: [GitOps with Terraform and GitHub](https://www.codeproject.com/Articles/5334971/GitOps-with-Terraform-and-GitHub)
-- **Part 3**: [GitOps Provisioning with GitHub Actions](https://www.codeproject.com/Articles/5334972/GitOps-with-Azure-Terraform-and-GitHub-Part-3-GitO)
+- **Part 1**: Introduction to GitOps *(CodeProject has closed.)*
+- **Part 2**: GitOps with Terraform and GitHub *(CodeProject has closed.)*
+- **Part 3**: GitOps Provisioning with GitHub Actions *(CodeProject has closed.)*
 
 ### Microsoft-commissioned 3-Part Blog Series on Azure Arc
 
-- **Part 1**: [Deploying to Azure Arc via Azure Application Services Part 1: Getting Started with Azure Application Services](https://www.codeproject.com/Articles/5329093/Deploying-to-Azure-Arc-via-Azure-Application-Servi)
-- **Part 2**: [Deploying to Azure Arc via Azure Application Services Part 2: Running Azure Functions Anywhere](https://www.codeproject.com/Articles/5329094/Deploying-to-Azure-Arc-via-Azure-Application-Ser-2)
-- **Part 3**: [Deploying to Azure Arc via Azure Application Services Part 3: Deploying a Multi-cloud Azure App Service Web App](https://www.codeproject.com/Articles/5329095/Deploying-to-Azure-Arc-via-Azure-Application-Ser-3)
+- **Part 1**: Deploying to Azure Arc via Azure Application Services Part 1: Getting Started with Azure Application Services *(CodeProject has closed.)*
+- **Part 2**: Deploying to Azure Arc via Azure Application Services Part 2: Running Azure Functions Anywhere *(CodeProject has closed.)*
+- **Part 3**: Deploying to Azure Arc via Azure Application Services Part 3: Deploying a Multi-cloud Azure App Service Web App *(CodeProject has closed.)*
 
 ### Docker
 
@@ -42,10 +42,9 @@ Mattermost is the leading open source collaboration platform. I was asked to wri
 
 ### Microsoft-commissioned 3-Part Blog Series on Teams and PowerApps
 
-- **Part 1**: [Build a Teams Power App for Manufacturing 1: Get Started with Dataverse](https://www.codeproject.com/Articles/5303169/Build-a-Teams-Power-App-for-Manufacturing-1-Get-St)
-- **Part 2**: [Build a Teams Power App for Manufacturing 2: Create the Customer UI](https://www.codeproject.com/Articles/5303170/Build-a-Teams-Power-App-for-Manufacturing-2-Create)
-- **Part 3**: [Build a Teams Power App for Manufacturing 3: Create the Manufacturer UI
-](https://www.codeproject.com/Articles/5303171/Build-a-Teams-Power-App-for-Manufacturing-3-Create)
+- **Part 1**: Build a Teams Power App for Manufacturing 1: Get Started with Dataverse *(CodeProject has closed.)*
+- **Part 2**: Build a Teams Power App for Manufacturing 2: Create the Customer UI *(CodeProject has closed.)*
+- **Part 3**: Build a Teams Power App for Manufacturing 3: Create the Manufacturer UI *(CodeProject has closed.)*
 
 ### Some other topics I've ghostwritten on recently
 
@@ -76,8 +75,8 @@ Mattermost is the leading open source collaboration platform. I was asked to wri
 
 ## Awards
 
-- 1 Jan 2019 - CodeProject MVP 2019 [MVA Most Valuable Author Award](https://www.codeproject.com/Competitions/1071/CodeProject-MVP-2019.aspx) - 'We recognize and value your exceptional contributions and commitment to the technical communities worldwide. By sharing your real world expertise and technical skills, you demonstrate outstanding technical community leadership.'
-- 15 Nov 2018 - First Prize: [Best Article of October 2018](https://www.codeproject.com/Articles/1263638/A-Re-Introduction-to-Csharp-References-Post-Csharp) with A Re-Introduction to C# References Post C# 7
-- 24 Aug 2018 First Prize: [Best Article of July 2018](https://www.codeproject.com/Articles/1252394/A-Super-Simplified-Explanation-of-NET-Garbage-Coll) with A Super-Simplified Explanation of .NET Garbage Collection
-- 18 May 2018 First Prize: [Best C# Article of April 2018](https://www.codeproject.com/Articles/1239524/Csharp-Debug-vs-Release-Builds-and-Debugging-in-Vi) with C# Debug vs. Release Builds and Debugging in Visual Studio – from Novice to Expert in One Blog Article
-- 23 Mar 2018 - First Prize: [Best C# Article of February 2018](https://www.codeproject.com/Articles/1229574/Addressing-a-simple-yet-common-Csharp-Async-Await) with Addressing a Simple Yet Common C# Async/Await Misconception
+- 1 Jan 2019 - CodeProject MVP 2019 MVA Most Valuable Author Award - 'We recognize and value your exceptional contributions and commitment to the technical communities worldwide. By sharing your real world expertise and technical skills, you demonstrate outstanding technical community leadership.' *(CodeProject has closed.)*
+- 15 Nov 2018 - First Prize: Best Article of October 2018 with A Re-Introduction to C# References Post C# 7 *(CodeProject has closed.)*
+- 24 Aug 2018 First Prize: Best Article of July 2018 with A Super-Simplified Explanation of .NET Garbage Collection *(CodeProject has closed.)*
+- 18 May 2018 First Prize: Best C# Article of April 2018 with C# Debug vs. Release Builds and Debugging in Visual Studio – from Novice to Expert in One Blog Article *(CodeProject has closed.)*
+- 23 Mar 2018 - First Prize: Best C# Article of February 2018 with Addressing a Simple Yet Common C# Async/Await Misconception *(CodeProject has closed.)*

@@ -13,9 +13,9 @@ tags:
   - 'C#'
   - garbage collection
 ---
-[![image-center](/assets/images/super-gc/codeprojectgc.png){: .align-center}](https://www.codeproject.com/Competitions/1058/Best-Article-of-July-2018.aspx)
+![image-center](/assets/images/super-gc/codeprojectgc.png){: .align-center}
 
-Super happy to have won First Prize @ [Codeproject](https://www.codeproject.com/Articles/1252394/A-Super-Simplified-Explanation-of-NET-Garbage-Coll) for best article.
+Super happy to have won First Prize @ CodeProject for best article. *(CodeProject has closed.)*
 
 ***
 

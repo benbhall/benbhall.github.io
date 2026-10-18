@@ -13,8 +13,8 @@ tags:
   - Asynchronous
   - 'C#'
 ---
-[<img class="alignnone" src="https://i0.wp.com/benhall.io/wp-content/uploads/2018/01/bestAsync2.png?resize=563%2C52" alt="" width="563" height="52" data-recalc-dims="1" />](https://www.codeproject.com/Articles/1229574/Addressing-a-Simple-Yet-Common-Csharp-Async-Await)  
-Super happy to have won First Prize @ [Codeproject](https://www.codeproject.com/Articles/1229574/Addressing-a-Simple-Yet-Common-Csharp-Async-Await) for this article.
+<img class="alignnone" src="https://i0.wp.com/benhall.io/wp-content/uploads/2018/01/bestAsync2.png?resize=563%2C52" alt="" width="563" height="52" data-recalc-dims="1" />
+Super happy to have won First Prize @ CodeProject for this article. *(CodeProject has closed.)*
 
 [Git repository with example code discussed in this article.](https://github.com/benbhall/AsyncAwaitBehaviourDemo)
 
@@ -135,5 +135,3 @@ This is what happens when the code is executed (with colouring):
 ## Conclusion
 
 If you use the `await` keyword when calling an `async` method from inside an `async` method, execution of the calling method is suspended to avoid blocking the thread and control is passed (or yielded) back up the method chain. If, on its journey up the chain, it reaches a call that was not awaited, then code in that method is able to continue in parallel to the remaining processing in the chain of awaited methods until it runs out of work to do, and then needs to `await` the result, which is inside the Task object returned by `LongOperation()`.``​​​​​​​
-
-<a style="display: none;" href="https://www.codeproject.com" rel="tag">CodeProject</a>

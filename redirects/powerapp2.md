@@ -1,6 +1,10 @@
 ---
-layout: redirected
+layout: single
+title: "Build a Teams Power App for Manufacturing 2: Create the Customer UI"
 sitemap: false
 permalink: /mspower2/
-redirect_to: https://www.codeproject.com/Articles/5303170/Build-a-Teams-Power-App-for-Manufacturing-2-Create
 ---
+
+This Microsoft-commissioned article was published on CodeProject, which has since closed. The original link is no longer available.
+
+[More of my writing](/about/)

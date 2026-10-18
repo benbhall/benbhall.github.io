@@ -1,6 +1,10 @@
 ---
-layout: redirected
+layout: single
+title: "GitOps Provisioning with GitHub Actions"
 sitemap: false
 permalink: /gitops3/
-redirect_to: https://www.codeproject.com/Articles/5334972/GitOps-with-Azure-Terraform-and-GitHub-Part-3-GitO
 ---
+
+This Microsoft-commissioned article was published on CodeProject, which has since closed. The original link is no longer available.
+
+[About the GitOps series](/gitops/)

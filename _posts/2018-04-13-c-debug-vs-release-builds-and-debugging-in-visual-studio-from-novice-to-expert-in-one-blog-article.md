@@ -78,7 +78,7 @@ For a more detailed discussion on C# compiler optimisations see Eric Lippert's a
 
 ## **The JIT compiler optimisations**
 
-Despite having to perform its job swiftly at runtime, the JIT compiler performs a lot of optimisations. There's not much info on its internals and it is a non-deterministic beast (like Forrest Gump’s box of chocolates) &#8211; varying in the native code it produces depending on a many factors. Even while your application is running it is profiling and possibly re-compiling code to improve performance. For a good set of examples of optimisations made by the JIT compiler checkout [Sasha Goldshtein's article](https://www.codeproject.com/Articles/25801/JIT-Optimizations).
+Despite having to perform its job swiftly at runtime, the JIT compiler performs a lot of optimisations. There's not much info on its internals and it is a non-deterministic beast (like Forrest Gump’s box of chocolates) &#8211; varying in the native code it produces depending on a many factors. Even while your application is running it is profiling and possibly re-compiling code to improve performance. Sasha Goldshtein's article "JIT Optimizations" provided a good set of examples. *(CodeProject has closed.)*
 
 I will just look at one example to illustrate the effect of optimisation on your debugging experience:
 
