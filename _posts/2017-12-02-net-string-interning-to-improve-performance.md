@@ -116,7 +116,7 @@ In Figure 1 below, I have plotted the size of collections in number of strings a
 There is slightly more overhead when populating the `List<T>` with string interning, which is initially of no consequence but is growing faster than the other options.
 
 <div id="attachment_259" style="width: 574px" class="wp-caption aligncenter">
-  <img aria-describedby="caption-attachment-259" class="size-full wp-image-259" src="https://i2.wp.com/benhall.io/wp-content/uploads/2017/12/populatecollection2.png?resize=574%2C322" alt="" width="574" height="322" srcset="https://i2.wp.com/benhall.io/wp-content/uploads/2017/12/populatecollection2.png?w=574 574w, https://i2.wp.com/benhall.io/wp-content/uploads/2017/12/populatecollection2.png?resize=300%2C168 300w" sizes="(max-width: 574px) 100vw, 574px" data-recalc-dims="1" />
+  <img aria-describedby="caption-attachment-259" class="size-full wp-image-259" src="/wp-content/uploads/2017/12/populatecollection2.png" alt="" width="574" height="322" />
   
   <p id="caption-attachment-259" class="wp-caption-text">
     Figure 1: Populating List<T> and HashSet<T> collections with random strings
@@ -126,7 +126,7 @@ There is slightly more overhead when populating the `List<T>` with string intern
 Figure 2, shows the times for searching for the known string. All the times are pretty small for these collection sizes but the growths are clear.
 
 <div id="attachment_260" style="width: 571px" class="wp-caption aligncenter">
-  <img aria-describedby="caption-attachment-260" class="size-full wp-image-260" src="https://i1.wp.com/benhall.io/wp-content/uploads/2017/12/searchcollection.png?resize=571%2C322" alt="" width="571" height="322" srcset="https://i1.wp.com/benhall.io/wp-content/uploads/2017/12/searchcollection.png?w=571 571w, https://i1.wp.com/benhall.io/wp-content/uploads/2017/12/searchcollection.png?resize=300%2C169 300w" sizes="(max-width: 571px) 100vw, 571px" data-recalc-dims="1" />
+  <img aria-describedby="caption-attachment-260" class="size-full wp-image-260" src="/wp-content/uploads/2017/12/searchcollection.png" alt="" width="571" height="322" />
   
   <p id="caption-attachment-260" class="wp-caption-text">
     Figure 2: Times taken searching for a string known, which was added last
