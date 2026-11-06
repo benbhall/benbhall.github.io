@@ -13,7 +13,7 @@ tags:
   - Asynchronous
   - 'C#'
 ---
-<img class="alignnone" src="https://i0.wp.com/benhall.io/wp-content/uploads/2018/01/bestAsync2.png?resize=563%2C52" alt="" width="563" height="52" data-recalc-dims="1" />
+<img class="alignnone" src="/wp-content/uploads/2018/01/bestAsync2.png" alt="" width="563" height="52" />
 Super happy to have won First Prize @ CodeProject for this article. *(CodeProject has closed.)*
 
 [Git repository with example code discussed in this article.](https://github.com/benbhall/AsyncAwaitBehaviourDemo)
@@ -130,7 +130,7 @@ private static async Task LongOperation()
 
 This is what happens when the code is executed (with colouring):
 
-<img class="aligncenter wp-image-347" src="https://i2.wp.com/benhall.io/wp-content/uploads/2018/01/async_demo2.gif?resize=560%2C239" alt="" width="560" height="239" data-recalc-dims="1" /> 
+<img class="aligncenter wp-image-347" src="/wp-content/uploads/2018/01/async_demo2.gif" alt="" width="560" height="239" /> 
 
 ## Conclusion
 
