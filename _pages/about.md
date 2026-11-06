@@ -19,9 +19,11 @@ Most of what I do is 👻 ghostwritten but I do get authorship credit sometimes:
 
 ### Microsoft-commissioned 3-Part Blog Series on GitOps with Terraform plans, GitHub, GitHub Actions, and Azure
 
-- **Part 1**: Introduction to GitOps *(CodeProject has closed.)*
-- **Part 2**: GitOps with Terraform and GitHub *(CodeProject has closed.)*
-- **Part 3**: GitOps Provisioning with GitHub Actions *(CodeProject has closed.)*
+- **Part 1**: [Introduction to GitOps](/gitops1/)
+- **Part 2**: [GitOps with Terraform and GitHub](/gitops2/)
+- **Part 3**: [GitOps Provisioning with GitHub Actions](/gitops3/)
+
+First published on CodeProject in 2022 and republished here since it closed.
 
 ### Microsoft-commissioned 3-Part Blog Series on Azure Arc
 
