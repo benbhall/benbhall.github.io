@@ -133,7 +133,7 @@ body.light-theme .update-badge {
 }
 </style>
 
-<span class="update-badge">📅 Last updated: October 2026</span>
+<span class="update-badge">📅 Last updated: November 2026</span>
 
 No-nonsense reference for developers who just want to know which AI model to pick. Bookmark this and stop Googling.
 
@@ -143,23 +143,23 @@ No-nonsense reference for developers who just want to know which AI model to pic
 <div class="quick-pick-grid">
 <div class="pick-card">
 <div class="use-case">Features / bugs / tests</div>
-<div class="models">Claude Sonnet 5.5<br>Gemini 3.8 Flash<br>GPT-6 Sol</div>
+<div class="models">Claude Sonnet 5.5<br>GPT-6.1 Sol<br>GPT-6.1 Terra</div>
 </div>
 <div class="pick-card">
 <div class="use-case">Agentic / CLI / scaffolding</div>
-<div class="models">Claude Sonnet 5.5<br>Gemini 3.7 Flash<br>DeepSeek V4.1 Flash</div>
+<div class="models">Claude Sonnet 5.5<br>GPT-6.1 Sol<br>DeepSeek V4.1 Flash</div>
 </div>
 <div class="pick-card">
 <div class="use-case">Architecture / refactors</div>
-<div class="models">Claude Fable 5.1 / Opus 5.5<br>GPT-6 Astra<br>Gemini 3.8 Flash</div>
+<div class="models">Claude Fable 5.1 / Opus 5.5<br>GPT-6 Astra<br>Gemini 4 Argon</div>
 </div>
 <div class="pick-card">
 <div class="use-case">Code review</div>
-<div class="models">Claude Sonnet 5.5<br>Gemini 3.8 Flash<br>GPT-6 Sol</div>
+<div class="models">Claude Sonnet 5.5<br>GPT-6.1 Sol<br>Gemini 4 Argon</div>
 </div>
 <div class="pick-card">
 <div class="use-case">Documentation</div>
-<div class="models">Claude Sonnet 5.5<br>Gemini 3.7 Flash<br>GPT-5.6 Luna</div>
+<div class="models">Claude Haiku 5.5<br>GPT-6.1 Terra<br>Gemini 3.8 Flash</div>
 </div>
 <div class="pick-card">
 <div class="use-case">GitHub Copilot users</div>
@@ -167,7 +167,7 @@ No-nonsense reference for developers who just want to know which AI model to pic
 </div>
 <div class="pick-card">
 <div class="use-case">Design / planning</div>
-<div class="models">Claude Fable 5.1 / Opus 5.5<br>GPT-6 Astra<br>GPT-5.6 Sol</div>
+<div class="models">Claude Fable 5.1 / Opus 5.5<br>GPT-6 Astra<br>GPT-6.1 Sol</div>
 </div>
 </div>
 </div>
@@ -188,14 +188,15 @@ When this page says "Sonnet", it means whatever the current Sonnet is. Same for 
 
 | Model | What it's for | Speed | Cost |
 |-------|---------------|-------|------|
-| **Haiku 4.5** | Fast tasks, scaffolding, CLI | ⚡⚡⚡ | $0.10/task |
+| **Haiku 5.5** | Fast tasks, scaffolding, CLI | ⚡⚡⚡ | $0.01/task |
+| **Haiku 4.5** | Previous Haiku | ⚡⚡⚡ | $0.10/task |
 | **Sonnet 5 / 5.5** | Everyday coding | ⚡⚡ | $0.20/task |
 | **Opus 5** | Complex reasoning, design | ⚡ | $0.50/task |
 | **Opus 5.5** | Higher-end reasoning | ⚡ | $0.40/task |
 | **Fable 5 / 5.1** | Frontier reasoning | ⚡ | $1.00/task |
 
 <div class="callout tip">
-<strong>Start with Sonnet 5 or 5.5.</strong> Both list at $0.20/task. Reach for Opus 5/5.5 for hard reasoning; Fable is the expensive top tier. These estimates use 50K input + 10K output tokens and exclude caching.
+<strong>Start with Sonnet 5.5.</strong> It lists at $0.20/task. Reach for Opus 5.5 for hard reasoning; Fable is the expensive top tier. Haiku 5.5 costs a tenth of Haiku 4.5 for prompts up to 100K tokens; above that the input and output rates rise fivefold. These estimates use 50K input + 10K output tokens and exclude caching.
 </div>
 
 ### OpenAI (GPT) {#openai-gpt}
@@ -203,10 +204,10 @@ When this page says "Sonnet", it means whatever the current Sonnet is. Same for 
 | Model | What it's for | Speed | Cost |
 |-------|---------------|-------|------|
 | **GPT-6 Luna** | Lightweight, lowest-cost frontier choice | ⚡⚡⚡ | $0.01/task |
+| **GPT-6.1 Terra** | Mid-tier, half the price of Sol | ⚡⚡ | $0.10/task |
 | **GPT-6 / GPT-6.1 Sol** | General coding and reasoning | ⚡⚡ | $0.20/task |
 | **GPT-5.6 Luna / Terra / Sol** | Budget to frontier variants | ⚡⚡ to ⚡ | $0.02–$0.40/task |
 | **GPT-6 Astra** | Highest-capability tier | ⚡ | $1.00/task |
-| **GPT-5 mini** | Lightweight legacy option | ⚡⚡⚡ | $0.03/task |
 
 <div class="callout">
 <strong>Skip the "o-series" reasoning models (o1, o3, o4)</strong> for everyday coding. They think longer and cost more - o1 is particularly expensive at ~$1.35/task. Save them for:
@@ -221,10 +222,11 @@ When this page says "Sonnet", it means whatever the current Sonnet is. Same for 
 
 | Model | What it's for | Speed | Cost |
 |-------|---------------|----------|------|
-| **Gemini 3.7 / 3.8 Flash** | Current fast general-purpose models | ⚡⚡ | $0.075/task through Dec 31, 2026* |
+| **Gemini 4 Argon** | Higher-capability tasks | ⚡ | $0.20/task until Nov 30, 2026, then $0.40 |
+| **Gemini 3.8 Flash** | Current fast general-purpose model | ⚡⚡ | $0.075/task through Dec 31, 2026* |
 | **Gemini 3.6 Flash** | Previous generation | ⚡⚡ | $0.075/task through Dec 31, 2026* |
 | **Gemini 3.5 Flash-Lite** | Lower-cost, high-volume workloads | ⚡⚡⚡ | $0.04/task |
-| **Gemini 3.1 Pro** | Higher-capability tasks | ⚡ | $0.22/task (≤200K context) |
+| **Gemini 3.1 Pro** | Previous Pro model (still a preview) | ⚡ | $0.22/task (≤200K context) |
 
 ## Benchmarks {#benchmarks}
 
@@ -234,15 +236,16 @@ Want numbers?
 
 **The TLDR:**
 
-- **LiveBench's current leader is Claude Fable 5.1 Max (83.4)**, followed by Claude Opus 5.5 (83.2) and Fable 5 Max (83.0). LiveBench still labels its question-set release 2026-06-25; these are later leaderboard submissions, not a new benchmark release.
-- **GPT-6 variants are in the mix:** Astra scores 82.2, GPT-6.1 Sol 81.6, Sol 79.3 and Luna 72.0. Direct-API task estimates run from about $0.01 to $1.00 using the same token assumptions.
-- **The budget frontier moved:** DeepSeek V4.1 Flash scores 81.1 on LiveBench; its price varies by peak/off-peak time. Gemini 3.7/3.8 Flash is temporarily discounted through Dec 31, 2026.
-- **ProgramBench adds a different kind of evidence:** its strict full-program reconstruction tasks remain difficult even for the leaders. Don't compare its pass rates directly with SWE-bench issue resolution.
-- **SWE-bench Verified, Aider, and Arena have not kept pace with current releases.** Their published scores remain useful historical measurements, not evidence about models absent from those runs.
+- **LiveBench moved to version 2.0 in October.** It now gives models long pieces of real work (extending apps over several rounds, fixing real bugs, building documents, using a browser). The top four are close: Claude Fable 5.1 (85.7), GPT-6 Astra (85.6), Claude Opus 5.5 (85.1) and GPT-6.1 Sol (84.1). These scores aren't comparable with the LiveBench numbers this page quoted before November.
+- **GPT-6.1 Sol is the value pick at the top:** 84.1 for about $0.20/task, against $0.40 for Opus 5.5 and $1.00 for Fable 5.1 or Astra. GPT-6.1 Terra scores 77.8 at $0.10.
+- **New this month:** Claude Haiku 5.5 (69.8 on LiveBench, about $0.01/task) and Gemini 4 Argon (79.3, $0.20/task until Nov 30, then $0.40).
+- **On ProgramBench, Claude Opus 5.5 resolved 18.5% of tasks**, about twice the next model. The task is rebuilding whole programs from a binary and its docs, so the numbers aren't comparable with issue-fixing benchmarks.
+- **Arena Code has current scores again** (October 28), after being stuck at February. Many of the top models are statistically tied there, and older Claude Opus versions still rate as highly as the newest models.
+- **SWE-bench Verified and Aider have no scores for 2026 models.** SWE-bench's standardized runs stopped in February apart from one in September, and Aider's leaderboard stopped in October 2025.
 
-The [benchmark page](/ai-coding-guide/benchmarks/) records each source's access date and methodology; LiveBench's checked leaderboard date and question-set release are separate.
+The [benchmark page](/ai-coding-guide/benchmarks/) has the per-suite scores, dates and methodology for each source.
 
-*Google's Gemini 3.6/3.7/3.8 Flash promotional API rates end Dec 31, 2026. Anthropic's published Claude Sonnet 5 price is $2/$10 per MTok (the previously announced September increase was cancelled).*
+*Google's Gemini 3.6/3.8 Flash promotional API rates end Dec 31, 2026. Gemini 3.7 Flash has been withdrawn; Google routes its requests to 3.8 Flash. Gemini 2.5 Pro and 2.5 Flash are deprecated and will be routed to newer models from Dec 1, 2026.*
 
 Benchmarks are useful for gut-checking, but the real test is running a model on your own work.
 
@@ -299,7 +302,9 @@ Big windows help for: exploring unfamiliar codebases, analysing logs, multi-file
 - [Anthropic Claude models](https://docs.anthropic.com/en/docs/about-claude/models)
 - [OpenAI models](https://platform.openai.com/docs/models)
 - [Google Gemini models](https://ai.google.dev/gemini-api/docs/models/gemini)
-- [Aider Leaderboards](https://aider.chat/docs/leaderboards/)
+- [LiveBench](https://livebench.ai/)
+- [Arena leaderboard dataset](https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset)
+- [ProgramBench](https://programbench.com/)
 - [SWE-bench](https://www.swebench.com/)
-- [Chatbot Arena](https://lmarena.ai/)
+- [Aider Leaderboards](https://aider.chat/docs/leaderboards/) (archive)
 

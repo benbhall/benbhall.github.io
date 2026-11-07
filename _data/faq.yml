@@ -72,7 +72,7 @@
 - id: frontier-model
   question: What's a "frontier" model?
   answer: |
-    Industry term for the most capable models available at a given time. Examples in October 2026 include GPT-6 Astra, Claude Fable 5.1, and Gemini 3.8 Flash. This label is informal and changes as new models arrive.
+    Industry term for the most capable models available at a given time. Examples in November 2026 include GPT-6 Astra, Claude Fable 5.1, Claude Opus 5.5 and Gemini 4 Argon. This label is informal and changes as new models arrive.
 
     Frontier models are usually trained and served with substantial compute. Their parameter counts and architectures are often undisclosed, and some are available only through hosted services. Open-weight models can also be highly capable and may be run locally when hardware and licenses permit; "frontier" does not mean cloud-only.
 
