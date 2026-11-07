@@ -61,44 +61,162 @@ toc_icon: "file-alt"
 }
 </style>
 
-<span class="update-badge">📅 Snapshot: October 2026</span>
+<span class="update-badge">📅 Snapshot: November 2026</span>
 
 This page collates benchmark data from independent sources to help you compare models. **These aren't my benchmarks** - I'm just pulling highlights so you don't have to tab between sites.
 
-For the latest data, always check the original sources. Data current as of: SWE-bench (February 2026), Aider (latest listed runs October 2025), Arena Code (February 2026), LiveBench (leaderboard checked October 2026; release 2026-06-25), ProgramBench (September 28, 2026).
+For the latest data, always check the original sources. Data used here: LiveBench 2.0 (release 2026-10-25), Arena Code (published October 28, 2026), ProgramBench (October 22, 2026), SWE-bench Verified (standardized runs from February 2026, plus one from September 1, 2026) and Aider (archive, last run October 3, 2025).
+
+---
+
+## LiveBench 2.0
+
+<div class="source-box">
+<strong>Source:</strong> <a href="https://livebench.ai/">livebench.ai</a> (release 2026-10-25) · seven suites of long-running, practical tasks · one run per suite
+</div>
+
+**What changed:** LiveBench replaced its short-question benchmark with LiveBench 2.0 in October 2026. Models now do longer pieces of work: extending applications over several rounds of changing requirements, fixing bugs taken from real merged pull requests, building decks and documents, completing tasks in a real browser, and writing research reports. Short reasoning and data-analysis questions remain as two of the seven suites. The overall score weights long agentic work ×2, coding and design ×1.5, and the rest ×1.
+
+**Comparing with older numbers:** the scale is new. The top models score a little higher on 2.0 (Claude Opus 5.5 went from 83.2 to 85.1), but most others score much lower: Gemini 3.8 Flash dropped from 75.8 to 59.2 and Muse Spark 1.3 from 81.6 to 63.0, mainly because of the long agentic suite. Don't compare a 2.0 score with a score from the old leaderboard (final release 2026-06-25, still viewable on the LiveBench site).
+
+| Model | Overall | Agentic | Coding | Design | Browser | Data | Research | Reasoning |
+|-------|---------|---------|--------|--------|---------|------|----------|-----------|
+| Claude Fable 5.1 | 85.7 | 77.9 | 97.7 | 83.4 | 89.8 | 80.3 | 82.0 | 91.7 |
+| GPT-6 Astra | 85.6 | 77.5 | 93.7 | 82.0 | 91.3 | 83.0 | 85.2 | 92.7 |
+| Claude Opus 5.5 | 85.1 | 72.8 | 96.3 | 86.9 | 88.4 | 80.3 | 85.0 | 92.2 |
+| GPT-6.1 Sol | 84.1 | 68.7 | 96.0 | 82.1 | 93.3 | 82.7 | 83.5 | 92.6 |
+| Claude Sonnet 5.5 | 80.0 | 63.4 | 94.7 | 85.0 | 89.3 | 59.5 | 83.6 | 91.6 |
+| Gemini 4 Argon | 79.3 | 61.2 | 89.7 | 73.7 | 82.8 | 85.2 | 83.1 | 95.1 |
+| GPT-6.1 Terra | 77.8 | 48.6 | 94.3 | 82.3 | 93.1 | 82.3 | 73.9 | 88.7 |
+| Muse Wonder 1.0 | 74.2 | 52.6 | 86.2 | 75.1 | 60.0 | 81.6 | 88.0 | 90.6 |
+| DeepSeek V4.1 Flash 1017 | 72.9 | 35.7 | 96.0 | 83.4 | 67.2 | 79.5 | 79.5 | 89.1 |
+| Kimi K3.1 Pro | 71.3 | 39.1 | 81.8 | 77.8 | 75.9 | 79.1 | 77.9 | 91.1 |
+| Grok 4.7 | 70.1 | 46.1 | 84.5 | 78.0 | 49.3 | 76.9 | 86.4 | 82.7 |
+| Claude Haiku 5.5 | 69.8 | 40.0 | 91.4 | 83.1 | 69.5 | 53.1 | 81.9 | 82.4 |
+| MiMo V2.6 Pro | 68.5 | 35.2 | 81.5 | 78.5 | 77.3 | 72.3 | 76.7 | 79.6 |
+| GPT-5.6 Terra | 67.8 | 33.1 | 86.2 | 76.0 | 70.3 | 79.3 | 60.4 | 90.6 |
+| Grok 4.6 | 67.8 | 28.0 | 89.1 | 79.8 | 49.4 | 75.3 | 84.5 | 91.2 |
+| MiniMax M3.1 Flash | 66.9 | 28.8 | 83.9 | 74.0 | 80.6 | 71.4 | 72.7 | 82.9 |
+| GPT-6 Luna | 64.6 | 30.9 | 84.5 | 82.5 | 70.3 | 73.4 | 43.5 | 81.8 |
+| Kimi K3 | 64.6 | 26.4 | 59.3 | 77.2 | 75.2 | 78.7 | 79.0 | 90.7 |
+| Mistral Large 4 1029 | 63.5 | 27.5 | 95.4 | 76.3 | 17.4 | 76.6 | 79.7 | 85.2 |
+| Muse Spark 1.3 | 63.0 | 25.5 | 90.2 | 74.8 | 30.9 | 79.6 | 68.6 | 89.7 |
+| GLM-5.3 Flash | 62.1 | 19.0 | 80.6 | 77.2 | 59.8 | 76.4 | 70.1 | 77.6 |
+| Qwen3.8 Max | 61.6 | 29.9 | 60.3 | 78.6 | 49.4 | 78.4 | 69.9 | 88.2 |
+| Gemini 3.8 Flash | 59.2 | 16.5 | 82.2 | 72.7 | 45.1 | 54.0 | 79.1 | 89.3 |
+| Step 5 (Preview) | 58.6 | 19.4 | 85.6 | 76.9 | 24.8 | 63.5 | 72.8 | 83.8 |
+| Qwen3.8 27B | 58.4 | 20.6 | 86.8 | 75.9 | 24.2 | 76.6 | 59.4 | 80.0 |
+
+{: .table .table-striped }
+
+Seven more open-weight models scored between 38.7 and 51.6; see the LiveBench site for the full list.
+
+<div class="callout tip">
+<strong>Takeaway:</strong> The top four are within 1.6 points of each other: Claude Fable 5.1 (85.7), GPT-6 Astra (85.6), Claude Opus 5.5 (85.1) and GPT-6.1 Sol (84.1). The long agentic suite separates models more than anything else. Gemini 3.8 Flash scores 82.2 on coding but 16.5 on long agentic work. GPT-6.1 Sol costs half as much per task as Opus 5.5 and a fifth as much as Fable 5.1 or Astra, for a slightly lower score.
+</div>
+
+---
+
+## Arena Code
+
+<div class="source-box">
+<strong>Source:</strong> <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset">Arena leaderboard dataset</a> (text arena, coding category, style control on; published October 28, 2026) · blind human votes between two anonymous models
+</div>
+
+People submit a coding prompt, get answers from two anonymous models and vote for the better one. The rating comes from those votes. Style control adjusts for things voters tend to reward regardless of quality, such as longer answers and heavy markdown; it's Arena's default view.
+
+| Rank | Model as listed | Score | 95% CI | Votes |
+|------|-----------------|-------|--------|-------|
+| 1 | Gemini 4 Carbon (High) | 1573 | 1555–1592 | 1,106 |
+| 2 | Claude Opus 4.7 (High) | 1551 | 1545–1557 | 18,587 |
+| 3 | Claude Opus 5.5 (High) | 1551 | 1538–1563 | 2,555 |
+| 4 | Claude Fable 5 (High) | 1550 | 1544–1557 | 11,629 |
+| 5 | Gemini 4 Argon (High) | 1550 | 1539–1562 | 2,813 |
+| 6 | Claude Opus 4.6 (High) | 1548 | 1542–1553 | 21,789 |
+| 7 | Claude Opus 4.6 | 1546 | 1541–1551 | 24,611 |
+| 8 | Claude Opus 4.7 | 1546 | 1540–1552 | 18,788 |
+| 9 | Muse Wonder (Max) | 1545 | 1531–1559 | 1,902 |
+| 10 | Muse Spark 1.2 (xHigh) | 1543 | 1531–1554 | 2,987 |
+| 11 | GPT-6 Astra (Max) | 1542 | 1532–1553 | 3,393 |
+| 12 | GPT-6.1 Sol (Max) | 1541 | 1527–1556 | 1,896 |
+| 13 | Kimi K3 (Max) | 1540 | 1533–1547 | 9,235 |
+| 14 | MiMo-V2.6-Pro | 1538 | 1521–1556 | 1,091 |
+| 15 | Claude Fable 5.1 (Max) | 1537 | 1526–1547 | 3,403 |
+| 16 | Claude Opus 5 (High) | 1534 | 1528–1540 | 18,778 |
+| 17 | Muse Spark 1.3 (Max) | 1534 | 1525–1543 | 5,707 |
+| 18 | Claude Opus 4.8 (High) | 1534 | 1528–1540 | 17,403 |
+| 19 | Muse Spark 1.1 | 1533 | 1527–1539 | 12,770 |
+| 20 | GPT-5.6 Sol (xHigh) | 1533 | 1526–1539 | 11,636 |
+| 21 | Claude Opus 4.5 (High, 32K, 20251101) | 1530 | 1523–1538 | 7,777 |
+| 22 | Gemini 3.8 Flash (High) | 1530 | 1523–1537 | 12,376 |
+| 23 | Claude Opus 4.8 | 1529 | 1524–1535 | 18,091 |
+| 24 | Claude Sonnet 5.5 (xHigh) | 1529 | 1516–1542 | 2,339 |
+| 25 | Muse Spark | 1529 | 1519–1539 | 3,941 |
+
+Gemini 4 Carbon is on Arena but isn't in Google's API price list yet.
+
+<div class="callout tip">
+<strong>Takeaway:</strong> The top 25 span 44 points, and most confidence intervals overlap with their neighbours. Claude Opus 4.6 and 4.7 still rate as highly as the newest models here, so Arena separates current models less clearly than LiveBench does. It covers more models than any other source on this page, though, which makes it useful for models nobody else has tested.
+</div>
+
+<div class="callout">
+<strong>Why this was stuck at February 2026:</strong> the arena.ai site loads its leaderboard with JavaScript and sits behind a bot check, so the scraper used for earlier updates got an empty page. Arena publishes the same leaderboard as a dataset on Hugging Face, which is where these numbers now come from.
+</div>
+
+---
+
+## ProgramBench
+
+<div class="source-box">
+<strong>Source:</strong> <a href="https://programbench.com/">ProgramBench</a> · 200 tasks · leaderboard updated October 22, 2026 · <a href="https://arxiv.org/abs/2605.03546">paper</a>
+</div>
+
+ProgramBench asks an agent to recreate a program from its compiled executable and documentation, without source code, decompilation, or internet access. It measures a much harder and different task than fixing a bounded repository issue. A task counts as resolved only when the recreated program passes all behavioral tests.
+
+| Rank | Model / effort | Resolved | Almost resolved | Run cost |
+|------|----------------|----------|-----------------|----------|
+| 1 | Claude Opus 5.5 (xhigh) | 18.5% | 70.5% | $36.36 |
+| 2 | Claude Fable 5.1 (xhigh) | 9.0% | 55.5% | $56.84 |
+| 3 | Muse Wonder Full | 8.5% | 60.0% | not published |
+| 4 | Muse Wonder (xhigh) | 5.5% | 50.5% | $36.53 |
+| 5 | GPT-6 Astra (max) | 5.0% | 52.5% | $11.47 |
+| 6 | Claude Opus 5 (xhigh) | 4.5% | 37.0% | $50.53 |
+| 7 | Muse Spark 1.3 (max) | 2.5% | 25.0% | $6.46 |
+| 8 | Muse Spark 1.3 (xhigh) | 1.0% | 16.5% | $2.02 |
+| 9 | GPT-5.6 Sol (xhigh) | 1.0% | 15.5% | $6.08 |
+| 10 | GPT-5.5 (xhigh) | 0.5% | 13.5% | $8.85 |
+
+These are ProgramBench's own mini-SWE-agent runs; run cost is the average API cost per task. Claude Opus 5.5 resolved four times as many tasks as Opus 5, at a lower cost per task. Full-resolution rates are low by design, so don't compare them with SWE-bench Verified or read them as a day-to-day coding success rate.
 
 ---
 
 ## SWE-bench Verified
 
 <div class="source-box">
-<strong>Source:</strong> <a href="https://www.swebench.com/">swebench.com</a> (February 2026) · Tests whether models can fix real GitHub issues · <em>Standardized harness: mini-SWE-agent v2.0.0, high reasoning mode where available</em>
+<strong>Source:</strong> <a href="https://www.swebench.com/">swebench.com</a> · tests whether models can fix real GitHub issues · <em>standardized harness: mini-SWE-agent, one attempt per issue</em>
 </div>
 
-| Model | Score | $/task | Copilot |
-|-------|-------|--------|---------|
-| Claude Opus 4.5 | 76.8% | $0.50 | - |
-| Minimax M2.5 | 75.8% | $0.07 | - |
-| Gemini 3 Flash | 75.8% | $0.06 | - |
-| Claude Opus 4.6 | 75.6% | $0.50 | - |
-| GPT-5.2 (high reasoning) | 72.8% | $0.23 | - |
-| GLM-5 | 72.8% | $0.05 | - |
-| GPT-5.2 | 72.8% | $0.23 | - |
-| Claude Sonnet 4.5 | 71.4% | $0.30 | - |
-| Kimi K2.5 | 70.8% | $0.15 | - |
-| DeepSeek V3.2 (high reasoning, legacy API) | 70.0% | $0.45 | - |
-| Gemini 3.1 Pro | 69.6% | $0.22 | - |
-| Claude Opus 4.1 (retired first-party API) | 67.6% | $1.50 | - |
-| Claude Haiku 4.5 | 66.6% | $0.10 | ✓ |
-| GPT-5 | 65.0% | $0.16 | - |
-| Kimi K2 Thinking Turbo | 63.4% | $0.06 | - |
-| GPT-5 mini | 56.2% | $0.03 | ✓ |
-| Gemini 2.5 Pro | 53.6% | $0.16 | - |
+| Model | Score | Run date | $/task | Copilot |
+|-------|-------|----------|--------|---------|
+| Claude Opus 4.5 (high) | 76.8% | Feb 2026 | $0.50 | - |
+| MiniMax M2.5 (high) | 75.8% | Feb 2026 | $0.07 | - |
+| Gemini 3 Flash (high) | 75.8% | Feb 2026 | $0.06 | - |
+| Claude Opus 4.6 | 75.6% | Feb 2026 | $0.50 | - |
+| GPT-5.2 (high) | 72.8% | Feb 2026 | $0.23 | - |
+| GPT-5.2-Codex | 72.8% | Feb 2026 | $0.23 | - |
+| GLM-5 (high) | 72.8% | Feb 2026 | $0.05 | - |
+| Gemini 3.5 Flash (medium) | 71.8% | Sep 2026 | - | - |
+| Claude Sonnet 4.5 (high) | 71.4% | Feb 2026 | $0.30 | - |
+| Kimi K2.5 (high) | 70.8% | Feb 2026 | - | - |
+| DeepSeek V3.2 (high) | 70.0% | Feb 2026 | - | - |
+| Gemini 3 Pro (high) | 69.6% | Feb 2026 | - | - |
+| Claude Haiku 4.5 (high) | 66.6% | Feb 2026 | $0.10 | ✓ |
+| GPT-5 mini | 56.2% | Feb 2026 | $0.03 | - |
 
-**$/task** on this historical run table is the benchmark's reported run cost and may use prices that have since changed. **Copilot** = currently listed in GitHub Copilot (✓ = yes; this is availability, not a price tier).
+**$/task** uses the same 50K input + 10K output token estimate as the [comparison page](/ai-coding-guide/compare/), at current list prices; "-" means the model is retired or I couldn't confirm its current price. The February runs used mini-SWE-agent 2.0.0. The Gemini 3.5 Flash run used version 2.4.2, and Google now routes that model to Gemini 3.6 Flash. DeepSeek V3.2 and Gemini 3 Pro are retired.
 
 <div class="callout tip">
-<strong>Takeaway:</strong> The Verified leaderboard still has no new standardized-harness runs since February. Claude Opus 4.5 leads this snapshot at 76.8%; treat it as a historical run, not a ranking of today's newest models. DeepSeek's 70% result is V3.2, not V4.1, and Opus 4.1 is retired from Anthropic's first-party API.
+<strong>Takeaway:</strong> None of the models released since February has a standardized Verified run, and that's why the SWE-bench column on the comparison page is mostly empty. Providers still quote Verified scores above 90% for their newest models, but those come from their own agents and settings, so they aren't comparable with these runs and aren't included here. Use this table to compare the older models in it, not to rank current releases.
 </div>
 
 ---
@@ -106,11 +224,11 @@ For the latest data, always check the original sources. Data current as of: SWE-
 ## Aider Polyglot
 
 <div class="source-box">
-<strong>Source:</strong> <a href="https://aider.chat/docs/leaderboards/">aider.chat/docs/leaderboards</a> (latest listed runs: October 2025) · Tests code editing across C++, Go, Java, JavaScript, Python, Rust
+<strong>Source:</strong> <a href="https://aider.chat/docs/leaderboards/">aider.chat/docs/leaderboards</a> (last run: October 3, 2025) · Tests code editing across C++, Go, Java, JavaScript, Python, Rust
 </div>
 
 <div class="callout">
-<strong>Historical snapshot:</strong> The published model runs stop at October 2025. No newer scores were found for this update, so treat these as archived results rather than current model recommendations.
+<strong>Archive:</strong> Aider's leaderboard hasn't added a model since October 3, 2025, so none of the models released in 2026 has a score. It's no longer on the comparison page; the results are kept here for reference.
 </div>
 
 | Model as tested | % Correct |
@@ -128,126 +246,6 @@ For the latest data, always check the original sources. Data current as of: SWE-
 | o4-mini | 72.0% |
 | Claude Opus 4.5 | 70.7% |
 | DeepSeek V3.2 Exp Chat | 70.2% |
-
-<div class="callout tip">
-<strong>Takeaway:</strong> These results are useful as an archived comparison of the models tested at the time, but the leaderboard has not kept pace with current releases. The V3.2 Reasoner/Chat names refer to 2025 Aider runs; they are not DeepSeek V4.1 results.
-</div>
-
----
-
-## LiveBench
-
-<div class="source-box">
-<strong>Source:</strong> <a href="https://livebench.ai/">livebench.ai</a> (checked October 4, 2026; latest question-set release 2026-06-25) · Contamination-free benchmark with 23 diverse tasks
-</div>
-
-**What it is:** A contamination-free benchmark with 23 diverse tasks spanning Coding, Agentic Coding, Data Analysis, Language, Instruction Following, Math, and Reasoning. Questions refresh every 6 months and are delay-released to minimize training contamination. Scores use objective ground-truth answers, not LLM judges.
-
-**Why it matters:** Most benchmarks face contamination (models train on test data). LiveBench addresses this with regular question rotation and delayed public release. The Global Average provides a single score across multiple capabilities, avoiding narrow specialization.
-
-| Model | Global Avg | Coding | Agentic | Data | Language | IF | Math | Reasoning |
-|-------|------------|--------|---------|------|----------|-----|------|-----------|
-| Claude Fable 5.1 Max | 83.4 | 91.7 | 86.4 | 66.1 | 97.0 | 80.3 | 89.5 | 73.0 |
-| Claude Opus 5.5 Thinking Max | 83.2 | 92.2 | 89.3 | 71.7 | 97.1 | 80.3 | 86.3 | 65.7 |
-| Claude Fable 5 Max | 83.0 | 89.7 | 86.0 | 62.2 | 96.0 | 80.5 | 90.7 | 75.8 |
-| GPT-6 Astra Max | 82.2 | 92.7 | 80.4 | 57.3 | 96.8 | 83.0 | 89.4 | 75.6 |
-| GPT-6.1 Sol Max | 81.6 | 92.6 | 80.4 | 54.5 | 96.8 | 82.7 | 90.1 | 74.2 |
-| Muse Spark 1.3 xHigh | 81.6 | 89.7 | 81.1 | 64.1 | 95.9 | 79.6 | 82.8 | 78.0 |
-| DeepSeek V4.1 Flash Max | 81.1 | 86.7 | 80.0 | 77.3 | 93.3 | 79.3 | 81.2 | 70.0 |
-| GPT-5.6 Sol Max | 81.0 | 91.7 | 83.9 | 56.2 | 96.2 | 79.8 | 87.7 | 71.8 |
-| GPT-5.5 Thinking xHigh | 80.2 | 89.7 | 82.1 | 54.0 | 95.9 | 81.6 | 87.4 | 70.7 |
-| Claude Opus 5 Thinking Max | 80.1 | 91.2 | 81.4 | 65.2 | 95.7 | 74.6 | 88.7 | 63.8 |
-| GPT-6 Sol Max | 79.3 | 88.7 | 81.8 | 52.9 | 96.4 | 81.2 | 85.3 | 68.6 |
-| Kimi K3 open | 79.2 | 90.7 | 81.4 | 62.2 | 84.4 | 78.7 | 85.5 | 71.4 |
-| Gemini 3.7 Flash High | 78.8 | 87.8 | 78.9 | 58.3 | 93.5 | 68.0 | 85.5 | 79.9 |
-| Qwen 3.8 Max | 78.5 | 88.2 | 72.9 | 64.6 | 91.3 | 78.4 | 79.7 | 74.1 |
-| Grok 4.6 xHigh | 78.0 | 90.5 | 76.8 | 57.0 | 92.6 | 73.9 | 83.7 | 71.9 |
-| GPT-5.4 Thinking xHigh | 78.0 | 88.1 | 77.5 | 53.8 | 94.1 | 79.3 | 82.6 | 70.2 |
-| Muse Spark 1.2 xHigh | 78.0 | 90.0 | 77.5 | 57.6 | 91.2 | 76.5 | 78.6 | 74.3 |
-| GPT-5.6 Terra Max | 77.9 | 90.6 | 78.2 | 54.9 | 94.9 | 79.3 | 82.9 | 64.6 |
-| Claude Sonnet 5.5 xHigh | 77.8 | 86.8 | 88.9 | 39.3 | 96.7 | 78.6 | 83.4 | 70.5 |
-| DeepSeek V4 Pro 0813 open | 77.4 | 85.8 | 77.2 | 54.9 | 95.1 | 79.2 | 82.1 | 67.7 |
-| Grok 4.7 xHigh | 77.4 | 82.7 | 77.2 | 54.0 | 95.7 | 76.9 | 80.1 | 75.3 |
-| Gemini 3.1 Pro High | 77.0 | 84.0 | 76.5 | 44.1 | 91.0 | 78.5 | 85.4 | 79.1 |
-| DeepSeek V4 Flash Vision Exp open | 76.8 | 85.4 | 68.2 | 65.1 | 87.8 | 79.5 | 80.4 | 71.0 |
-| Claude Opus 4.7 Thinking xHigh | 76.5 | 87.2 | 82.1 | 50.7 | 92.9 | 78.3 | 77.9 | 66.7 |
-| Claude Opus 4.8 Thinking Max | 76.2 | 89.2 | 81.8 | 50.5 | 94.3 | 66.0 | 79.7 | 72.0 |
-| Qwen 3.8 Flash Next open | 76.2 | 87.4 | 72.6 | 61.6 | 85.8 | 74.2 | 74.6 | 77.1 |
-| GLM-5.3 open | 76.1 | 85.8 | 79.0 | 60.9 | 87.9 | 70.2 | 79.9 | 69.3 |
-| Claude Sonnet 5 xHigh | 76.0 | 88.7 | 80.7 | 59.4 | 92.9 | 71.7 | 75.0 | 63.9 |
-| Gemini 3.8 Flash High | 75.8 | 89.3 | 72.5 | 54.2 | 91.6 | 54.0 | 87.8 | 81.4 |
-| Grok 4.5 | 75.8 | 87.2 | 68.6 | 56.5 | 90.8 | 73.0 | 82.8 | 71.5 |
-
-{: .table .table-striped }
-
-<div class="callout-box">
-<strong>⚡ Key takeaways:</strong><br>
-• <strong>Current leaderboard leader:</strong> Claude Fable 5.1 Max (83.4), followed by Claude Opus 5.5 (83.2) and Fable 5 Max (83.0)<br>
-• <strong>OpenAI's GPT-6 family is now represented:</strong> Astra (82.2), 6.1 Sol (81.6), Sol (79.3), and Luna (72.0)<br>
-• <strong>New contenders:</strong> Muse Spark 1.3 (81.6), DeepSeek V4.1 Flash (81.1), Kimi K3 (79.2), and Gemini 3.7 Flash (78.8)<br>
-• <strong>Version note:</strong> the leaderboard was checked October 4; its question-set release is still 2026-06-25. Model submissions continue to appear within that release.
-</div>
-
----
-
-## ProgramBench
-
-<div class="source-box">
-<strong>Source:</strong> <a href="https://programbench.com/">ProgramBench</a> · 200 tasks · leaderboard updated September 28, 2026 · <a href="https://arxiv.org/abs/2605.03546">paper</a>
-</div>
-
-ProgramBench asks an agent to recreate a program from its compiled executable and documentation, without source code, decompilation, or internet access. It measures a much harder and different task than fixing a bounded repository issue. A task counts as resolved only when the recreated program passes all behavioral tests.
-
-| Rank | Model / effort | Resolved | Almost resolved | Run cost |
-|------|----------------|----------|-----------------|----------|
-| 1 | Claude Opus 5 (xhigh) | 4.5% | 37.0% | $50.53 |
-| 2 | Muse Spark 1.3 (max) | 2.5% | 25.0% | $6.46 |
-| 3 | Muse Spark 1.3 (xhigh) | 1.0% | 16.5% | $2.02 |
-| 4 | GPT-5.6 Sol (xhigh) | 1.0% | 15.5% | $6.08 |
-| 5 | GPT-5.5 (xhigh) | 0.5% | 13.5% | $8.85 |
-| 6 | Gemini 3.6 Flash | 0.5% | 4.0% | $4.83 |
-| 7 | GPT-5.6 Sol | 0.5% | 2.5% | $1.00 |
-| 8 | Claude Opus 4.8 (xhigh) | 0% | 16.5% | $21.02 |
-| 9 | GLM-5.2 | 0% | 8.5% | $25.36 |
-
-These are results from ProgramBench's published mini-SWE-agent runs; effort setting and agent scaffold matter. Its strict full-resolution rates are low by design, so don't compare them directly with SWE-bench Verified or interpret them as a day-to-day coding success rate.
-
----
-
-## Chatbot Arena Code
-
-<div class="source-box">
-<strong>Source:</strong> <a href="https://lmarena.ai/">lmarena.ai</a> Code category (February 2026) · Human preference voting on coding tasks
-</div>
-
-| Model | Elo Score | Notes |
-|-------|-----------|-------|
-| Claude Opus 4.5 thinking-32k | 1497 | Thinking variant |
-| GPT-5.2 high reasoning | 1470 | High reasoning mode |
-| Claude Opus 4.5 | 1468 | Standard (non-thinking) |
-| Gemini 3 Flash | 1443 | |
-| GLM-4.7 | 1440 | |
-| GPT-5.2 | 1432 | |
-| Claude Opus 4.1 | 1431 | |
-| o3 | 1417 | |
-| GPT-5 | 1407 | |
-| Claude Sonnet 4.5 | 1383 | |
-| GPT-4o | 1372 | |
-| Gemini 2.5 Pro | 1372 | |
-| Kimi K2 Thinking Turbo | 1356 | |
-| DeepSeek V3.2 Reasoner | 1350 | |
-| Claude Haiku 4.5 | 1290 | |
-| DeepSeek V3.2 Chat | 1287 | |
-
-*Note: Arena Code data could not be refreshed; these are February 2026 results. The table is a historical snapshot, not a current model ranking.*
-
-<div class="callout">
-<strong>"Thinking" variants are labeled explicitly.</strong> Claude Opus 4.5 thinking-32k (rank 1, 1497 Elo) does explicit reasoning passes. The standard Opus 4.5 (rank 3, 1468 Elo) is still excellent but slightly lower. Both cost $0.50/task but thinking models are slower and burn more tokens on complex tasks.
-</div>
-
-<div class="callout tip">
-<strong>Takeaway:</strong> The archived top group was tightly packed (1468–1497 Elo). Arena Code's table was inaccessible during this refresh, so don't use these old model prices or rankings to choose among today's releases.
-</div>
 
 ---
 
@@ -272,7 +270,7 @@ The best benchmark is running a model on your own work for a day.
 | **LiveCodeBench** | Fresh problems | [livecodebench.github.io](https://livecodebench.github.io/) - avoids training contamination |
 | **ProgramBench** | Rebuilding executable programs from docs/binaries | [programbench.com](https://programbench.com/) - 200 tasks, strict behavioral-test pass; not comparable to issue-fixing scores |
 
-For repository issue fixing, SWE-bench is relevant; for code editing, Aider's historical runs provide context. ProgramBench tests a different, much broader full-program reconstruction task.
+LiveBench 2.0's coding suite and SWE-bench both use real bug fixes; Aider's archived runs cover multi-language code editing up to October 2025. ProgramBench tests a different, much broader full-program reconstruction task.
 
 ---
 
@@ -284,14 +282,16 @@ GitHub moved Copilot to **usage-based AI credit billing** on June 1, 2026. The o
 - Models are priced per token; Copilot rates can differ from provider API rates
 - The Copilot column in these tables now simply shows **✓** (available) or **-** (not available)
 
-Models listed in Copilot pricing as of October 2026:
+Models listed in Copilot pricing as of November 2026:
 
 | Provider | Models |
 |----------|--------|
-| OpenAI | GPT-6 Astra, GPT-6/6.1 Sol, GPT-6 Luna, GPT-5.6 Sol/Terra/Luna, GPT-5.5, GPT-5.4, GPT-5.4 mini/nano, GPT-5.3-Codex, GPT-5 mini |
-| Anthropic | Claude Fable 5/5.1, Opus 5/5.5, Opus 4.8, Sonnet 5/5.5, Sonnet 4/4.6, Haiku 4.5 |
-| Google | Gemini 3.7 Flash, Gemini 3.8 Flash |
+| OpenAI | GPT-6 Astra, GPT-6/6.1 Sol, GPT-6.1 Terra, GPT-6 Luna, GPT-5.6 Sol/Terra/Luna, GPT-5.4 nano, GPT-5.3-Codex |
+| Anthropic | Claude Fable 5/5.1, Opus 5/5.5, Opus 4.8, Sonnet 5/5.5, Sonnet 4/4.6, Haiku 5.5, Haiku 4.5 |
+| Google | Gemini 4 Argon, Gemini 3.8 Flash |
 | xAI / Moonshot / Microsoft | Grok 4.5/4.6/4.7, Kimi K3, MAI-Code-1.1-Flash |
+
+Since October, GitHub has added Claude Haiku 5.5, GPT-6.1 Terra and Gemini 4 Argon, and removed GPT-5.5, GPT-5.4, GPT-5.4 mini, GPT-5 mini and Gemini 3.7 Flash.
 
 Copilot's per-token rates can differ from provider API pricing and may have context tiers, cached-input rates, cache-write charges, or promotional prices. The API-based $/task column is not an estimate of Copilot's bill. Consult the linked rate card before quoting a Copilot cost. `1 AI credit = $0.01`.
 
