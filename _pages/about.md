@@ -6,7 +6,7 @@ classes: wide
 
 ## What I've been up to
 
-- Lead Software Developer at Mountain Warehouse, also serving as Interim Engineering Manager across all three e-commerce web teams
+- Lead Software Developer at Mountain Warehouse, stepping up as Engineering Manager for all three e-commerce web teams when needed
 - Jan 2022 ⇉⇉⇉ Jan 2024   Principal Software Developer at a gov.uk
 - 2019 ⇉⇉⇉ ...   Technical Specialist & Author for ContentLab.io
 - 2018 ⇉⇉⇉ 2022 Technical Lead Engineer for C# .NET at a gov.uk
